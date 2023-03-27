@@ -1,0 +1,23 @@
+{
+  "name": "favmovie",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Juego de preguntas creado con NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "trivial": "node ./trivial/trivial.js"
+  },
+  "keywords": [
+    "JavaScript",
+    "Node",
+    "Inquirer",
+    "Chalk"
+  ],
+  "author": "Antonio Rosales <antoniorosalesmartinez90gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "inquirer": "^9.1.5"
+  }
+}

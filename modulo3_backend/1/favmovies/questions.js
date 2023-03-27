@@ -1,0 +1,53 @@
+export const questions = [
+  {
+    type: "list",
+    name: "character",
+    message: "¿Cuál es tu personaje favorito?",
+    choices: [
+      "Darth Maul",
+      "Padme",
+      "Yoda",
+      "Obi-Wan",
+      "Darth Vader",
+      "Luke Skywalker",
+      "Rey",
+      "Kylo Ren",
+      "Darth Sidious",
+    ],
+  },
+  {
+    type: "list",
+    name: "side",
+    message: "¿De qué lado estás?",
+    choices: ["La Fuerza", "El lado oscuro"],
+  },
+  {
+    type: "list",
+    name: "planet",
+    message: "¿Cuál es tu planeta favorito?",
+    choices: [
+      "Naboo",
+      "Geonosis",
+      "Mustafar",
+      "Tatooine",
+      "Hoth",
+      "Endor",
+      "Jakku",
+      "Crait",
+      "Exegol",
+    ],
+  },
+  {
+    type: "list",
+    name: "power",
+    message: "¿Qué poder de La Fuerza prefieres?",
+    choices: [
+      "Conexión con la Fuerza",
+      "Relámpago de Fuerza",
+      "Visión",
+      "Control mental",
+      "Telekinesis",
+      "Curación",
+    ],
+  },
+];

@@ -1,0 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Istok+Web:regular,italic,700,700italic);
+
+:root {
+  accent-color: #f24e1e;
+  border-color: #f24e1e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Istok web", sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+  color: black;
+  background-image: url("https://www.transparenttextures.com/patterns/lined-paper-2.png");
+}
+
+h1,
+h2,
+h3 {
+  color: #f24e1e;
+  font-weight: bolder;
+}
