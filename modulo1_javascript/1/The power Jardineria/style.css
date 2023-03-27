@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+:root {
+  --primary: #f2f6f8;
+  --secondary: #239d62;
+  --terciary: #183f3d;
+}
+
+/* reset de estilos */
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  padding: 20px;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 10%;
+  min-width: 90px;
+}
+
+#buscador {
+  width: 60%;
+  min-width: 320px;
+  background-color: var(--primary);
+  height: 30px;
+  border-radius: 20px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#buscador input {
+  width: 90%;
+  outline: none;
+  background-color: transparent;
+  padding-left: 15px;
+  font-weight: bolder;
+}
+
+.lupa {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  width: 10%;
+}
+
+.icon {
+  width: 20px;
+  cursor: pointer;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--secondary);
+  padding: 10px 0px 10px 0px;
+  flex-wrap: wrap;
+  border-radius: 2px;
+  margin: 20px 0px 20px 0px;
+}
+
+a {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+a:hover {
+  border-bottom: var(--primary) solid 2px;
+}
+
+.portada,
+.portada2 {
+  background-image: url("https://www.jardineriajorman.com/upload/img-web/jorman_jardineros.jpg");
+  height: 400px;
+  border-radius: 2px;
+}
+
+.portada2 {
+  background-image: url("https://www.jardineriamarve.com/blog/wp-content/uploads/portada-colaboracion-jardin-tallerdepaisatge.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.paralelogramo,
+.paralelogramo2 {
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  width: 50%;
+  height: 450px;
+  background-color: var(--terciary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 100px;
+  color: white;
+}
+
+.paralelogramo2 {
+  background-color: var(--secondary);
+  left: auto;
+  right: 100px;
+}
+
+.paralelogramo div,
+.paralelogramo2 div {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.paralelogramo h1,
+.paralelogramo2 h2 {
+  font-size: 35px;
+}
+
+.paralelogramo h3,
+.paralelogramo2 h3 {
+  font-size: 15px;
+}
+
+.intereses {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.interes {
+  width: 30%;
+  height: 500px;
+  border-radius: 2px;
+  min-width: 320px;
+  max-width: 350px;
+}
+
+.interes img {
+  width: 100%;
+  height: 200px;
+}
+
+.descripcion {
+    gap: 20px;
+    background-color: var(--primary);
+    padding: 20px;
+}
+
+.descripcion h4 {
+    height: 50px;
+}
+
+.descripcion-text {
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.boton {
+    display: flex;
+    align-items: center;
+    background-color: var(--secondary);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all, 1s;
+}
+
+.boton:hover {
+    transition: all, 1s;
+    background-color: var(--terciary);
+}
+
+.boton img {
+    margin-left: 10px;
+    height: 10px;
+    width: 10px;
+}
+
+.productos {
+  display: flex;
+  background-color: var(--primary);
+  width: 100%;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px 0px 30px 0px;
+  gap: 30px;
+}
+
+.productos-title {
+  width: 200px;
+}
+
+.producto {
+  border-radius: 2px;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 400px;
+  gap: 20px;
+  width: 300px;
+  padding: 20px;
+  position: relative;
+}
+
+.producto:hover {
+  outline: solid 2px var(--terciary);
+}
+
+.info-producto {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+  transition: all, 1s;
+}
+
+.info-producto:hover {
+  color: var(--secondary);
+  transition: all, 1s;
+}
+
+.imagen-producto {
+  width: 60%;
+}
+
+.arrow {
+  width: 20px;
+}
+
+.like {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.destacados {
+  color: var(--secondary);
+}
+
+.compra {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.compra p {
+  font-weight: bolder;
+}
+
+footer {
+    background-color: var(--terciary);
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 40%;
+    margin-top: 100px;
+    gap: 50px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.enlaces {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 200px;
+}
+
+.enlaces a {
+    font-weight: lighter;
+    transition: all, 1s;
+}
+
+.enlaces a:hover {
+    border: none;
+    color: var(--secondary);
+    transition: all, 1s;
+}
+
+.enlace-titulo {
+    color: white;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 530px) {
+  .icons {
+      width: 100%;
+  }
+
+  .paralelogramo, .paralelogramo2 {
+      width: 70%;
+      left: 50px;
+  }
+
+  .producto {
+      width: 250px;
+  }
+}
+
+@media only screen and (min-width: 645px) {
+  footer {
+      max-height: 300px;
+  }
+
+  .navbar ul {
+      align-items: flex-start;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .productos-title {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+    footer {
+        height: 100%;
+    }
+}

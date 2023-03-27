@@ -1,0 +1,50 @@
+[
+  {
+    "titulo": "The last of us part II",
+    "portada": "https://as.com/meristation/imagenes/2019/09/25/game_cover/183891271569432001.jpg",
+    "precio": 60,
+    "descripcion": "Este videojuego te aporta el otro punto de vista de las cosas referentes a la parte I, Ellie evoluciona mucho después de enfadarse con Joel por cosas que pasan (es spoiler por eso no lo pongo) y está muy guapo."
+  },
+  {
+    "titulo": "Fifa 23",
+    "portada": "https://static1-es.millenium.gg/articles/1/48/93/1/@/266332-fifa23-article_m-1.JPG",
+    "precio": 40,
+    "descripcion": "El fifa 23 este año es igual que el de los años anteriores porque todos los años es igual pero compralo que tenemos el mejor mercado del mundo de los videojuegos y está muy guapo."
+  },
+  {
+    "titulo": "God of war ragnarok",
+    "portada": "https://i.3djuegos.com/juegos/17544/god_of_war_ragnarok/fotos/ficha/god_of_war_ragnarok-5732812.jpg",
+    "precio": 50,
+    "descripcion": "En este videojuego correrás las trepidosas aventuras de mi pana el kratos con su son el niño que no se como se llama, pero mola mucho porque pelean con cosas chungas."
+  },
+  {
+    "titulo": "Animal Crossing",
+    "portada": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81QvUXy2qpL._AC_SX522_.jpg",
+    "precio": 49.99,
+    "descripcion": "Probablemente el mejor videojuego de la historia, el único problema es que es de nintendo y siempre costará 49.99€"
+  },
+  {
+    "titulo": "Minecraft",
+    "portada": "https://i.pinimg.com/originals/1b/9f/77/1b9f772d10ae2cfce18fab1b05705810.png",
+    "precio": 20,
+    "descripcion": "Este juego está muy bien, bloques, relax, cubitos, más relax, polígonos, más relax..."
+  },
+  {
+    "titulo": "Mario Party",
+    "portada": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/816L6TLGDGS._AC_SL1417_.jpg",
+    "precio": 10,
+    "descripcion": "El mejor juego para jugar en familia y con amigos."
+  },
+  {
+    "titulo": "League of Legends",
+    "portada": "https://sm.ign.com/ign_es/game/l/league-of-/league-of-legends_q2kj.png",
+    "precio": 0,
+    "descripcion": "No juguéis a este juego, porfavor y gracias"
+  },
+  {
+    "titulo": "Howarts Legacy",
+    "portada": "https://uvejuegos.com/img/caratulas/65094/Hogwarts-Legacy-Key-Art.jpg",
+    "precio": 80,
+    "descripcion": "Pues no lo he jugado pero dicen que está bastante fresco mi pana"
+  }
+]

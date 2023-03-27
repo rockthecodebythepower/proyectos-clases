@@ -1,0 +1,22 @@
+{
+  "name": "back1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "encriptar": "node encriptar.js",
+    "desencriptar": "node desencriptar.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.3",
+    "fs": "^0.0.1-security",
+    "html-pdf": "^3.0.1",
+    "json2csv": "^6.0.0-alpha.2",
+    "path": "^0.12.7"
+  }
+}

@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "marca": "SEAT",
+    "color": "NARANJA",
+    "puertas": 5,
+    "potencia": "90CV",
+    "precio": 30000,
+    "modelo": "Ibiza",
+    "identificador": "OQWEFMNAS23420",
+    "imagen": "https://rgautomocion.es/wp-content/uploads/2020/01/seat-ibiza-png-3.png"
+  },
+  {
+    "id": 2,
+    "marca": "PEUGEOT",
+    "color": "AZUL",
+    "puertas": 5,
+    "potencia": "65CV",
+    "precio": 10000,
+    "modelo": "307",
+    "identificador": "OQWEFMNAS23421",
+    "imagen": "https://cdn.tiresleader.com/static/img/auto/pe37b02y.jpg"
+  },
+  {
+    "id": 3,
+    "marca": "BUGATTI",
+    "color": "NEGRO",
+    "puertas": 3,
+    "potencia": "990CV",
+    "precio": 1000000,
+    "modelo": "Veyron",
+    "identificador": "OQWEFMNAS23422",
+    "imagen": "https://i.pinimg.com/originals/ac/e6/3b/ace63b2f6ccd29c7e567e070089fcd5b.png"
+  },
+  {
+    "id": 4,
+    "marca": "AUDI",
+    "color": "GRIS",
+    "puertas": 3,
+    "potencia": "1200CV",
+    "precio": 100000,
+    "modelo": "R8",
+    "identificador": "OQWEFMNAS23423",
+    "imagen": "https://wellerexperience.com/wp-content/uploads/2022/05/alquilar-coche-de-lujo-en-ibiza-audi-r8-pro.png"
+  },
+  {
+    "id": 5,
+    "marca": "BMW",
+    "color": "GRIS",
+    "puertas": 5,
+    "potencia": "290CV",
+    "precio": 35000,
+    "modelo": "M3",
+    "identificador": "OQWEFMNAS23424",
+    "imagen": "https://totalrenting.es/wp-content/uploads/2022/06/BMW-M3.png"
+  },
+  {
+    "id": 6,
+    "marca": "CHEVROLET",
+    "color": "AMARILLO",
+    "puertas": 5,
+    "potencia": "290CV",
+    "precio": 40000,
+    "modelo": "Camaro",
+    "identificador": "OQWEFMNAS23425",
+    "imagen": "https://www.motortrend.com/uploads/sites/10/2017/07/2018-chevrolet-camaro-2lt-coupe-angular-front.png"
+  },
+  {
+    "id": 7,
+    "marca": "FORD",
+    "color": "NEGRO",
+    "puertas": 5,
+    "potencia": "190CV",
+    "precio": 40000,
+    "modelo": "Mustang",
+    "identificador": "OQWEFMNAS23426",
+    "imagen": "https://es.ford.com/cmslibs/content/dam/vdm_ford/live/en_us/ford/nameplate/mustang/2023/collections/cyp/BYO_Mustang_2023.png"
+  },
+  {
+    "id": 8,
+    "marca": "OPEL",
+    "color": "GRIS",
+    "puertas": 5,
+    "potencia": "100CV",
+    "precio": 10000,
+    "modelo": "Corsa",
+    "identificador": "OQWEFMNAS23427",
+    "imagen": "https://renting.racc.es/835-full_default/renting-opel-corsa-12t-xhl-100-cv-elegance-5p.jpg"
+  },
+  {
+    "id": 9,
+    "marca": "RENAULT",
+    "color": "BLANCO",
+    "puertas": 5,
+    "potencia": "130CV",
+    "precio": 22000,
+    "modelo": "Megane",
+    "identificador": "OQWEFMNAS23428",
+    "imagen": "https://rentingfinders.com/wp-content/uploads/2019/11/megane-blanco.png"
+  },
+  {
+    "id": 10,
+    "marca": "FORD",
+    "color": "BLANCO",
+    "puertas": 5,
+    "potencia": "190CV",
+    "precio": 20000,
+    "modelo": "Fiesta",
+    "identificador": "OQWEFMNAS23429",
+    "imagen": "https://cdn.drivek.com/configurator-imgs/cars/es/$original$/FORD/FIESTA/40810_BERLINA-5-PUERTAS/ford-fiesta-5-doors.png"
+  },
+  {
+    "id": 11,
+    "marca": "FERRARI",
+    "color": "ROJO",
+    "puertas": 3,
+    "potencia": "900CV",
+    "precio": 1300000,
+    "modelo": "La ferrari",
+    "identificador": "OQWEFMNAS23430",
+    "imagen": "https://i.pinimg.com/originals/17/27/0f/17270fb6b3c174daae51ec6ba0415c4d.png"
+  },
+  {
+    "id": 12,
+    "marca": "SEAT",
+    "color": "NEGRO",
+    "puertas": 3,
+    "potencia": "120CV",
+    "precio": 20000,
+    "modelo": "Leon",
+    "identificador": "OQWEFMNAS23431",
+    "imagen": "https://www.seat.es/content/dam/public/seat-website/myco/2325/carworlds/leon/leon-style/header-version/seat-leon-5d-style-trim-midnight-black-colour-alloy-wheels.png"
+  }
+]
