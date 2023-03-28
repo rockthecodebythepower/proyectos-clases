@@ -1,0 +1,8 @@
+input {
+  border: none;
+  padding: 0.4rem;
+  background-color: transparent;
+  border-bottom: 2px solid var(--secondary-color);
+  min-width: 500px;
+  color: var(--primary-color);
+}

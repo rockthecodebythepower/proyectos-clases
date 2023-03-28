@@ -1,0 +1,11 @@
+.mail {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 0.4rem 0.8rem;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.mail:hover {
+  color: var(--background-color);
+}

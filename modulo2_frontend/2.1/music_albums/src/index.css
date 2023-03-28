@@ -1,0 +1,24 @@
+:root {
+  --background-color: #2f2f3b;
+  --background-secondary-color: #353543;
+  --primary-color: #f8f8f8;
+  --secondary-color: #e36f3f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--secondary-color);
+}

@@ -1,0 +1,17 @@
+.albumcard {
+  width: 250px;
+  height: 350px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: var(--background-secondary-color);
+  padding: 0.5rem;
+  box-shadow: 10px 10px 0px -6px rgba(0, 0, 0, 0.2);
+}
+
+.albumcard > img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}

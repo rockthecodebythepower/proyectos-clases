@@ -1,0 +1,14 @@
+.avatar {
+  max-width: 10rem;
+  text-align: center;
+}
+
+.avatar > img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 0.8rem;
+  border: 4px solid var(--primary-color);
+  box-shadow: 5px 5px 0px 0px var(--primary-color);
+}
