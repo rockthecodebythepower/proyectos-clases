@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+:root {
+    --primary: rgba(243, 53, 53, 1);
+    --secondary: rgb(255, 255, 255);
+    --terciary: rgb(203, 189, 189);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.flechita {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+    transition: all, 0.2s;
+}
+
+.flechita img {
+    width: 30px;
+}
+
+.flechita:hover {
+    bottom: 25px;
+}
+
+header {
+    background-color: var(--primary);
+    background: linear-gradient(to bottom, var(--primary) 0%, var(--secondary) 100%);
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+    font-weight: bolder;
+}
+
+a {
+    color: var(--secondary);
+}
+
+a:hover {
+    border-bottom: var(--secondary) 2px solid;
+}
+
+.navbar>img {
+    width: 10%;
+    min-width: 90px;
+}
+
+.listado {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 700px));
+    grid-auto-rows: 1fr;
+    min-height: 70vh;
+    padding: 50px;
+}
+
+.intro {
+    color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 50px;
+    text-shadow: 3px 2px 2px var(--secondary);
+}
+
+.intro p {
+    color: var(--primary);
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.button-anchord {
+    background-color: var(--primary);
+    padding: 10px 20px 10px 20px;
+    border-radius: 15px;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+
+.button-anchord:hover {
+    border: none;
+    box-shadow: 5px 6px 12px -4px var(--secondary);
+}
+
+.superposicion {
+    position: relative;
+    padding: 10px;
+}
+
+.superposicion-1, .superposicion-2, .superposicion-3 {
+    border-radius: 15px;
+    width: 70%;
+    height: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.superposicion-1:hover, .superposicion-2:hover, .superposicion-3:hover {
+    z-index: 3;
+}
+
+.superposicion-1 {
+    top: 0;
+    right: 0;
+    background-image: url("https://media.istockphoto.com/id/1177469070/es/foto/fondo-borroso-del-vest%C3%ADbulo-vac%C3%ADo-en-el-hospital.jpg?s=612x612&w=0&k=20&c=O8kQsLg0a8H_ZhDZaQ6uULN_I3-faZFPVkRIM__FTg0=");
+    z-index: 0;
+}
+
+.superposicion-2 {
+    left: 0;
+    top: 10%;
+    background-image: url("https://i.blogs.es/d0a6c0/como-crear-efecto-desenfoque-bokeh-cuatro-pasos-04/450_1000.webp");
+    z-index: 1;
+}
+
+.superposicion-3 {
+    bottom: 0;
+    left: 10%;
+    background-image: url("https://www.comunicare.es/wp-content/uploads/2021/10/Disenador-grafico-1080x675-1-2.jpg");
+    z-index: 2;
+}
+
+.presentacion {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.presentacion section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.presentacion > section h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.presentacion > section p {
+    font-weight: 500;
+    width: 50%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.presentacion-imagenes {
+    width: 80%;
+    height: 70vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentacion-imagenes-1, .presentacion-imagenes-2, .presentacion-imagenes-3 {
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 50%;
+    border-radius: 15px;
+    box-shadow: 0px 5px 12px -4px black;
+}
+
+.presentacion-imagenes-1 {
+    left: 0;
+    background-image: url("https://st3.depositphotos.com/2884373/37640/i/600/depositphotos_376404002-stock-photo-blurred-view-on-a-park.jpg");
+    z-index: -1;
+}
+
+.presentacion-imagenes-2 {
+    right: 0;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/001/254/679/non_2x/defocused-city-street-at-night-free-photo.jpeg");
+    z-index: -1;
+}
+
+.presentacion-imagenes-3 {
+    width: 70%;
+    height: 70%;
+    background-image: url("https://blancfestival.com/wp-content/uploads/2021/02/1toolkitdisen%CC%83ador.jpg");
+}
+
+.esfera {
+    background-color: var(--terciary);
+    border-radius: 100%;
+    box-shadow: 0px 0px 21px 3px var(--terciary);
+    opacity: 50%;
+    position: absolute;
+    z-index: -1;
+}
+
+.esfera1 {
+    width: 200px;
+    height: 200px;
+    top: 200px;
+    left: -100px;
+}
+
+.esfera2 {
+    width: 150px;
+    height: 150px;
+    top: 600px;
+    right: 150px;
+}
+
+#cursos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    position: relative;
+}
+
+#cursos h2 {
+    margin-bottom: 50px;
+    color: var(--primary);
+    font-weight: bolder;
+    text-align: center;
+}
+
+#cursos section {
+    width: 70%;
+    min-width: 300px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px 30px 0px;
+    border-radius: 15px;
+}
+
+/* nth-child es una pseudoclase que me va a ayudar a seleccionar los elementos pares o impares (le puedo pasar número o palabras como even u odd) */
+
+#cursos > section img:nth-child(even) {
+    width: 50%;
+    margin-right: 150px;
+}
+
+#cursos > section img:nth-child(odd) {
+    width: 50%;
+    margin-left: 150px;
+}
+
+.info {
+    width: 300px;
+}
+
+/* .info:nth-of-type(even) {
+    margin-right: 150px;
+}
+
+.info:nth-of-type(odd) {
+    margin-left: 150px;
+} */
+
+.info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+footer {
+    background-color: var(--primary);
+    min-height: 30vh;
+    margin-top: 100px;
+    background-image: url("https://www.transparenttextures.com/patterns/shattered-dark.png");
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--secondary);
+}
+
+footer ul {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 25px;
+}
+
+footer > ul li:first-child {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+}
+
+.email a {
+    margin-left: 20px;
+    border: none;
+}
+
+.email img {
+    width: 30px;
+}
+
+@media only screen and (max-width: 680px) {
+    footer {
+        height: 400px;
+    }
+    footer > ul li {
+        font-size: 15px;
+        width: 150px;
+    }
+    .info {
+        width: 150px;
+    }
+    #cursos > section img:nth-child(even) {
+        width: 100%;
+        margin-right: -50px;
+    }
+    #cursos > section img:nth-child(odd) {
+        width: 100%;
+        margin-left: -50px;
+    }
+    .presentacion > section p {
+        width: 90%;
+    }
+    .presentacion {
+        margin-top: 70px;
+    }
+    /* .intro p {
+        color: --;
+    } */
+    .hero {
+        padding: 0px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .intro {
+        margin-left: 20px;
+    }
+}

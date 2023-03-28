@@ -1,0 +1,17 @@
+.header-link__dark, .header-link__light {
+    font-weight: bolder;
+    font-size: 30px;
+    color: var(--contrast-light);
+}
+
+.header-link__dark {
+    color: var(--contrast-dark); 
+}
+
+.header-link__light:hover {
+    border-bottom: 3px solid var(--contrast-light);
+}
+
+.header-link__dark:hover {
+    border-bottom: 3px solid var(--contrast-dark);
+}
