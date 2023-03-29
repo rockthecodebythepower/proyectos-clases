@@ -1,0 +1,12 @@
+header {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+header > img {
+  height: 5vh;
+}

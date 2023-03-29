@@ -1,0 +1,12 @@
+main {
+  min-height: 80vh;
+  padding: 2rem 2rem;
+}
+
+main > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem 0;
+}
