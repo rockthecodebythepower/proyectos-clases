@@ -1,0 +1,80 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  color: var(--contrast-light);
+  text-shadow: 2px 2px 2px var(--contrast-light);
+}
+
+.h1__dark {
+  color: var(--contrast-dark);
+  text-shadow: 2px 2px 2px var(--contrast-dark);
+}
+
+.home__light,
+.home__dark {
+  min-height: 90vh;
+  background-color: var(--primary-light);
+}
+
+.home__dark {
+  background-color: var(--primary-dark);
+}
+
+.portada {
+  width: 100%;
+  min-height: 70vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.portada div {
+  width: 400px;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  position: absolute;
+  box-shadow: 0px 0px 15px 0px var(--secondary-light);
+}
+
+.portada-div__dark {
+  box-shadow: 0px 0px 15px 0px var(--secondary-dark) !important;
+}
+
+.portada-1 {
+  background-image: url("https://www.marialunarillos.com/media/catalog/product/cache/babc9c3930426724bed95a50193e0e01/g/o/gominolas-de-az_car-besos-rayas-rojas-y-blancas-_1-kg_---fini.jpg");
+  transform: rotate(-30deg);
+  left: 20%;
+}
+
+.portada-2 {
+  background-image: url("https://informaciongastronomica.com/wp-content/uploads/2021/08/b95d500796efef87061c773e303a59f2-e1630656620725.jpg");
+  transform: rotate(-15deg);
+  left: 30%;
+}
+
+.portada-3 {
+  background-image: url("https://anavidaldietista.com/wp-content/uploads/2020/08/gominolas-3.jpg");
+  left: 40%;
+}
+
+.portada-4 {
+  background-image: url("https://mercatderipollet.com/wp-content/uploads/2020/09/gominolas-fruta.jpg");
+  transform: rotate(15deg);
+  left: 50%;
+}
+
+.portada-5 {
+  background-image: url("https://sugarpharmacy.net/wp-content/uploads/2018/04/cocktailgominolasabrillo-min.jpg");
+  transform: rotate(30deg);
+  left: 60%;
+}

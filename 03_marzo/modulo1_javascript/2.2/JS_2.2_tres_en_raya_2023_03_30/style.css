@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.tablero {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  outline: 2px solid black;
+  margin-top: 20px;
+}
+
+.casilla {
+  width: 100px;
+  height: 100px;
+  outline: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 80vh;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  color: brown;
+}
+
+.pregunta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.pregunta div {
+  border: 2px solid black;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 80px;
+  cursor: pointer;
+}
+
+.marcador {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.x,
+.o {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h4 {
+  padding: 20px;
+  border: 2px solid black;
+  width: 100px;
+}
+
+.x div,
+.o div {
+  padding: 20px;
+  width: 100px;
+  outline: 2px solid black;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

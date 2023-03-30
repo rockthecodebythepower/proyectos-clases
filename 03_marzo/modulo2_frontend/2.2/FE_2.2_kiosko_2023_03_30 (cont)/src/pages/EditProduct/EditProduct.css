@@ -1,0 +1,47 @@
+.editProduct {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--primary-light);
+}
+
+.editProduct div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    margin-top: 50px;
+}
+
+.editProduct_img {
+    width: 300px;
+    height: 300px;
+}
+
+.editProduct_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.editProduct input, .editProduct button {
+    padding: 10px;
+    font-weight: bolder;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.editProduct button {
+    cursor: pointer;
+}
+
+.editProduct button:last-of-type {
+    background-color: red;
+    color: white;
+}
+
+.editProduct__dark {
+    background-color: var(--primary-dark);
+}
