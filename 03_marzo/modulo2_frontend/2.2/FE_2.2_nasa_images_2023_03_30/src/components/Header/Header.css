@@ -1,0 +1,19 @@
+header {
+  display: flex;
+  padding: 0 2rem;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  min-height: 10vh;
+}
+
+header > ul {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+}
+
+.active {
+  color: #7caaac;
+  text-decoration: underline;
+}
