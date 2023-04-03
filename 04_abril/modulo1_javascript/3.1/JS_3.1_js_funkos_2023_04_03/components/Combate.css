@@ -1,0 +1,11 @@
+.jugadores {
+    display: flex;
+}
+
+.jugadores>div {
+    margin: 20px;
+}
+
+h2 {
+    margin: 20px;
+}

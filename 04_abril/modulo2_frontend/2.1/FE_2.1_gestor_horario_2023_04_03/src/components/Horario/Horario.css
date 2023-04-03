@@ -1,0 +1,20 @@
+.horario {
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nombre_horario {
+    font-size: 35px;
+}
+
+.info {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}

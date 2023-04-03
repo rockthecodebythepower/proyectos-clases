@@ -1,0 +1,26 @@
+.titulo2 {
+  background-color: red;
+}
+
+.titulo {
+  background-color: goldenrod;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#combate {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#combate div {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+}

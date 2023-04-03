@@ -1,0 +1,10 @@
+.pregunta {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.respuesta {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+}

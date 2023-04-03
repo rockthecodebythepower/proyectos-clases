@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Tillana&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Tillana", cursive;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.funko{
+    padding: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imagen_wrp {
+    width: 300px;
+    height: 400px;
+}
+
+.imagen {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.img_wrp_player {
+    width: 100px;
+    height: 100px;
+}
+
+.img_wrp_player img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
