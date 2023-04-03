@@ -1,0 +1,18 @@
+{
+  "name": "be_1_poster_scrapping_2023_04_01",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Antonio Rosales <antoniorosalesmartinez90gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^9.1.5",
+    "puppeteer": "^19.8.3",
+    "request": "^2.88.2"
+  }
+}

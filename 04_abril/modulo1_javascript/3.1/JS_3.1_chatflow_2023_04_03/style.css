@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+:root {
+  --primary-light: #0f082c;
+  --primary-dark: white;
+  --secondary-light: #0d082c;
+  --secondary-dark: rgba(255, 255, 255, 0.592);
+  --description: #6e6b80;
+  --highlight: #4635f3;
+}
+
+body {
+  color: var(--primary-light);
+}
+
+h1,
+h2 {
+  font-family: "Source Serif Pro", serif;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+p {
+  color: var(--secondary-dark);
+}

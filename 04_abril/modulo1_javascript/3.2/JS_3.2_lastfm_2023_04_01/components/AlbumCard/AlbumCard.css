@@ -1,0 +1,13 @@
+.albumcard {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+.albumcard > img {
+  transition: all 0.5s ease-in-out;
+}
+
+.albumcard > img:hover {
+  transform: scale(1.05);
+}

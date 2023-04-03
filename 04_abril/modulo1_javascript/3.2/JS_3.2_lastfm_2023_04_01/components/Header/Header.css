@@ -1,0 +1,24 @@
+header {
+  background-color: var(--color-00);
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > img {
+  height: 50%;
+}
+
+header > .profile,
+header > .icon {
+  height: 100%;
+  aspect-ratio: 1.1;
+  object-fit: cover;
+}
+
+header > .profile {
+  border-radius: 50%;
+  height: 80%;
+  border: solid 2px var(--color-100);
+}

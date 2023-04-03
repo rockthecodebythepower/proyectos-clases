@@ -1,0 +1,27 @@
+:root {
+  --color-00: #000000;
+  --color-50: #696969;
+  --color-100: #f4f4f4;
+  --color-red: #b90000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Barlow", sans-serif;
+}
+
+main {
+  min-height: calc(100vh - (8vh * 2));
+}
+
+a {
+  color: var(--color-00);
+}
+
+a:hover {
+  color: var(--color-red);
+}

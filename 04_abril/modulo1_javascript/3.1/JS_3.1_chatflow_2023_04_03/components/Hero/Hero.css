@@ -1,0 +1,56 @@
+#hero {
+  min-height: 86vh;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.description {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.description > div {
+  display: flex;
+  gap: 2rem;
+}
+
+.description > div > button {
+  background-color: var(--primary-light);
+  border: none;
+  color: var(--primary-dark);
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+}
+
+.description > div > .btn-variant {
+  background-color: var(--highlight);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.preview {
+  width: 30vw;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  #hero {
+    padding: 2rem;
+  }
+
+  .preview,
+  .description {
+    width: 100%;
+  }
+
+  .preview > img {
+    width: 100%;
+  }
+}

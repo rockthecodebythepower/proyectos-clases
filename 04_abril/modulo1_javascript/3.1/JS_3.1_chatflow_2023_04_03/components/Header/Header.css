@@ -1,0 +1,36 @@
+header {
+  min-height: 100vh;
+  background-image: url(/images/background.png);
+  background-size: cover;
+  color: var(--primary-dark);
+  padding: 1rem 4rem;
+}
+
+header > nav {
+  min-height: 14vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+header > nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+header > nav a {
+  color: var(--secondary-dark);
+}
+
+header > nav a:hover {
+  color: var(--primary-dark);
+}
+
+header > nav .register-link {
+  background-color: var(--secondary-dark);
+  color: var(--primary-light);
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.4rem;
+}
