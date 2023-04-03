@@ -1,0 +1,19 @@
+.moviecard {
+  height: 8rem;
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+  white-space: nowrap;
+}
+
+.moviecard img {
+  height: 100%;
+  width: 5rem;
+  object-fit: cover;
+}
+
+#moviescontainer li:nth-child(odd) {
+  background-color: #ececec;
+}

@@ -1,0 +1,15 @@
+header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+header ul {
+  display: flex;
+  gap: 2rem;
+  white-space: nowrap;
+}
