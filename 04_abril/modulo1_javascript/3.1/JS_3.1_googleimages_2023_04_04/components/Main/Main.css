@@ -1,0 +1,45 @@
+main {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem;
+}
+
+main > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+main > form > input {
+  border: 1px solid var(--secondary-color);
+  background: none;
+  color: var(--secondary-color);
+  padding: 0.5rem 0.7rem;
+  border-radius: 20px;
+  width: 50vw;
+}
+
+main > form > input:focus {
+  background-color: var(--back-color);
+}
+
+main > form > button {
+  background-color: var(--back-color);
+  border: none;
+  color: var(--primary-color);
+  padding: 0.5rem 0.7rem;
+  border-radius: 4px;
+  width: fit-content;
+}
+
+#results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+  width: 90vw;
+}
