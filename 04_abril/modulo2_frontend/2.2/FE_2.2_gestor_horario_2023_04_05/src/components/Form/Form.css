@@ -1,0 +1,69 @@
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 70%;
+  color: white;
+  width: 70%;
+  max-width: 800px;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: #3a0061;
+  background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+  border: 3px solid white;
+}
+
+.guardar,
+.cancelar {
+  padding: 10px;
+  border-color: white;
+  color: black;
+}
+
+.guardar {
+  background-color: rgb(85, 233, 85);
+}
+
+.cancelar {
+  background-color: rgb(254, 86, 86);
+}
+
+.botones {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.color {
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bolder;
+  border-radius: 10px;
+}
+
+option {
+  padding: 5px;
+}
+
+@media screen and (max-width: 400px) {
+  .modal {
+    width: 104vw;
+    height: 105vh;
+  }
+}

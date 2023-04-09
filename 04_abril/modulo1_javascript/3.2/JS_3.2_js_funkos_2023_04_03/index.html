@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funko pop fight</title>
+  </head>
+  <body>
+    <div id="combate">
+      <div class="jugadores">
+        <div>
+          <label>Selecciona el jugador 1</label>
+          <select id="jugador1"></select>
+          <div class="img_wrp_player">
+            <img
+              id="img_jugador1"
+              src="https://i5.walmartimages.com/asr/76f8abf7-34f8-4f0d-8fec-0e50a031a477_1.16580d64e5ca0a1443faccefd2ba9c61.png"
+            />
+          </div>
+        </div>
+        <div>
+          <label>Selecciona el jugador 2</label>
+          <select id="jugador2"></select>
+          <div class="img_wrp_player">
+            <img
+              id="img_jugador2"
+              src="https://i5.walmartimages.com/asr/76f8abf7-34f8-4f0d-8fec-0e50a031a477_1.16580d64e5ca0a1443faccefd2ba9c61.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="pelea"></div>
+    </div>
+    <button id="start">COMENZAR COMBATE</button>
+      <h2>- Pulsa la tecla "a" para pegar siendo el jugador 1</h2>
+      <h2>- Pulsa la tecla "ñ" para pegar siendo el jugador 2</h2>
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

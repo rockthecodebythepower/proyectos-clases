@@ -1,0 +1,59 @@
+#combate {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.jugadores {
+    display: flex;
+}
+
+.jugadores>div {
+    margin: 20px;
+}
+
+h2 {
+    margin: 20px;
+}
+
+.barrita-vida {
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.vida {
+    height: 20px;
+    border-radius: 5px;
+    background-color: red;
+}
+
+.img_wrp_player_combate {
+    width: 200px;
+    height: 200px;
+}
+
+.img_wrp_player_combate img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all 1s;
+}
+
+.pelea>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 50px;
+}
+
+.vs {
+    width: 200px;
+}
+
+.muerto {
+    transform: rotate(60deg);
+    filter: invert(0.3);
+}

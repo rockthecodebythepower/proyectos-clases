@@ -1,0 +1,16 @@
+{
+  "name": "scrapperalcampo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^7.0.3",
+    "puppeteer": "^19.8.3"
+  }
+}

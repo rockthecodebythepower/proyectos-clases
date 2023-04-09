@@ -1,0 +1,44 @@
+.gestor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.horarios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.no-horarios {
+    color: white;
+}
+
+.bailonga{
+    width: 600px;
+}
+
+.no-horarios-wrp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width: 600px) {
+    .no-horarios {
+        font-size: 35px;
+        text-align: center;
+    }
+    
+    .bailonga{
+        width: 250px;
+    }
+    
+  }

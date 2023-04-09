@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Comfortaa", cursive;
+}
+
+header {
+  padding: 50px;
+  height: 19vh;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+a {
+  color: black;
+}
+
+.img-perfil {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.img-perfil img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.icono {
+  width: 30px;
+}
+
+.presentacion h1 {
+  color: #f98152;
+  margin-bottom: 40px;
+}
+
+.presentacion p {
+  opacity: 50%;
+  width: 300px;
+}
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacto > div {
+  margin-right: 30px;
+}
+
+.contacto > ul {
+  height: 180px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.contacto > ul li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+main {
+  width: 100%;
+  height: 70vh;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  height: 70%;
+  width: 60%;
+}
+
+section {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+section > div {
+  margin-top: 50px;
+}
+
+h2 {
+  color: #f98152;
+  margin-bottom: 20px;
+}
+
+section > h2 {
+  margin-top: 300px;
+  color: #f98152;
+  margin-bottom: 0px;
+}
+
+.fecha {
+  margin: 10px 0px 10px 0px;
+  opacity: 50%;
+}
+
+.descripcion {
+  width: 90%;
+}
+
+aside {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 20px;
+  min-height: 70vh;
+}
+
+button {
+  background-color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  transition: all, 1s;
+  border-radius: 12px;
+}
+
+button:hover {
+  background-color: #f98152;
+}
+
+#mostrar {
+  border-radius: 12px;
+  background-color: white;
+  padding: 30px;
+  height: 400px;
+  width: 200px;
+  overflow-y: scroll;
+}
+
+.educacion {
+  margin-bottom: 30px;
+}
+
+.habilidad_secundaria,
+.habilidad_principal {
+  margin-bottom: 20px;
+}
+
+.habilidad_principal {
+  margin-top: 40px;
+}
+
+.logro {
+  margin-top: 30px;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+
+/* Flip card 3d */
+.flip-card {
+  width: 100px;
+  height: 100px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
