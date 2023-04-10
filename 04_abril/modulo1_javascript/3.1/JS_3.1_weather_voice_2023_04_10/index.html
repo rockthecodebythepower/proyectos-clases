@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <search id="search">
+      <div>
+        <label>Busca tu ciudad</label>
+        <input />
+        <button>Buscar</button>
+      </div>
+      <div>
+        <label>Dime: Quiero saber el tiempo de {TuCiudad}</label>
+        <button id="boton_voz">Reconocimiento por voz</button>
+      </div>
+    </search>
+    <div id="app">
+      <div class="ciudad">
+        <h2 class="nombre_ciudad">Nombre Ciudad</h2>
+        <img class="icono" src="./public/assets/clima.png" alt="icono tiempo"/>
+      </div>
+      <div class="grados">
+        <h2 class="grados_titulo">
+          0 °C
+        </h2>
+      </div>
+      <div class="info">
+        <div class="lluvia">
+          <img class="lluvia_img" src="./public/assets/lluvia.png" alt="precipitaciones"/>
+          <p class="lluvia_dato">9%</p>
+        </div>
+        <div class="viento">
+          <img class="viento_img" src="./public/assets/viento.png" alt="viento"/>
+          <p class="viento_dato">20 km/h</p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

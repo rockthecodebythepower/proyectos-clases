@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+  font-weight: bolder;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: #00457a;
+  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+}
+
+#search {
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+  flex-wrap: wrap;
+  color: white;
+}
+
+#search > div {
+  margin-right: 100px;
+}
+
+#search button, #search input {
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border: 3px solid black;
+}
+
+#app {
+  width: 500px;
+  height: 700px;
+  background-color: white;
+  margin-top: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border: 3px solid black;
+}
+
+#app img {
+  width: 100px;
+}
+
+.ciudad, .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  border-bottom: 3px solid black;
+}
+
+.grados_titulo {
+  font-size: 100px;
+}
+
+.info {
+  border-top: 3px solid black;
+  border-bottom: none;
+}
+
+.info p {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.lluvia, .viento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
