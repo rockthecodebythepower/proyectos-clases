@@ -1,0 +1,26 @@
+{
+  "name": "be_2.1_albums_2023_04_11",
+  "version": "0.0.1",
+  "description": "Albums API REST",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "API",
+    "Music",
+    "Express",
+    "Node"
+  ],
+  "author": "Antonio Rosales <antoniorosalesmartinez90gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

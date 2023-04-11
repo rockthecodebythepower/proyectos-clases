@@ -1,0 +1,6 @@
+.cardwrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 5rem 10vw;
+}

@@ -1,0 +1,10 @@
+figure {
+  height: 130px;
+  width: 130px;
+  background-color: beige;
+}
+
+figure > img {
+  max-width: 130px;
+  max-height: 130px;
+}
