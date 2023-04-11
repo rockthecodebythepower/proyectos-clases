@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-decoration: none; 
+   font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --primary: #00a884;
+    --secondary: #e3e2de;
+    --terciary: #f1f2f6;
+    --cuaternary: #efebe29b;
+    --border: #d4d5d9;
+    --mensaje1: #d8fdd2;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verde-fuerte {
+    height: 15vh;
+    background-color: var(--primary);
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.verde-flojo {
+    height: 85vh;
+    background-color: var(--secondary);
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+main {
+    background-color: white;
+    width: 80%;
+    height: 95vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 70px 1fr;
+}
+
+.gestion {
+    background-color: var(--terciary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.contacto {
+    background-color: var(--terciary);   
+    border-left: 2px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+/* .chats {
+
+} */
+
+.chat {
+    background-color: var(--quaternary);
+    background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+    border-left: 2px solid var(--border);
+    position: relative;
+}
+
+.perfil {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.perfil img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.opciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 200px;
+}
+
+.icon {
+    height: 20px;
+}
+
+.contacto > div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.lupa {
+    margin-right: 20px;
+}
+
+.buscador {
+    border-bottom: 2px solid var(--border);
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0px 20px;
+}
+
+.search > div {
+    background-color: var(--secondary);
+    border-radius: 10px;
+    width: 80%;
+    display: flex;
+    padding: 10px;
+}
+
+.search > div input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 90%;
+}
+
+.archivados {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    gap: 50px;
+    padding: 0px 20px;
+}
+
+.grupo_chats {
+    max-height: 76vh;
+    overflow-y: scroll;
+}
+
+.grupo_chats > div {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    border-top: 1px solid var(--border);
+    cursor: pointer;
+}
+
+.grupo_chats > div:hover {
+    background-color: var(--terciary);
+}
+
+.texto {
+    white-space: nowrap;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hablar {
+    background-color: var(--terciary);
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.hablar input {
+   width: 80%;
+   padding: 10px;
+   border: none;
+   border-radius: 10px;
+}
+
+.mensaje-1 {
+    background-color: var(--mensaje1);
+    padding: 6px 7px 8px 9px;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 40px;
+    gap: 10px;
+    float: right;
+    margin: 15px;
+    position: relative;
+    border-radius: 10px 0px 10px 10px;
+}
+
+.mensaje-1 .bocadillo {
+    position: absolute;
+    background-color: var(--mensaje1);
+    top: 0;
+    width: 20px;
+    height: 40px;
+    right: -10px;
+    clip-path: polygon(0 0, 0 62%, 100% 0);
+}
+
+.sub {
+    align-self: flex-end;
+}

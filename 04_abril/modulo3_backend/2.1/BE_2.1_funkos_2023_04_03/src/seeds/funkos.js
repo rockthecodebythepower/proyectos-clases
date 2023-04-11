@@ -13,6 +13,7 @@ const funkos = [
         pelicula: "End-Game",
         peso: 23,
         altura: 20,
+        frase: "El thanos este quien es",
         poder: 1340,
         vida: 1000000
     },
@@ -22,6 +23,7 @@ const funkos = [
         pelicula: "End-Game",
         peso: 20,
         altura: 30,
+        frase: "Ven aquí doctor octopus que te reviento",
         poder: 1540,
         vida: 1000000
     },
@@ -31,6 +33,7 @@ const funkos = [
         pelicula: "Stranger Things",
         peso: 20,
         altura: 30,
+        frase: "Soy super poderoso",
         poder: 2040,
         vida: 2000000
     },
@@ -41,6 +44,7 @@ const funkos = [
         peso: 24,
         altura: 25,
         poder: 1040,
+        frase: "Yo solo tengo un escudo",
         vida: 1200000
     },
     {
@@ -49,6 +53,7 @@ const funkos = [
         pelicula: "Avatar",
         peso: 26,
         altura: 20,
+        frase: "te muevo el agua que te quedas loco",
         poder: 1940,
         vida: 1400000
     },
@@ -58,6 +63,7 @@ const funkos = [
         pelicula: "Dragon-ball",
         peso: 30,
         altura: 26,
+        frase: "kameeee kameeee haaaaaaaaaaaaaaaaaa",
         poder: 1840,
         vida: 1000000
     },
@@ -67,6 +73,7 @@ const funkos = [
         pelicula: "Julieta Madrigal",
         peso: 20,
         altura: 23,
+        frase: "Romeooooooooo",
         poder: 140,
         vida: 10000
     },
@@ -76,6 +83,7 @@ const funkos = [
         pelicula: "My Hero Academia",
         peso: 20,
         altura: 33,
+        frase: "Super ataque 3000 con potencia extrema!",
         poder: 1841,
         vida: 1000000
     },
@@ -85,6 +93,7 @@ const funkos = [
         pelicula: "The Office",
         peso: 23,
         altura: 25,
+        frase: "No me conoce ni mi prima",
         poder: 841,
         vida: 10000
     },
@@ -93,6 +102,7 @@ const funkos = [
         imagen: "https://garhis.es/8730-large_default/funko-pop-vulpix-580-pokemon.jpg",
         pelicula: "Pokemon",
         peso: 20,
+        frase: "mister maiiiim",
         altura: 25,
         poder: 1641,
         vida: 1000000
@@ -103,6 +113,7 @@ const funkos = [
         pelicula: "Jurassic World 3",
         peso: 30,
         altura: 35,
+        frase: "grrrrrgrrrrrrgrrrrr",
         poder: 1141,
         vida: 1000000
     },
@@ -112,6 +123,7 @@ const funkos = [
         pelicula: "Spider-Man 3",
         peso: 20,
         altura: 35,
+        frase: "Pero que dices spiderman killo callate",
         poder: 1440,
         vida: 1000000
     },
@@ -121,6 +133,7 @@ const funkos = [
         pelicula: "Star wars",
         peso: 20,
         altura: 34,
+        frase: "sonidos de espadas laser de fondo",
         poder: 1500,
         vida: 1000000
     },
@@ -129,6 +142,7 @@ const funkos = [
         imagen: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/617TZmn81ZL._AC_SX450_.jpg",
         pelicula: "David el gnomo",
         peso: 2,
+        frase: "Soy el putísimo amo",
         altura: 4,
         poder: 1000000000000000,
         vida: 1000000000000000
@@ -138,6 +152,7 @@ const funkos = [
         imagen: "https://m-arian.com/wp-content/uploads/2023/03/7886d4b2eea24d9f8b0c8739e8c0acc3xl-removebg-preview.png",
         pelicula: "Guardianes de la galaxia",
         peso: 20,
+        frase: "Yo soy groot",
         altura: 29,
         poder: 1,
         vida: 1000000000000000

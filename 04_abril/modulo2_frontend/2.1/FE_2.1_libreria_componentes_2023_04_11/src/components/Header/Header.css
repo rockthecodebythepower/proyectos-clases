@@ -1,0 +1,43 @@
+header {
+  height: 15vh;
+  background-color: var(--primary);
+  color: var(--terciary);
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-size: 30px;
+}
+
+.enlace {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+}
+
+.enlace::before {
+  content: attr(contenido);
+  transition: 0.5s;
+  color: #8254ff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+.enlace:hover::before {
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}

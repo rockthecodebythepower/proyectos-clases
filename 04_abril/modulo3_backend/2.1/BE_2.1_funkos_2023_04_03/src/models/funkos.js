@@ -5,6 +5,7 @@ const funkosSchema = new mongoose.Schema({
     imagen: { type: String, required: true },
     pelicula: { type: String, required: true },
     peso: { type: Number, required: true },
+    frase: { type: String, required: true },
     altura: { type: Number, required: true },
     poder: { type: Number, required: true },
     vida: { type: Number, required: true }
