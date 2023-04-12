@@ -1,0 +1,21 @@
+.cta {
+  background-color: #007bff;
+  border-radius: 4px;
+  padding: 10px 16px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
+.cta.purple {
+  background-color: purple;
+}
+
+.cta.yellowGreen {
+  background-color: yellowgreen;
+  color: black;
+}

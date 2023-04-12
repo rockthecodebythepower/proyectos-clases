@@ -1,0 +1,8 @@
+nav {
+  min-width: 50%;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+}

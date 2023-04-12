@@ -1,0 +1,11 @@
+.text {
+  color: coral;
+}
+
+.text.purple {
+  color: purple;
+}
+
+.text.yellowGreen {
+  color: yellowgreen;
+}

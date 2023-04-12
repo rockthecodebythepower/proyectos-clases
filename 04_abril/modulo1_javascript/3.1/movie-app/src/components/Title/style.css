@@ -1,0 +1,11 @@
+.title {
+  color: coral;
+}
+
+.title.purple {
+  color: purple;
+}
+
+.title.yellowGreen {
+  color: yellowgreen;
+}
