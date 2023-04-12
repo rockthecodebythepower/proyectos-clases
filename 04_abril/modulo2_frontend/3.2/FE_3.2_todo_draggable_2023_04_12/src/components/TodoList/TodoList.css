@@ -1,0 +1,24 @@
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.2rem;
+}
+
+.not-selected {
+  background-color: whitesmoke;
+}
+
+.selected {
+  background-color: orange;
+  opacity: 0.6;
+  border: 2px solid black;
+}

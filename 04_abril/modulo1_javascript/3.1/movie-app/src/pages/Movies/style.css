@@ -1,0 +1,94 @@
+.container {
+  width: 600px;
+  height: 300px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.container > section {
+  display: flex;
+  animation: slider 30s infinite;
+}
+
+.container > section > img {
+  width: 100%;
+  position: relative;
+  object-fit: cover;
+  top: -300px;
+}
+
+#movieList {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin: 2rem;
+  grid-auto-rows: 350px;
+  gap: 1rem;
+}
+
+@keyframes slider {
+  0% {
+    transform: translateX(0);
+  }
+
+  4% {
+    transform: translateX(0);
+  }
+
+  8% {
+    transform: translateX(-100%);
+  }
+
+  12% {
+    transform: translateX(-100%);
+  }
+
+  16% {
+    transform: translateX(-200%);
+  }
+
+  20% {
+    transform: translateX(-200%);
+  }
+
+  24% {
+    transform: translateX(-300%);
+  }
+
+  28% {
+    transform: translateX(-300%);
+  }
+
+  32% {
+    transform: translateX(-400%);
+  }
+
+  36% {
+    transform: translateX(-400%);
+  }
+
+  40% {
+    transform: translateX(-500%);
+  }
+
+  44% {
+    transform: translateX(-500%);
+  }
+
+  48% {
+    transform: translateX(-600%);
+  }
+
+  52% {
+    transform: translateX(-600%);
+  }
+
+  56% {
+    transform: translateX(-700%);
+  }
+
+  60% {
+    transform: translateX(-700%);
+  }
+}

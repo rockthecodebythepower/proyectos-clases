@@ -1,8 +1,11 @@
 nav {
   min-width: 50%;
+  display: flex;
+  align-items: center;
 }
 
 nav > ul {
   display: flex;
   justify-content: space-evenly;
+  gap: 2rem;
 }

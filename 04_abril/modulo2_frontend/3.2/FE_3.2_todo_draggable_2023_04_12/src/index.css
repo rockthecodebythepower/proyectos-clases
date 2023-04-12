@@ -1,0 +1,32 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+input[type="submit"] {
+  background-color: whitesmoke;
+  border: none;
+  padding: 0.2rem 0.5rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+button {
+  border: none;
+  background-color: none;
+  background: transparent;
+  cursor: pointer;
+}

@@ -40,11 +40,11 @@ ul {
   margin: 0;
 }
 
-
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  padding: 1rem;
 }
 
 header {
@@ -55,6 +55,13 @@ header {
 footer {
   display: flex;
   justify-content: center;
+}
+
+main {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 button {
@@ -88,7 +95,6 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-
 
 /* 
 #app {
