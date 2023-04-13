@@ -1,0 +1,12 @@
+.cart {
+  border-top: 2px solid var(--dark);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: var(--white);
+  padding: 1rem;
+}
+
+.cart img {
+  height: 100px;
+}

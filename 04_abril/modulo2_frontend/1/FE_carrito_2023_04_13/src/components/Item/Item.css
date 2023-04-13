@@ -1,0 +1,33 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.3rem;
+  padding: 0.5rem;
+  height: 300px;
+}
+
+.item > img {
+  max-width: 130px;
+  max-height: 130px;
+}
+
+.item > h4:nth-child(3) {
+  font-size: 1.3rem;
+}
+
+.item button {
+  background-color: var(--dark);
+  color: var(--white);
+  width: 100%;
+  padding: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.item button:hover {
+  background-color: var(--primary);
+}
