@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+  font-weight: bolder;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: #00457a;
+  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+}
+
+#search {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: white;
+  gap: 30px;
+}
+
+#search > div {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#search > div label {
+  text-align: center;
+}
+
+#button_buscador, #search input {
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border: 3px solid black;
+}
+
+#app {
+  max-width: 500px;
+  width: 80%;
+  height: 600px;
+  background-color: white;
+  margin-top: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border: 3px solid black;
+  margin-bottom: 100px;
+}
+
+#app img {
+  width: 100px;
+}
+
+.ciudad, .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  border-bottom: 3px solid black;
+}
+
+.grados_titulo {
+  font-size: 4rem;
+}
+
+.info {
+  border-top: 3px solid black;
+  border-bottom: none;
+}
+
+.info p {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.lluvia, .viento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#boton_voz {
+  border: 3px solid black;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: red;
+  cursor: pointer;
+}
+
+.activo {
+  animation: palpitar 1s ease-in-out infinite;
+}
+
+@keyframes palpitar {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 320px) {
+  .grados_titulo {
+    font-size: 3rem;
+  }
+}
