@@ -1,0 +1,12 @@
+.experiencias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    flex-direction: column;
+}
+
+.experiencias p {
+    text-align: center;
+    margin-bottom: 20px;
+}

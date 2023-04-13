@@ -1,0 +1,12 @@
+.estudios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+}
+
+.estudios p {
+    text-align: center;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Dongle", sans-serif;
+  font-size: 25px;
+}
+
+body {
+  background-color: #f8eee5;
+  background-image: url("https://www.transparenttextures.com/patterns/lined-paper-2.png");
+  min-height: 100vh;
+}
+
+#root {
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
