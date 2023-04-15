@@ -1,0 +1,21 @@
+:root {
+  --background-color: #121212;
+  --color: whitesmoke;
+  --gradient: linear-gradient(35deg, #ad3de3 0%, #fc646c 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--color);
+}
+
+main {
+  min-height: 70vh;
+}

@@ -1,0 +1,12 @@
+{
+  "name": "be_1_adivina_num_2023_04_15",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "play": "node game.js"
+  },
+  "keywords": [],
+  "author": "Antonio Rosales <antoniorosalesmartinez90gmail.com>",
+  "license": "MIT"
+}

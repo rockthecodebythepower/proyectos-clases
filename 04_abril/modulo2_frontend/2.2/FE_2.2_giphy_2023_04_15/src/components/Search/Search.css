@@ -1,0 +1,28 @@
+.search {
+  display: flex;
+  justify-content: center;
+}
+
+.search > input {
+  width: 400px;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.search > button {
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: var(--color);
+  animation: color-change-2x 6s linear infinite alternate both;
+}
+
+@keyframes color-change-2x {
+  0% {
+    background: #ad3de3;
+  }
+  100% {
+    background: #fc646c;
+  }
+}

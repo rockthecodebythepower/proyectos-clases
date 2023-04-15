@@ -1,0 +1,17 @@
+{
+  "name": "be_1_text_encrypt_2023_04_15",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "encrypt": "node encrypt.js",
+    "decrypt": "node decrypt.js"
+  },
+  "keywords": [],
+  "author": "Antonio Rosales <antoniorosalesmartinez90gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.3"
+  }
+}

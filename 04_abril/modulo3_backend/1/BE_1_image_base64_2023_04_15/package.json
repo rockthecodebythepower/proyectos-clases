@@ -1,0 +1,13 @@
+{
+  "name": "be_1_image_base64_2023_04_15",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tobase64": "node tobase64",
+    "toimage": "node toimage"
+  },
+  "keywords": [],
+  "author": "Antonio Rosales <antoniorosalesmartinez90gmail.com>",
+  "license": "MIT"
+}
