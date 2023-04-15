@@ -1,0 +1,23 @@
+#search {
+  justify-content: flex-start;
+  min-width: 70%;
+  min-height: 60vh;
+}
+
+#search > article {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#search div {
+  padding: 1rem;
+  background-color: rgba(240, 248, 255, 0.069);
+  border-radius: 10px;
+  flex-grow: 1;
+}
+
+#search input {
+  margin: 1rem;
+  width: 400px;
+}

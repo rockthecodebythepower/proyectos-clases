@@ -1,0 +1,18 @@
+:root {
+  --background-color: #d0e0e0;
+  --white: #ffffff;
+  --dark: #0c1415;
+  --primary: #007b6a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+  color: var(--dark);
+  background-color: var(--background-color);
+}
