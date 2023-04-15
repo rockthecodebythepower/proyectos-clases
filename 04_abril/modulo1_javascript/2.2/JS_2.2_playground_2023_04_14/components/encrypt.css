@@ -1,0 +1,15 @@
+#encrypt div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#encrypt button {
+  width: fit-content;
+}
+
+#encrypt textarea {
+  width: 600px;
+  height: 200px;
+}

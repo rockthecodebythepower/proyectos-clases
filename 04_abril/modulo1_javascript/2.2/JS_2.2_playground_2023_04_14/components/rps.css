@@ -1,0 +1,16 @@
+#rps div {
+  display: flex;
+  gap: 2rem;
+}
+
+.winner {
+  color: greenyellow;
+}
+
+.loser {
+  color: crimson;
+}
+
+.tie {
+  color: orange;
+}

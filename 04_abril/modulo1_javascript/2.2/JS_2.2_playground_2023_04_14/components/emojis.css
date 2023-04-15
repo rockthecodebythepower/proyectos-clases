@@ -1,0 +1,9 @@
+.emojis {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.emojis > p {
+  font-size: 1.5rem;
+}

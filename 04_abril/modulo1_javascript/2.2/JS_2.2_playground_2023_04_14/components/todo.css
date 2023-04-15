@@ -1,0 +1,21 @@
+#todo div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#todo li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+#todo li::before {
+  content: "★";
+  padding-right: 0.2rem;
+}
+
+.completed {
+  text-decoration: line-through;
+  text-decoration-color: crimson;
+  text-decoration-thickness: 3px;
+}

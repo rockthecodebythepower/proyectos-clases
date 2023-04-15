@@ -1,0 +1,32 @@
+.blur {
+  filter: blur(5px);
+}
+
+.huerotate {
+  filter: hue-rotate(800deg);
+}
+
+.saturate {
+  filter: saturate(400%);
+}
+
+.sepia {
+  filter: sepia(100%);
+}
+
+.opacity {
+  filter: opacity(20%);
+}
+
+.dropshadow {
+  filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
+}
+
+.mix {
+  filter: hue-rotate(300deg) contrast(200%) saturate(400%)
+    drop-shadow(10px 10px 2px green) invert(80%);
+}
+
+.invert {
+  filter: invert(100%);
+}
