@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "DynaPuff", cursive;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
+  color: white;
+}
+
+h1 {
+    margin-top: 50px;
+}
+
+.marcador {
+    align-self: flex-start;
+    margin-left: 50px;
+    border: solid 3px white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 2;
+}
+
+.cucaracha {
+    height: 50px;
+    cursor: pointer;
+    transform: rotate(270deg);
+    position: absolute;
+    z-index: 1;
+}
+
+.mancha {
+    height: 50px;
+    position: absolute;
+}
+
+.iniciar {
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.none {
+    display: none;
+}
+
+.bomba, .estallar {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    opacity: 0;
+    height: 50px;
+    cursor: pointer;
+}
+
+.estallar {
+    opacity: 1;
+}
