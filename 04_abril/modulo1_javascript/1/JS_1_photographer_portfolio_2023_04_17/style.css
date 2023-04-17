@@ -1,0 +1,202 @@
+:root {
+  --background: #ffffff;
+  --primary: #000000;
+  --secondary: rgba(0, 0, 0, 0.7);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--primary);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header > nav {
+  display: flex;
+  padding: 0 2rem;
+  gap: 2rem;
+  align-items: center;
+  height: 12vh;
+}
+
+header > nav > ul {
+  display: flex;
+  gap: 2rem;
+}
+
+header > nav > h1 {
+  background-color: var(--primary);
+  width: 40px;
+  height: 40px;
+  color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+header > img {
+  height: 35vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+aside {
+  width: 450px;
+  height: 600px;
+  background-color: var(--background);
+  position: absolute;
+  top: 23vh;
+  left: 80px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 47px -14px rgba(0, 0, 0, 0.75);
+  padding: 2rem 4rem;
+}
+
+aside > .data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+aside > .data > img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+aside > .data > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+aside > .data p,
+aside > .data h3 {
+  color: var(--secondary);
+}
+
+aside > .data p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+aside > .stats > ul {
+  display: flex;
+  padding: 2rem 0;
+  justify-content: space-between;
+}
+
+aside > .stats h3 {
+  font-size: 1.5rem;
+}
+
+aside > .stats p {
+  color: var(--secondary);
+}
+
+aside > .contact {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+aside > .contact p {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--secondary);
+}
+
+aside > .contact > ul {
+  display: flex;
+  gap: 1rem;
+}
+
+aside > .contact > ul img {
+  height: 25px;
+  filter: opacity(70%);
+}
+
+@media screen and (max-width: 600px) {
+  aside {
+    width: 90%;
+    left: 0;
+    margin-left: 5%;
+    padding: 1rem 2rem;
+  }
+
+  aside > .data > img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+main {
+  min-height: 80vh;
+  position: absolute;
+  left: calc(80px + 450px);
+}
+
+main > nav {
+  width: calc(98.5vw - (80px + 450px));
+}
+
+main > nav > ul {
+  display: flex;
+  height: 10vh;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    position: absolute;
+    left: 0;
+    top: calc(47vh + 450px);
+  }
+
+  main > nav {
+    width: 97vw;
+  }
+}
+
+main > .gallery {
+  padding: 1rem;
+  gap: 1rem;
+}
+
+main > .gallery > img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+main > .gallery > img:nth-child(odd) {
+  aspect-ratio: 0.6;
+  height: 300px;
+}

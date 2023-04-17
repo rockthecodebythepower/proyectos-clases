@@ -1,0 +1,40 @@
+main > nav {
+  width: calc(98.5vw - (80px + 450px));
+}
+
+main > nav > ul {
+  display: flex;
+  height: 10vh;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    position: absolute;
+    left: 0;
+    top: calc(47vh + 450px);
+  }
+
+  main > nav {
+    width: 97vw;
+  }
+}
+
+main > .gallery {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+main > .gallery > img {
+  flex: auto;
+  height: 200px;
+  min-width: 150px;
+  margin: 0 10px 10px 0;
+  object-fit: cover;
+  padding: 8px;
+}

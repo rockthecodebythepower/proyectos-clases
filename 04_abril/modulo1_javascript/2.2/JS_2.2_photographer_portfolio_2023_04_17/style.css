@@ -1,0 +1,44 @@
+:root {
+  --background: #ffffff;
+  --primary: #000000;
+  --secondary: rgba(0, 0, 0, 0.7);
+  --highlight: #c5261a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--primary);
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+}
+
+main {
+  position: absolute;
+  left: calc(80px + 450px);
+}
+
+h1,
+h2,
+h3,
+strong {
+  color: var(--highlight);
+}

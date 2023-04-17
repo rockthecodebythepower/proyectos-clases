@@ -1,0 +1,23 @@
+aside > .contact {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+aside > .contact p {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--secondary);
+}
+
+aside > .contact > ul {
+  display: flex;
+  gap: 1rem;
+}
+
+aside > .contact > ul img {
+  height: 25px;
+  filter: opacity(70%);
+}

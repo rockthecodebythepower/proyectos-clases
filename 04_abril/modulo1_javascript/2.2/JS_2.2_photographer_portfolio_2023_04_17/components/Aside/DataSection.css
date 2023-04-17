@@ -1,0 +1,29 @@
+aside > .data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+aside > .data > img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+aside > .data > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+aside > .data p,
+aside > .data h3 {
+  color: var(--secondary);
+}
+
+aside > .data p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

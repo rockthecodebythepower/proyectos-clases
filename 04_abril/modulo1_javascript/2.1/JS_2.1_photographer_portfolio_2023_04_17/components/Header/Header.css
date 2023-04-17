@@ -1,0 +1,30 @@
+header > nav {
+  display: flex;
+  padding: 0 2rem;
+  gap: 2rem;
+  align-items: center;
+  height: 12vh;
+}
+
+header > nav > ul {
+  display: flex;
+  gap: 2rem;
+}
+
+header > nav > h1 {
+  background-color: var(--highlight);
+  width: 40px;
+  height: 40px;
+  color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+header > img {
+  height: 35vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}

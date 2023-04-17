@@ -1,0 +1,13 @@
+aside > .stats > ul {
+  display: flex;
+  padding: 2rem 0;
+  justify-content: space-between;
+}
+
+aside > .stats h3 {
+  font-size: 1.5rem;
+}
+
+aside > .stats p {
+  color: var(--secondary);
+}
