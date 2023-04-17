@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: var(--fuente), sans-serif;
+  color: white;
+}
+
+:root {
+  --primary: #1e1e1e;
+  --secondary: #181818;
+  --terciary: #101010;
+  --black: black;
+  --header: rgb(77, 77, 119);
+  --fuente: "Signika Negative";
+}
+
+body {
+  min-height: 100vh;
+}
+
+header {
+  height: 7vh;
+  background-color: var(--header);
+  position: fixed;
+  right: 0;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  width: 15%;
+  height: 100vh;
+  background-color: var(--black);
+  position: fixed;
+}
+
+main {
+  min-height: 90vh;
+  background-color: var(--secondary);
+  width: 85%;
+  margin-left: 15%;
+  padding-top: 7vh;
+}
+
+footer {
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: var(--primary);
+}
+
+.hero {
+  display: block;
+  height: 30vh;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    var(--header) 0%,
+    var(--secondary) 80%
+  );
+}
+
+.arrows > img {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  padding: 10px;
+  border-radius: 100%;
+  background-color: var(--primary);
+}
+
+.user-flechita {
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  background-color: white;
+  width: 20px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+.user {
+  border-radius: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  height: 50px;
+  background-color: var(--secondary);
+  width: 200px;
+}
+
+.user-img {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 100%;
+  background-color: var(--primary);
+}
+
+.arrows,
+.user {
+  margin: 30px;
+}
+
+.hero-playlist {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  margin: 20px;
+}
+
+.hero-playlist-list {
+    background-color: rgb(76, 76, 76);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.hero-playlist-list-img__wrp {
+    width: 100px;
+    height: 100px;
+}
+
+.hero-playlist-list-img__wrp > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.songs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 80px;
+}
+
+.songs-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.songs-container-list {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+}
+
+.songs-container-list-song {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary);
+    height: 230px;
+    border-radius: 10px;
+}
+
+.songs-container-list-song > img {
+    width: 100%;
+    height: 130px;
+    border-radius: 10px;
+}
+
+.songs-container-list-song > h4 {
+    font-size: 20px;
+}
+
+.songs-container-list-song > p {
+    font-size: 10px;
+}

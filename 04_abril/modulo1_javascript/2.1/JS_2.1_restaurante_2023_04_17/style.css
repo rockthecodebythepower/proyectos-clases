@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+}
+
+:root {
+    --highlight: #ff8e3c;
+    --primary: #eff0f3;
+    --secondary: #fffffe;
+    --terciary: #d9376e;
+    --dark: #0d0d0d;
+    --paragraph: #2a2a2a;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--primary);
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    clip-path: polygon(100% 0, 100% 80%, 51% 100%, 0 80%, 0 0);
+    background-color: var(--highlight);
+}
+
+header img {
+    width: 50px;
+}
+
+.plato {
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--secondary);
+    width: 85%;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.img_wrp {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: var(--terciary);
+    
+}
+
+.img_wrp > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.precio {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-weight: bolder;
+}
+
+.like {
+    position: absolute;
+    top: 10px;
+    width: 20px;
+    right: 20px;
+}
+
+.carta > section {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin: 50px 10px 0px 10px;
+}
+
+.carta > section > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.plato h3 {
+    margin-left: 40px;
+    width: 100px;
+    text-align: center;
+}
+
+.mi-lista {
+    background-color: var(--dark);
+    width: 0;
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    transition: all 1s;
+    opacity: 0.8;
+    color: white !important;
+}
+
+.mi-lista h3 {
+    opacity: 1;
+}
+
+.abierto {
+    width: 100%;
+    transition: all 1s;
+}
