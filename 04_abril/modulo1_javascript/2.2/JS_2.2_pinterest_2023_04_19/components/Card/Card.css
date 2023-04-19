@@ -1,0 +1,127 @@
+.gallery-item {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.gallery-item > div {
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  backdrop-filter: brightness(50%) blur(3px);
+  display: none;
+}
+
+.gallery-item:hover > div {
+  display: flex;
+  cursor: zoom-in;
+}
+
+.gallery-item .save-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.gallery-item .links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gallery-item button {
+  padding: 1rem 1.4rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: var(--logo);
+  color: var(--color-background);
+  font-size: 1rem;
+}
+
+.gallery-item .links a {
+  background-color: var(--transparent);
+  padding: 0.5rem;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+}
+
+.gallery-item .links img {
+  width: 24px;
+  height: 24px;
+}
+
+.gallery-item .links div {
+  display: flex;
+  gap: 1rem;
+}
+
+.gallery-item .links-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-item .full-link {
+  width: 200px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: black;
+}
+
+.gallery-item:nth-child(2) {
+  grid-column: span 2;
+}
+.gallery-item:nth-child(4) {
+  grid-row: span 2;
+}
+
+.gallery-item:nth-child(6) {
+  grid-column: span 2;
+}
+
+.gallery-item:nth-child(8) {
+  grid-row: span 2;
+}
+
+.gallery-item:nth-child(10) {
+  grid-column: span 2;
+}
+
+.gallery-item:nth-child(12) {
+  grid-row: span 2;
+}
+.gallery-item:nth-child(14) {
+  grid-column: span 2;
+}
+.gallery-item:nth-child(16) {
+  grid-row: span 2;
+}
+.gallery-item:nth-child(18) {
+  grid-column: span 2;
+}
+.gallery-item:nth-child(20) {
+  grid-row: span 2;
+}
+.gallery-item:nth-child(22) {
+  grid-column: span 2;
+}
+.gallery-item:nth-child(24) {
+  grid-row: span 2;
+}
+.gallery-item:nth-child(26) {
+  grid-column: span 2;
+}
+.gallery-item:nth-child(28) {
+  grid-row: span 2;
+}
+.gallery-item:nth-child(30) {
+  grid-column: span 2;
+}

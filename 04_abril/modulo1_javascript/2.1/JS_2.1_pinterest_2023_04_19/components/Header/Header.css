@@ -1,0 +1,58 @@
+header {
+  display: flex;
+  height: 15vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  gap: 1.5rem;
+}
+
+header > h1 {
+  background-color: var(--logo);
+  width: 30px;
+  height: 30px;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--color-background);
+}
+
+header > nav > ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+header input {
+  padding: 1rem 1.4rem;
+  border-radius: 2rem;
+  flex-grow: 1;
+  background-color: var(--secondary);
+  border: none;
+  font-size: 1rem;
+}
+
+header img {
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+header img:hover {
+  background-color: var(--secondary);
+  cursor: pointer;
+}
+
+header .icon {
+  filter: opacity(60%);
+}
+
+header .profileimg {
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 730px) {
+  header > input {
+    display: none;
+  }
+}

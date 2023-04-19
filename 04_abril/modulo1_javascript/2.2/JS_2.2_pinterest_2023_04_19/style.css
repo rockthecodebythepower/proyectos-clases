@@ -1,0 +1,40 @@
+:root {
+  --color-background: whitesmoke;
+  --primary: #111111;
+  --secondary: #cacaca;
+  --logo: #e60022;
+  --transparent: rgba(245, 245, 245, 0.862);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--primary);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dark {
+  background-color: var(--primary);
+  color: var(--color-background);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.active {
+  background-color: var(--primary);
+  color: var(--color-background);
+  padding: 1rem 1.4rem;
+  border-radius: 2rem;
+}
+
+li {
+  list-style-type: none;
+}
