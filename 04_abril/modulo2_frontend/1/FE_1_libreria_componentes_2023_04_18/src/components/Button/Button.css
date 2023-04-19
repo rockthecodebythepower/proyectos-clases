@@ -1,0 +1,87 @@
+.button {
+    margin: 15px;
+    border-radius: 2px;
+    cursor: pointer;
+    border: none;
+    color: #5D5E62;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+    font-size: 16px;
+}
+
+.high {
+    background-color: var(--button);
+    color: white;
+}
+
+.high:hover {
+    background-color: #008555;
+}
+
+.high:focus {
+    border: 4px solid #B3DFC3;
+}
+
+.high:active {
+    background-color: #B3DFC3;
+    color: #008555;
+}
+
+.high:disabled {
+    background-color: #B9BABC;
+    color: white;
+}
+
+.medium {
+    border: 1px solid #5D5E62;
+}
+
+.medium:hover {
+    color: #2E3035;
+    border-color: #2E3035;
+}
+
+.medium:focus {
+    color: #239D62;
+    border-color: #239D62;
+}
+
+.medium:active {
+    background-color: #E9F4EE;
+    color: #008555;
+    border-color: #008555;
+}
+
+.medium:disabled {
+    color: #B9BABC;
+    border-color: #B9BABC;
+    background-color: transparent;
+}
+
+.low:hover {
+    color: #2E3035;
+    border-color: #2E3035;
+}
+
+.low:focus {
+    color: #239D62;
+    border-color: #239D62;
+}
+
+.low:active {
+    background-color: #E9F4EE;
+    color: #008555;
+}
+
+.low:disabled {
+    color: #B9BABC;
+    background-color: transparent;
+}
+
+.img_medium {
+    color: #5D5E62;
+}

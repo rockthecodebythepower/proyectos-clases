@@ -1,0 +1,49 @@
+.badge {
+    background-color: #F2F6F8;
+    padding: 4px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #46474C;
+    margin: 10px;
+    width: 125px;
+}
+
+.s {
+    font-size: 10px;
+    height: 20px;
+}
+
+.l {
+    height: 30px;
+    font-size: 18px;
+}
+
+.warning {
+    background: #FFF8E5;
+    color: #FF9800;
+}
+
+.error {
+    color: #E81919;
+}
+
+.info {
+    color: #03A9F4;
+}
+
+.success {
+    color: #44B748;
+}
+
+.oferta {
+    background: #DC6868;
+    color: white;
+}
+
+.agotado {
+    background: #5D5E62;
+    color: white;
+}

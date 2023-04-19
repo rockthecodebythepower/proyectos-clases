@@ -1,0 +1,54 @@
+.alert {
+  width: 380px;
+  padding: 12px;
+  background: #f2f6f8;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  margin: 20px;
+}
+
+.alert p {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.alert h4 {
+  font-size: 16px;
+}
+
+.div_title {
+    display: flex;
+    gap: 9px;
+}
+
+.warning {
+    color: #FF9800;
+}
+
+.danger {
+    color: #E81919;
+}
+
+.success {
+    color: #44B748;
+}
+
+.informative {
+    color: #03A9F4;
+}
+
+.close_alert_button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+
+.cerrado {
+    display: none;
+}

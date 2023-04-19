@@ -1,0 +1,27 @@
+.badges {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.badges_tamaños, .badges_states {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badges_tamaños > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.badges_states > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
