@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./public/assets/musica.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis Canciones</title>
+    <!-- <script src="./main.js" defer type="module"></script> -->
+  </head>
+  <body>
+    <input id="buscador" placeholder="Buscar..."/>
+    <div id="app"></div>
+    <div class="reproductor">
+      <div class="reproductor_div">
+        <div class="cover">
+          <img id="state" src="./public/assets/play.svg" class="icon" />
+        </div>
+        <div class="volume">
+          <img src="./public/assets/volume.svg" class="icon" id="img-volumen" />
+          <p class="dato">50%</p>
+          <input type="range" id="volumen" />
+        </div>
+      </div>
+      <div class="tiempo">
+        <p class="start">--:--</p>
+        <input type="range" class="progress" value="0" disabled />
+        <p class="end">--:--</p>
+      </div>
+    </div>
+    <div>
+      <audio id="audio"></audio>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

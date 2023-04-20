@@ -1,0 +1,46 @@
+.song {
+    background-color: var(--secondary);
+    width: 300px;
+    height: 100px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
+    overflow: hidden;
+    border: 3px solid black;
+    margin: 0px 50px;
+    cursor: pointer;
+}
+
+.song:hover {
+    box-shadow: 0px 14px 30px -13px var(--quartuary);
+}
+
+.song h3, .song p{
+    width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.song-img {
+    height: 100%;
+    width: 100px;
+    border-right: 3px solid black;
+}
+
+.song-img > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.song-info {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}

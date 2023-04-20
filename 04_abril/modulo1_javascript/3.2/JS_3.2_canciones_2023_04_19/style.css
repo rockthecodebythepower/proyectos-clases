@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Chivo Mono', monospace;
+  font-weight: 500;
+}
+
+:root {
+  --primary: #B2A4FF;
+  --secondary: #FFB4B4;
+  --terciary: #FFDEB4;
+  --quartuary: #FDF7C3;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+} 
+
+.canciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+#audio {
+  position: absolute;
+  bottom: 10%;
+  left: 40%;
+}
+
+#buscador {
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  margin-top: 100px;
+  background-color: var(--quartuary);
+}
+
+.icon {
+  width: 30px;
+}
+
+.reproductor_div {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.reproductor {
+  margin: 50px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--terciary);
+  border: 3px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.volume {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#volumen, img {
+  cursor: pointer;
+}
+
+.cover {
+  background-color: black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  background-image: url("https://www.hytorc.es/en/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png");
+  background-size: cover;
+  background-position: center;
+  border: 3px solid black;
+  background-repeat: no-repeat;
+}
+
+.dato {
+  width: 50px;
+}
+
+.progress, #volumen {
+  width: 60%;
+  -webkit-appearance: none;
+  background: var(--secondary);
+  outline: none;
+  height: 5px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.progress::-webkit-slider-thumb, #volumen::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 5px;
+  width: 5px;
+  box-shadow: -407px 0 0 400px var(--primary);
+}
+
+.tiempo {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.tiempo p {
+  font-size: 10px;
+}
