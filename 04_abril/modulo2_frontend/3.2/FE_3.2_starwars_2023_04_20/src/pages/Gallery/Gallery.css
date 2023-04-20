@@ -1,0 +1,35 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
+.gallery h2 {
+  border: none;
+}
+
+.card-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-auto-rows: 230px;
+  gap: 2rem;
+  padding: 0 10rem;
+  width: 100%;
+}
+
+.gallery-btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0 4rem;
+}
+
+.gallery-btns button:hover {
+  color: var(--primary);
+  border-bottom: 1px solid var(--primary);
+}

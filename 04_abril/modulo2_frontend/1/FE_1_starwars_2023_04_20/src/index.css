@@ -1,0 +1,57 @@
+:root {
+  --dark-background-color: #000000;
+  --background-color: #151515;
+  --card-color: #1d1e1f;
+  --primary: #ffffff;
+  --secondary: #b4b7b7;
+}
+
+@font-face {
+  font-family: 'Aurebesh';
+  src: url(../public/fonts/Aurebesh.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  letter-spacing: 0.07rem;
+}
+
+body {
+  background-color: var(--dark-background-color);
+  background-image: url(./assets/background.jpeg);
+  background-size: 100%;
+  color: var(--primary);
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+a:hover,
+.active {
+  color: var(--primary);
+}
+
+h2 {
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--primary);
+}
+
+span {
+  border-top: 1px solid var(--primary);
+  font-family: 'Aurebesh';
+  opacity: 20%;
+  font-size: 0.8rem;
+}
+
+main {
+  min-height: 70vh;
+}

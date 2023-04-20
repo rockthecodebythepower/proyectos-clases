@@ -1,0 +1,13 @@
+.showMoreBtn {
+  background-color: transparent;
+  border: var(--primary) 1px solid;
+  border-radius: 2rem;
+  color: var(--secondary);
+  padding: 0.5rem 0.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.showMoreBtn:hover {
+  color: var(--primary);
+}

@@ -1,0 +1,7 @@
+.gallery-btns button {
+  border: none;
+  background-color: transparent;
+  color: var(--secondary);
+  text-transform: uppercase;
+  font-weight: 600;
+}

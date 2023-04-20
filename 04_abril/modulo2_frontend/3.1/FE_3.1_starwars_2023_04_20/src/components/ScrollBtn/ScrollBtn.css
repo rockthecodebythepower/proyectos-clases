@@ -1,0 +1,23 @@
+.goupbtn {
+  background-color: var(--dark-background-color);
+  border: 1px solid var(--primary);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.goupbtn > img {
+  filter: invert(100%);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,38 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 400px;
+  gap: 2rem;
+  padding: 2rem 4rem;
+  width: 100%;
+}
+
+.gallery-btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0 4rem;
+}
+
+.gallery-btns button {
+  border: none;
+  background-color: transparent;
+  color: var(--secondary);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.gallery-btns button:hover {
+  color: var(--primary);
+  border-bottom: 1px solid var(--primary);
+}

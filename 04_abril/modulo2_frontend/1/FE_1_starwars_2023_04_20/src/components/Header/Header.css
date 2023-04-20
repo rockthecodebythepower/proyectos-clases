@@ -1,0 +1,26 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 20vh;
+  padding: 0.5rem 0;
+}
+
+header > img {
+  height: 80px;
+  width: auto;
+}
+
+header > nav > ul {
+  display: flex;
+  gap: 4rem;
+  text-transform: uppercase;
+}
+
+header a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

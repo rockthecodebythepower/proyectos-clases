@@ -1,0 +1,42 @@
+.detail-card {
+  display: flex;
+  height: 380px;
+  gap: 2rem;
+  background-color: var(--card-color);
+  margin: 0 4rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.detail-card:after {
+  content: '';
+  background-color: var(--dark-background-color);
+  position: absolute;
+  width: 240px;
+  height: 120px;
+  bottom: -8px;
+  right: 45px;
+  clip-path: polygon(15% 81%, 84% 81%, 100% 100%, 0% 100%);
+}
+
+.detail-card > img {
+  width: 45%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detail-card > figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.detail-card h2 {
+  border: none;
+}
+
+.detail-card p {
+  text-align: justify;
+}

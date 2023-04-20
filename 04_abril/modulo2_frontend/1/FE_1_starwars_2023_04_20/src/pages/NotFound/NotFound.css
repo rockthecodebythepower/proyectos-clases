@@ -1,0 +1,14 @@
+.notfound {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card-color);
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+  background-color: var(--background-color);
+}
+
+.notfound img {
+  height: 40vh;
+}
