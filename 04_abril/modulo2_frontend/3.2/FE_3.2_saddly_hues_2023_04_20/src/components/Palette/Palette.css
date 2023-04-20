@@ -1,0 +1,23 @@
+.palette {
+    width: 130px;
+    height: 60px;
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.color {
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    border: 3px solid black;
+    margin-left: -10px;
+}
+
+.color:first-child {
+    margin: 0px;
+}

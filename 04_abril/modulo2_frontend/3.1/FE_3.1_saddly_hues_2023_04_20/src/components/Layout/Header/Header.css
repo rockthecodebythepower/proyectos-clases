@@ -1,0 +1,39 @@
+.layout-header_left, .layout-header_right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.layout-header {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.icons {
+    display: flex;
+}
+
+.icon {
+    border-radius: 100%;
+    width: 28px;
+    z-index: 2;
+    border: 3px solid black;
+}
+
+.ball:first-of-type {
+    z-index: 1;
+}
+
+.ball {
+    margin-left: -10px;
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    border: 3px solid black;
+}
+
+.layout-header h4 {
+    user-select: none;
+    cursor: pointer;
+}

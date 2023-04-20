@@ -1,0 +1,18 @@
+.boton {
+    padding: 20px;
+    border-radius: 5px;
+    width: 350px;
+    font-weight: 600;
+    border: 3px solid black;
+    margin: 10px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.copia {
+    width: 20px;
+    margin-left: 10px;
+}

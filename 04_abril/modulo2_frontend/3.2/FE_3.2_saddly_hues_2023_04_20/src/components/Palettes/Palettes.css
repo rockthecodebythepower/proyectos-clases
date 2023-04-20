@@ -1,0 +1,18 @@
+.rocket {
+  width: 150px;
+}
+
+.palettes {
+  max-height: 90vh;
+  overflow-y: scroll;
+  width: 0px;
+  transition: all 1s;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.mostrarPalette {
+  width: 200px;
+}
