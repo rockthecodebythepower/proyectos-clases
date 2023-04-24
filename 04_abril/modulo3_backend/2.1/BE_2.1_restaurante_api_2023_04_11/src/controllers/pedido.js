@@ -7,7 +7,7 @@ const getPedidos = async (req, res, next) => {
 
     try {
 
-        const pedido = await Pedido.find();
+        const pedido = await Pedido.find().populate("mesa");
         return res.status(200).json(pedido);
 
     } catch (error) {
@@ -22,7 +22,7 @@ const getPedidoById = async (req, res, next) => {
 
         const { id } = req.params;
 
-        const pedido = await Pedido.findById(id);
+        const pedido = await Pedido.findById(id).populate("mesa");
         
         return res.status(200).json(pedido);
 
@@ -39,6 +39,7 @@ const postPedido = async (req, res, next) => {
         const pedido = new Pedido(req.body);
 
         pedido.precio = 0;
+        pedido.estado = "proceso";
 
         for (const e of req.body.pedido) {
             const product = await Product.findById(e.product);
@@ -64,7 +65,10 @@ const putPedido = async (req, res, next) => {
 
         const pedidoModify = new Pedido(req.body);
 
+        const oldPedido = await Pedido.findById(id);
         pedidoModify._id = id;
+
+        pedidoModify.pedido = [...oldPedido.pedido];
 
         const updatedPedido = await Pedido.findByIdAndUpdate(id, pedidoModify, {new: true});
 

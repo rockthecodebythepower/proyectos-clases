@@ -6,7 +6,8 @@ const pedidoSchema = new mongoose.Schema({
         cantidad: {type: Number, required: true, max: 10}
     }],
     precio: {type: Number, required: true},
-    estado: {type: String, enum: ["proceso", "pagado", "pendiente"]}
+    estado: {type: String, enum: ["proceso", "hecho", "pagado"]},
+    mesa: {type: mongoose.Types.ObjectId, required: true, ref: "mesas"}
 }, {
     timestamps: true,
     collection: "pedidos"
