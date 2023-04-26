@@ -1,0 +1,235 @@
+:root {
+  --background-color: #ffffff;
+  --main-background-color: #dadada;
+  --primary: #121212;
+  --secondary: #ff8f52;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--main-background-color);
+  color: var(--primary);
+}
+
+strong {
+  color: var(--secondary);
+}
+
+header {
+  background-color: var(--background-color);
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  position: fixed;
+  width: 100vw;
+}
+
+header ul {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+}
+
+header a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+header a:hover {
+  color: var(--secondary);
+}
+
+header button {
+  border: none;
+  background-color: transparent;
+}
+
+header img {
+  height: 38px;
+  width: 38px;
+}
+
+/* POR DEFECTO EL NAVEGADOR DE MOVIL ESTA OCULTO */
+header .mobile-nav ul {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 15vh;
+  left: 0;
+  background-color: var(--background-color);
+  width: 200px;
+  padding: 2rem 0;
+}
+
+/* LA HAMBURGUESA ESTA OCULTA */
+.hamburger-container {
+  display: none;
+}
+
+/* EL INPUT LO OCULTAMOS SIEMPRE PORQUE TENEMOS UN LABEL QUE LO ACTIVA POR NOSOTROS */
+#hamburger {
+  display: none;
+}
+
+/* CUANDO EL INPUT ACTIVADO MEDIANTE EL LABEL ESTE CHECKED ENSEÑAMOS NUESTRA LISTA */
+#hamburger:checked ~ .mobile-nav ul {
+  display: flex;
+}
+
+/* CUANDO PASAMOS A FORMATO MOVIL, ENSEÑAMOS TODA LA PARTE DE LA HAMBURGUESA Y OCULTAMOS EL NAVEGADOR DE ESCRITORIO */
+@media screen and (max-width: 800px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .hamburger-container {
+    display: block;
+  }
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  gap: 1rem;
+  padding-top: 15vh;
+}
+
+main h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  width: 250px;
+}
+
+.intro-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(2, 150px);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.intro-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.shop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.products li {
+  background-color: var(--background-color);
+  list-style-type: none;
+  width: 250px;
+  height: 250px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.products div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.products img {
+  width: 100%;
+  height: auto;
+}
+
+.products button {
+  color: var(--secondary);
+  font-weight: 600;
+  border: none;
+  background-color: transparent;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2rem;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  background-color: var(--primary);
+  color: var(--background-color);
+}
+
+footer article {
+  width: 300px;
+  text-align: justify;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1rem;
+}
+
+footer nav ul a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  footer nav ul {
+    flex-direction: row;
+  }
+
+  footer ul {
+    align-items: center;
+  }
+}
+
+.top {
+  color: var(--secondary);
+  text-decoration: none;
+  font-size: 2rem;
+  background-color: var(--primary);
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
