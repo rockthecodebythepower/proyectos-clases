@@ -1,0 +1,40 @@
+:root {
+  --background-color: #1a1a1a;
+  --primary: white;
+  --secondary: #11b0c8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--primary);
+}
+
+main {
+  height: 80vh;
+  overflow-y: auto;
+}
+
+strong {
+  color: var(--secondary);
+}
+
+section {
+  animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

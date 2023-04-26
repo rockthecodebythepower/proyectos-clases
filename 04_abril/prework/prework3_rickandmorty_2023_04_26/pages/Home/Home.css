@@ -1,0 +1,27 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 2rem;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.home img {
+  height: 60vh;
+  animation: beat 7s infinite alternate;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+    filter: hue-rotate(10deg);
+  }
+
+  100% {
+    transform: scale(1.1);
+    filter: hue-rotate(360deg);
+  }
+}

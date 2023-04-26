@@ -1,0 +1,51 @@
+.characters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+#characters-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#characters-container li {
+  list-style-type: none;
+  background-color: var(--primary);
+  color: var(--background-color);
+  padding: 1rem;
+}
+
+#characters-container li img {
+  width: 100%;
+}
+
+.Alive {
+  background-color: green;
+}
+
+.Dead {
+  background-color: crimson;
+}
+
+.unknown {
+  background-color: var(--secondary);
+}
+
+button {
+  color: var(--primary);
+  border: 2px solid var(--secondary);
+  background-color: transparent;
+  padding: 0.5rem 0.7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 1rem;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--secondary);
+}
