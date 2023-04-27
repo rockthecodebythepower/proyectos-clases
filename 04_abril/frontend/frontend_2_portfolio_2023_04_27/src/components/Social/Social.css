@@ -1,0 +1,9 @@
+.social > img {
+  width: 48px;
+  height: 48px;
+  transition: all 0.5s ease-in-out;
+}
+
+.social > img:hover {
+  transform: scale(1.2);
+}

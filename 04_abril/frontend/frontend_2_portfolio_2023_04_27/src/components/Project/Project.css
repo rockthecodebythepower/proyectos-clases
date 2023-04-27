@@ -1,0 +1,19 @@
+.project {
+  width: 100%;
+  height: 100%;
+}
+
+.project > img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.project > a {
+  color: var(--secondary);
+}
+
+.project > a:hover {
+  text-decoration: underline;
+}
