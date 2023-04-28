@@ -1,0 +1,35 @@
+.proyects {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.proyect-detail {
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: var(--text);
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.proyect-detail > div {
+    width: 280px;
+    position: absolute;
+    right: 0;
+    height: 100%;
+}
+
+.proyect-detail > div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

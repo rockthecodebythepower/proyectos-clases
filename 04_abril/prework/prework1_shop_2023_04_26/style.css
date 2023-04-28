@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap");
+
+/* seleccionar todos los elementos de mi página */
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Source Code Pro", monospace;
+}
+
+:root {
+  --primary: whitesmoke;
+  --secondary: #212121;
+  --terciary: #006704;
+  --paragraph: #676767;
+}
+
+button {
+  cursor: pointer;
+}
+
+.franja {
+  height: 29px;
+  background-color: var(--secondary);
+}
+
+.logo {
+  width: 70px;
+}
+
+.carrito {
+  width: 30px;
+  cursor: pointer;
+}
+
+header {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  color: var(--paragraph);
+  transition: all, 0.5s;
+  font-weight: 600;
+}
+
+header a:hover {
+  color: var(--terciary);
+}
+
+.navbar {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  font-size: 25px;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.left-hero {
+  width: 45%;
+  min-width: 350px;
+  height: 600px;
+  border: 1px solid #dedede;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding-left: 100px;
+  padding-top: 100px;
+  position: relative;
+}
+
+.left-hero h1 {
+  width: 75%;
+  font-size: 38px;
+}
+
+.left-hero > p {
+  align-self: flex-start;
+  width: 75%;
+  color: var(--paragraph);
+}
+
+.left-hero_meet {
+  height: 273px;
+  width: 77%;
+  background-color: var(--secondary);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-hero_meet > button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  height: 67px;
+  background-color: var(--terciary);
+  color: var(--primary);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px;
+  font-size: 20px;
+}
+
+.left-hero_meet > .info {
+  width: 40%;
+  color: var(--primary);
+  margin-right: 50px;
+  font-size: 15px;
+}
+
+.left-hero_meet > .info p {
+  color: var(--paragraph);
+}
+
+.img_wrp {
+  height: 146px;
+  width: 146px;
+}
+
+.img_wrp > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right-hero {
+  width: 45%;
+  height: 700px;
+  background-image: url("https://valenciasecreta.com/wp-content/uploads/2022/11/Zara-Juan-de-Austria-Woman-II-scaled.jpg");
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  position: relative;
+}
+
+.right-hero > button {
+  position: absolute;
+  bottom: 0;
+  width: 70%;
+  left: 0;
+  height: 67px;
+  background-color: var(--primary);
+  color: var(--secondary);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px;
+  font-size: 20px;
+}
+
+.main-products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.main-product {
+  height: 682px;
+  width: 45%;
+  min-width: 350px;
+  background-color: #676767;
+  margin-bottom: 50px;
+}
+
+.main-product:nth-child(odd) {
+  margin-left: 100px;
+}
+
+.main-product {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 50px;
+}
+
+.main-product > button {
+    width: 50%;
+    height: 100px;
+}
+
+.women {
+  background-image: url("https://res.cloudinary.com/deunyl3k1/image/upload/s--X7Tnyi8o--/c_fill,f_auto,h_650,q_auto,w_800/v1/prio/mall_common/0001/06/ab23d2161339bd823b23e595015ca812ee99ba21.png");
+}
+
+.accesories {
+  background-image: url("https://estaticos-cdn.elperiodico.com/clip/4c7f675a-aa97-4ab9-b170-6fc73869b384_alta-libre-aspect-ratio_default_0.jpg");
+}
+
+.men {
+  background-image: url("https://estaticos-cdn.epe.es/clip/236ea14d-2ad5-403a-8c05-6d5ccc8caab5_alta-libre-aspect-ratio_default_0.jpg");
+}
+
+.youth {
+  background-image: url("https://estaticos-cdn.epe.es/clip/b5b6a595-39dc-451a-9600-eede5248387c_alta-libre-aspect-ratio_default_0.jpg");
+}
+
+.meet-area {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.meet-area > div{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.img_area, .info_area {
+    width: 60%;
+    height: 60%;
+    position: absolute;
+}
+
+.img_area {
+    background-image: url("https://e00-telva.uecdn.es/assets/multimedia/imagenes/2020/05/11/15891922278276.jpg");
+}
+
+.info_area {
+    background-color: var(--primary);
+    padding: 30px;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    width: 55%;
+    height: 55%;
+    box-shadow: 3px 3px 30px 5px rgba(0, 0, 0, 0.17);
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.info_area p {
+    color: var(--paragraph);
+}

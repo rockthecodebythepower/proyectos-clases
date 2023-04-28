@@ -1,0 +1,73 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+}
+
+.proyecto {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.proyecto h2 {
+  font-size: 40px;
+}
+
+.proyecto > div {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.proyecto h3 {
+  width: 30%;
+  color: var(--text);
+  font-weight: 200;
+}
+
+.img_wrp {
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 23px -5px var(--main-content);
+  transition: all, 1s;
+}
+
+.img_wrp > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img_wrp:hover {
+  box-shadow: 0px 0px 50px -5px var(--main-content);
+}
+
+.flecha {
+  cursor: pointer;
+  transition: all, 0.5s;
+}
+
+.flecha:hover {
+  transform: scale(1.4);
+}
+
+.fadeIn {
+    animation: fadeIn 2s;
+}

@@ -1,0 +1,15 @@
+.header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary);
+    margin-bottom: 50px;
+}
+
+.header button {
+    background-color: var(--secondary);
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}

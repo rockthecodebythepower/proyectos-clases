@@ -1,0 +1,47 @@
+header {
+    height: 60px;
+    display: flex;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text);
+}
+
+header > p, nav > p {
+    padding: 20px 10% 0px 20px;
+}
+
+nav > p {
+    padding-right: 20px;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav > ul {
+    display: flex;
+}
+
+.navegacion {
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+header > p:hover, .navegacion:hover {
+    color: var(--main-content);
+    cursor: pointer;
+}
+
+.seleccionado {
+    border-bottom: 3px solid var(--content);
+}
+
+.buscador {
+    height: 40px;
+    align-self: center;
+    text-align: center;
+    border-radius: 20px;
+}

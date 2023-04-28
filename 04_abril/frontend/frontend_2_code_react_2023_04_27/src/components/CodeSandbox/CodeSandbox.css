@@ -1,0 +1,12 @@
+.editor {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-direction: column;
+}
+
+.renderizado {
+  padding: 100px;
+}

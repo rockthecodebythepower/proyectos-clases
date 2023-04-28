@@ -1,0 +1,41 @@
+.docs > div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.no-visible {
+    height: 0px;
+    overflow: hidden;
+    transition: all, 1s;
+}
+
+.visible {
+    height: 200px;
+    transition: all, 1s;
+    margin-bottom: 100px;
+}
+
+
+.abajo, .derecha {
+    width: 20px;
+    cursor: pointer;
+    transition: all, 0.5s;
+}
+
+.abajo {
+    transform: rotate(90deg);
+}
+
+.titulo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.icon {
+    width: 30px;
+}
