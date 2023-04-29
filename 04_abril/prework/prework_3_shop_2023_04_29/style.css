@@ -1,0 +1,32 @@
+:root {
+	--background-color: #f3f3f3;
+	--header-background-color: #ffffff;
+	--primary: #000000;
+	--secondary: #3d3d3d;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	font-family: "Inter", sans-serif;
+}
+
+body {
+	background-color: var(--background-color);
+	color: var(--secondary);
+}
+
+h1,
+h2,
+h3 {
+	color: var(--primary);
+	font-family: "Space Grotesk", sans-serif;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 40px;
+}

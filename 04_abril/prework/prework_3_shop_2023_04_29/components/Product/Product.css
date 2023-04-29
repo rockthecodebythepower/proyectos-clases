@@ -1,0 +1,34 @@
+.gallery img {
+	width: 100%;
+	height: auto;
+	padding: 1rem;
+	transition: 0.5s ease-in-out;
+	animation: changeColor 30s infinite;
+}
+
+.gallery img:hover {
+	transform: scale(1.1);
+}
+
+.gallery a {
+	color: var(--primary);
+	font-size: 0.8rem;
+}
+
+.gallery a:hover {
+	text-decoration: underline;
+}
+
+.gallery p {
+	font-weight: 600;
+}
+
+@keyframes changeColor {
+	0% {
+		filter: hue-rotate(0);
+	}
+
+	100% {
+		filter: hue-rotate(360deg);
+	}
+}

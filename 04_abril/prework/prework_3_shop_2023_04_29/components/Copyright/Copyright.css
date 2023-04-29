@@ -1,0 +1,9 @@
+footer .copyright {
+	font-size: 0.7rem;
+	border-top: 1px solid var(--secondary);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+}

@@ -1,0 +1,12 @@
+footer > input {
+	background-color: transparent;
+	border: 1px solid var(--secondary);
+	font-size: 1.2rem;
+	padding: 0.5rem;
+	position: relative;
+}
+
+footer > input:focus {
+	border: 2px solid var(--background-color);
+	outline: none;
+}

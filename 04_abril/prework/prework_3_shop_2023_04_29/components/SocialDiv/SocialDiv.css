@@ -1,0 +1,10 @@
+footer .social-icons img {
+	filter: invert(100%);
+	height: 24px;
+	width: 24px;
+}
+
+footer .social-icons {
+	display: flex;
+	gap: 1rem;
+}
