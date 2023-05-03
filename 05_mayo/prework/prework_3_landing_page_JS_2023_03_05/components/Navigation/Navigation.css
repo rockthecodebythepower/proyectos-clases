@@ -1,0 +1,25 @@
+nav {
+	height: 10vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 2rem;
+}
+
+nav img {
+	height: 38px;
+	width: auto;
+}
+
+nav ul {
+	display: flex;
+	gap: 1rem;
+}
+
+nav button {
+	background-color: var(--color-100);
+	color: var(--color-50);
+	border: none;
+	padding: 0.4rem;
+	border-radius: 0.5rem;
+}

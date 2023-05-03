@@ -1,0 +1,26 @@
+.contact {
+	min-height: 20vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 2rem;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.contact ul {
+	display: flex;
+	gap: 2rem;
+	flex-wrap: wrap;
+}
+
+.contact li {
+	height: 20vh;
+	flex-grow: 1;
+}
+
+.contact img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
