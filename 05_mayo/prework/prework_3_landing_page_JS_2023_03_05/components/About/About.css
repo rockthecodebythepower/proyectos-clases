@@ -1,0 +1,22 @@
+.about {
+	padding: 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 24vh;
+	flex-wrap: wrap;
+}
+
+.about ul {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 20vh;
+	width: 300px;
+	margin: 1rem 0;
+}
+
+.about li {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
