@@ -1,0 +1,5 @@
+figure {
+	backdrop-filter: blur(4px);
+	padding: 1rem;
+	border-radius: 1rem;
+}

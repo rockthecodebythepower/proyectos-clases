@@ -1,0 +1,8 @@
+h3 {
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	text-align: center;
+	white-space: nowrap;
+	border-bottom: 2px dashed var(--secondary-color);
+	margin-bottom: 0.5rem;
+}

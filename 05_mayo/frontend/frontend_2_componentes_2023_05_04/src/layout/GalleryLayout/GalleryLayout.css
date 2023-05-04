@@ -1,0 +1,6 @@
+.gallery-layout {
+	display: grid;
+	padding: 2rem;
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	gap: 2rem;
+}

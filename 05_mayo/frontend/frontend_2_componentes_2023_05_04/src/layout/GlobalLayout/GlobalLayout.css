@@ -1,0 +1,8 @@
+.global-layout {
+	display: grid;
+	min-height: 100vh;
+	grid-template-rows:
+		15vh
+		1fr
+		10vh;
+}

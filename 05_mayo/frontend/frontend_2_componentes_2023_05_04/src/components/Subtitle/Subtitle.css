@@ -1,0 +1,4 @@
+h2 {
+	color: var(--secondary-color);
+	border-bottom: 2px solid var(--secondary-color);
+}
