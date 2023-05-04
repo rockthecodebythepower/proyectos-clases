@@ -1,0 +1,38 @@
+nav {
+    height: 50px;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+nav img {
+    width: 30px;
+    cursor: pointer;
+}
+
+nav > div {
+    width: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--terciary);
+    align-items: center;
+    padding: 2px;
+    border-radius: 10px;
+    height: 30px;
+}
+
+nav > div p {
+    text-align: center;
+}
+
+.filtro_seleccionado {
+    background-color: var(--primary);
+    font-weight: bold;
+    border-radius: 10px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
