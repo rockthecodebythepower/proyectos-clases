@@ -1,0 +1,11 @@
+header {
+	height: 12vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--tertiary);
+}
+
+header h1 {
+	color: var(--background-color);
+}
