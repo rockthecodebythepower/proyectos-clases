@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Rubik", sans-serif;
+}
+
+:root {
+  --primary: #ffffff;
+  --secondary: #202124;
+  --terciary: #e4002c;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 25px -4px var(--secondary);
+  padding: 30px;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  border: 2px solid var(--terciary);
+  background-color: var(--primary);
+}
+
+form > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+form > div input,
+form > div select {
+  border: 2px solid var(--terciary);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+form > button {
+    padding: 20px 10px;
+    border-radius: 10px;
+    background-color: var(--terciary);
+    width: 50%;
+    align-self: center;
+    color: var(--primary);
+    font-weight: bolder;
+    cursor: url("./assets/pollo_icon.png"), auto;
+    transition: all, 0.5s;
+}
+
+form > button:hover {
+    box-shadow: 0px 10px 25px -4px var(--secondary);
+}
+
+.productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.productos > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.productos > div h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.producto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 3px var(--terciary);
+}
+
+.producto > div {
+    width: 200px;
+    height: 200px;
+}
+
+.producto > div img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.no-visible {
+    display: none;
+}
+
+.menu-form {
+    width: 50px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: url("./assets/pollo_icon.png"), auto;
+}

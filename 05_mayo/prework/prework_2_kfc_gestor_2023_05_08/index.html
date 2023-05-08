@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/pollo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>KFC - gestor</title>
+</head>
+<body>  
+    <img src="/assets/hamburguesa.png" alt="menu-form" class="menu-form">
+    <form class="no-visible">
+        <h3>Crear un nuevo producto</h3>
+        <div>
+            <label>Nombre</label>
+            <input placeholder="Nombre del producto" id="nombre"/>
+        </div>
+        <div>
+            <label>Imagen</label>
+            <input placeholder="Imagen del producto" id="imagen"/>
+        </div>
+        <div>
+            <label>Precio</label>
+            <input placeholder="Precio del producto" id="precio" type="number"/>
+        </div>
+        <div>
+            <label>Tipo</label>
+            <select id="tipo">
+                <option value="hamburguesa">Hamburguesa</option>
+                <option value="wrap">Wrap</option>
+                <option value="acompañante">Acompañante</option>
+                <option value="bebida">Bebida</option>
+            </select>
+        </div>
+        <button>PUBLICAR</button>
+    </form>
+    <div class="productos">
+        <div class="hamburguesas"></div>
+        <div class="wraps"></div>
+        <div class="acompañantes"></div>
+        <div class="bebidas"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

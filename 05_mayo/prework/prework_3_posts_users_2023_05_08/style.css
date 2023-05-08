@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  background-color: rgb(35, 31, 31);
+}
+
+header > button {
+  height: 30px;
+  padding: 0px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  font-weight: bolder;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.no-visible {
+  display: none;
+}
