@@ -1,0 +1,148 @@
+:root {
+	--color-50: #f6f6f6;
+	--color-100: #8b8e99;
+	--color-150: #1e1d1d;
+	--color-t: #8b8e992d;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Lato", sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--color-50);
+	color: var(--color-150);
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	color: var(--color-100);
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--color-50);
+}
+
+header {
+	height: 100vh;
+	background: rgb(0, 0, 0);
+	background: linear-gradient(
+		135deg,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(67, 68, 71, 1) 100%
+	);
+}
+
+header h1::before {
+	content: "⌚︎";
+	padding-right: 0.5rem;
+}
+
+header nav {
+	height: 10vh;
+	color: var(--color-50);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 2rem;
+}
+
+header nav ul {
+	display: flex;
+	gap: 1rem;
+}
+
+header .hero {
+	min-height: 90vh;
+	display: flex;
+	color: var(--color-50);
+	justify-content: center;
+	align-items: center;
+	padding: 0 2rem;
+	gap: 2rem;
+	text-align: justify;
+	flex-wrap: wrap;
+}
+
+header .hero h2 {
+	font-size: 3rem;
+	text-align: left;
+	font-weight: 900;
+	margin: 1rem 0;
+}
+
+header .hero div {
+	width: 450px;
+}
+
+header .hero img {
+	height: 400px;
+	padding: 1rem;
+}
+
+header .hero button {
+	padding: 0.3rem;
+	width: 100%;
+	margin: 1rem 0;
+	background-color: var(--color-50);
+	border: none;
+	border-radius: 0.5rem;
+	font-weight: 800;
+}
+
+header .hero button:hover {
+	background-color: var(--color-100);
+	color: var(--color-50);
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem;
+}
+
+main ul {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin: 2rem 0;
+}
+
+main ul li article {
+	width: 350px;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	padding: 1rem;
+	background-color: var(--color-t);
+	border-radius: 1.5rem;
+}
+
+main ul li article h3 {
+	font-size: 1.5rem;
+	font-weight: 800;
+}
+
+footer {
+	background-color: var(--color-150);
+	height: 10vh;
+	color: var(--color-50);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
