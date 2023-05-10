@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --primary: #E5E5E5;
+    --secondary: #6941C6;
+    --terciary: #667085;
+    --stroke: black; 
+}
+
+header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--terciary);
+    height: 5vh;
+}
+
+nav > ul {
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    color: var(--stroke);
+    font-weight: bolder;
+}
+
+nav a:hover {
+    border-bottom: 2px solid var(--stroke);
+}
+
+nav a:visited {
+    color: var(--secondary);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.recent-posts {
+    margin-top: 50px;
+    border-top: 1px solid var(--terciary);
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    gap: 50px;
+    justify-content: flex-start;
+}
+
+.recent-posts > h2 {
+    align-self: flex-start;
+    width: 100%;
+}
+
+.post {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 450px;
+}
+
+.img_wrp {
+    width: 100%;
+    height: 250px;
+}
+
+.img_wrp > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.post > h4 {
+    color: var(--secondary);
+}
+
+.title {
+    position: relative;
+}
+
+.title img {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.post > p {
+    color: var(--terciary);
+    font-weight: 500;
+}
+
+.etiquetas {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.etiquetas > span {
+    padding: 5px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.primero {
+    background-color: #F9F5FF;
+    color: var(--secondary);
+}
+
+.segundo {
+    background-color: #EEF4FF;
+    color: #3538CD;
+}
+
+.tercero {
+    background-color: #FDF2FA;
+    color: #C11574;
+}
+
+.cuarto {
+    background-color: #ECFDF3;
+    color: #027A48;
+}
