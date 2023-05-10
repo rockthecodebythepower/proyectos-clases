@@ -1,0 +1,18 @@
+nav {
+    position: fixed;
+    top: 0;
+    height: 7vh;
+    background-color: var(--light-secondary);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+nav > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}

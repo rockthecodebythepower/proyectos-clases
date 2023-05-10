@@ -1,0 +1,43 @@
+input {
+  height: 50px;
+  width: 60%;
+  border-radius: 10px;
+  background-color: var(--light-primary);
+  border: 3px solid var(--light-stroke);
+  text-align: center;
+  font-size: 25px;
+}
+
+input.dark {
+  background-color: var(--dark-primary);
+  border-color: var(--dark-stroke);
+}
+
+.main.dark {
+  background-color: var(--dark-background);
+}
+
+.cafes {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  gap: 30px;
+  justify-content: center;
+}
+
+.cafes_wrp {
+    padding-top: 10vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mode {
+  width: 50px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
