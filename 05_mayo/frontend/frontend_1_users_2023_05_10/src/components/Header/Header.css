@@ -1,0 +1,22 @@
+header {
+	height: 10vh;
+	display: flex;
+	padding: 0 2rem;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header ul {
+	display: flex;
+	gap: 1rem;
+	list-style-type: none;
+}
+
+header a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.active {
+	color: orange;
+}
