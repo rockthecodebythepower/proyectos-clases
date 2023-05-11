@@ -1,0 +1,11 @@
+li {
+	min-width: 300px;
+
+	justify-content: space-between;
+	padding: 0.3rem;
+}
+
+p::before {
+	content: "📝";
+	padding-right: 0.3rem;
+}

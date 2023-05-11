@@ -1,0 +1,33 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+	--background-color: #fffffe;
+	--primary: #2e2e2e;
+	--secondary: #4fc4cf;
+}
+
+body {
+	background-color: var(--background-color);
+	color: var(--primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+button {
+	color: var(--secondary);
+}
+
+button {
+	background-color: transparent;
+	border: 2px solid var(--primary);
+	padding: 0.3rem;
+	text-transform: uppercase;
+	font-weight: 700;
+}

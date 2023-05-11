@@ -1,0 +1,8 @@
+main > ul {
+	list-style-type: none;
+}
+
+main li {
+	display: flex;
+	gap: 1rem;
+}
