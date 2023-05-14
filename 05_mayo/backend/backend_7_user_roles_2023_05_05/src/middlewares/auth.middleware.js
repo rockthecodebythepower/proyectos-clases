@@ -26,7 +26,6 @@ const isUser = async (req, res, next) => {
 };
 
 const isAdmin = async (req, res, next) => {
-  
   const token = req.headers.authorization?.replace("Bearer ", "");
 
   if (!token) {
@@ -34,15 +33,17 @@ const isAdmin = async (req, res, next) => {
   }
 
   try {
-
     const decoded = verifyToken(token, process.env.JWT_SECRET);
     req.user = await User.findById(decoded.id);
-	if (req.user.rol === "admin") {
-		next();
-	} else {
-		return res.status(401).json("A donde vas, eres user, si quieres entrar aquí pide a un administrador que te cambie el rol");
-	}
-
+    if (req.user.rol === "admin") {
+      next();
+    } else {
+      return res
+        .status(401)
+        .json(
+          "A donde vas, eres user, si quieres entrar aquí pide a un administrador que te cambie el rol"
+        );
+    }
   } catch (error) {
     return next(error);
   }

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: 'Rubik', sans-serif;
+}
+
+:root {
+  --historia: #fadd41;
+  --deportes: #f8952e;
+  --arte: #f32b36;
+  --ciencia: #24ca68;
+  --geografia: #2879ca;
+  --entretenimiento: #f34daf;
+  --corona: #8e45b8;
+  --primary: #fffefc;
+  --secondary: #1fbba6;
+  --acierto: #61e250;
+  --fallo: #f32b36;
+}
+
+body {
+  background-image: url(https://media.istockphoto.com/id/1277432621/vector/vertical-landscape-background.jpg?s=170667a&w=0&k=20&c=sEVsLLRnhKcuAj96qRJZxVpcxbrkRYmoemIV-_1859o=);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+@media (min-width: 500px) {
+  body {
+    background-image: url(https://i.pinimg.com/736x/82/4c/75/824c75d5d8baddac1e3ab99a48b77f36.jpg);
+  }
+}
