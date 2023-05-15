@@ -1,0 +1,21 @@
+:root {
+	--primary: #1e282f;
+	--secondary: #eeeeef;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--primary);
+	color: var(--secondary);
+	background-image: url("https://www.transparenttextures.com/patterns/black-thread.png");
+}

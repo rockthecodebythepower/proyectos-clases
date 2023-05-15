@@ -1,0 +1,8 @@
+.about {
+	padding: 0 2rem;
+	text-align: justify;
+}
+
+.about > h2 {
+	font-size: 2rem;
+}

@@ -1,0 +1,20 @@
+.education {
+	padding: 2rem;
+	width: 100%;
+}
+
+.education h2 {
+	text-align: center;
+	border-bottom: 2px solid var(--secondary);
+	margin-bottom: 2rem;
+}
+
+.education article {
+	padding: 1rem 0;
+	text-align: center;
+}
+
+.education h3::before {
+	content: "📖";
+	padding-right: 1rem;
+}
