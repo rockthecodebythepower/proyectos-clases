@@ -1,0 +1,46 @@
+.list {
+    min-width: 272px;
+    height: max-content;
+    padding: 14px 8px;
+    border-radius: 12px;
+    background-color: var(--list);
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    align-items: center;
+}
+
+.title > img {
+    width: 20px;
+}
+
+.more {
+    cursor: pointer;
+}
+
+.addTask {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 6px 8px 4px 6px;
+}
+
+.addTask:hover {
+    background-color: #d0d5db;
+}
+
+.addTask > p {
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.addTask > img {
+    width: 15px;
+}

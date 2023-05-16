@@ -1,0 +1,46 @@
+.tasks {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.task {
+  background-color: var(--task);
+  width: 90%;
+  padding: 8px 8px 4px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 1px 0 #091e4240;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  flex-direction: column;
+}
+
+.task:focus {
+    cursor: grab;
+}
+
+.task > .task {
+    font-size: 12px;
+    box-shadow: none;
+    border-top: 1px solid black;
+    border-radius: 0px;
+    margin-top: 10px;
+    width: 90%;
+}
+
+/* .task > .task > .task {
+    font-size: 8px;
+    box-shadow: none;
+    border-top: 1px solid black;
+    border-radius: 0px;
+    margin-top: 10px;
+    width: 90%;
+} */
+
+.task:hover {
+  background-color: var(--list);
+}

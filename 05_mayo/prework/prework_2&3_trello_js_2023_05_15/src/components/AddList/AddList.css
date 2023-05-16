@@ -1,0 +1,47 @@
+.addList {
+    background-color: #ffffff40;
+    color: var(--task);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 256px;
+    padding: 8px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all, 0.5s;
+    height: max-content;
+}
+
+#form {
+    background-color: #ffffff;
+    display: block;
+}
+
+#form > input {
+    border: var(--primary) solid 2px;
+    border-radius: 3px;
+    width: 90%;
+    height: 32px;
+    padding: 0px 4px;
+}
+
+.accept {
+    background-color: #0b66e3;
+    height: 32px;
+    padding: 4px;
+    color: var(--task);
+    margin-top: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.cancel {
+    margin-left: 20px;
+    height: 32px;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.addList > img {
+    width: 20px;
+}

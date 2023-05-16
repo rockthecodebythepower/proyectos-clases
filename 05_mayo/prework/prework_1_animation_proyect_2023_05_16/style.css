@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    font-family: 'Rubik', sans-serif;
+}
+
+:root {
+    --background: #f7f8fa;
+    --green: #29CC39;
+    --purple: #8833FF;
+    --purpleOpacity: #8833ff1e;
+    --orange: #FF6633;
+    --blue: #33BFFF;
+    --dark: #1A2233;
+    --white: #FFFFFF;
+    --font-color: #6B7A99;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--background);
+}
+
+.animacion {
+    background-color: var(--white);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    overflow: hidden;
+    z-index: 2;
+    animation: presentacion 4s ease forwards;
+}
+
+@keyframes presentacion {
+    0% {
+        height: 100vh;
+    }
+    75% {
+        height: 100vh;
+    }
+    100% {
+        height: 0px;
+    }
+}
+
+.animacion > img {
+   width: 200px;
+    animation: imageAnimation 4s ease forwards;
+}
+
+@keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        scale: 0;
+    }
+    40% {
+        opacity: 1;
+        scale: 1.5;
+    }
+    60% {
+        opacity: 1;
+        scale: 0.5;
+    }
+    75% {
+        opacity: 1;
+        scale: 0.8;
+        transform: translateX(0px);
+    }
+    100% {
+        opacity: 1;
+        scale: 1;
+        transform: translateY(-1400px);
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    color: var(--font-color);
+}
+
+.icons > div:first-child, .constructor > div {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+}
+
+.constructor > div {
+    box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
+}
+
+.constructor {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.icons > div:first-child {
+    background-color: var(--purpleOpacity);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    max-width: 540px;
+}
+
+.card {
+    min-height: 135px;
+    min-width: 135px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    color: var(--white);
+    border-radius: 10px;
+}
+
+.card > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.card > h3 {
+    font-size: 22px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+.pages {
+    background-color: var(--green);
+}
+
+.posts {
+    background-color: var(--purple);
+}
+
+.users {
+    background-color: var(--orange);
+}
+
+.files {
+    background-color: var(--blue);
+}
+
+.categories {
+    background-color: var(--dark);
+}
+
+.comments {
+    background-color: var(--white);
+    color: var(--font-color);
+}
+
+nav a {
+    color: var(--font-color);
+    font-weight: 500;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav > ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav > ul > li:first-child a {
+    color: var(--purple);
+}
+
+.buscador {
+    display: flex;
+    border-radius: 30px;
+    background-color: var(--white);
+    padding: 10px;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.buscador > input {
+    height: 30px;
+    width: 80%;
+    color: var(--font-color);
+}
+
+.buscador > input::placeholder {
+    color: var(--font-color);
+    opacity: 0.5;
+}
+
+@media (max-width: 600px) {
+    .icons > img {
+        display: none;
+    }
+    .icons {
+        width: auto;
+    }
+}
+
+@media (max-width: 1000px) {
+    nav {
+        display: none;
+    }
+}
+
+@media (max-width: 1450px) {
+    .buscador {
+        display: none;
+    }
+}
