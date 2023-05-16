@@ -1,0 +1,100 @@
+:root {
+	--primary: #fefafa;
+	--secondary: #0c425a;
+	--tertiary: #188cb6;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif;
+}
+
+body {
+	color: var(--secondary);
+	background-color: var(--primary);
+	background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	color: var(--primary);
+	text-decoration: none;
+	transition: color 0.5s ease-in-out;
+	padding: 0.4rem;
+	border-radius: 0.5rem;
+	background-color: var(--secondary);
+}
+
+a:hover {
+	color: var(--tertiary);
+}
+
+a[href="#html"] {
+	background-color: #f74a1d;
+}
+
+a[href="#css"] {
+	background-color: #006eb5;
+}
+
+a[href="#javascript"] {
+	background-color: #ebd41b;
+}
+
+header {
+	text-align: center;
+	background-color: var(--secondary);
+	color: var(--primary);
+	padding: 1rem;
+}
+
+nav > ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	gap: 1rem;
+}
+
+.intro {
+	margin: 2rem 0 0 2rem;
+}
+
+.latest-posts > h2 {
+	text-align: center;
+	margin: 2rem;
+}
+
+.latest-posts-gallery {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin: 0 2rem;
+	gap: 1rem;
+}
+
+.latest-posts a {
+	background-color: transparent;
+	color: var(--secondary);
+	padding: 0;
+}
+
+@media screen and (max-width: 750px) {
+	.latest-posts-gallery {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	background-color: var(--secondary);
+	color: var(--primary);
+	margin-top: 2rem;
+}
