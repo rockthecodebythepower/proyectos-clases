@@ -1,0 +1,16 @@
+:root {
+	--primary: #222725;
+	--secondary: #fefeff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Instrument Sans", sans-serif;
+}
+
+body {
+	background-color: var(--primary);
+	color: var(--secondary);
+}
