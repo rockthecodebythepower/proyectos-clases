@@ -1,0 +1,11 @@
+footer {
+	background-color: var(--primary);
+	color: var(--secondary);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer h6 {
+	font-size: 0.8rem;
+}

@@ -1,0 +1,17 @@
+:root {
+	--primary: #202023;
+	--secondary: #f2f5f6;
+	--tertiary: #ffffff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+	background-color: var(--secondary);
+	color: var(--primary);
+}

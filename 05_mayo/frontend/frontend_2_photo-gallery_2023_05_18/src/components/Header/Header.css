@@ -1,0 +1,48 @@
+header {
+	background-color: var(--primary);
+	color: var(--secondary);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 2rem 0 3rem;
+}
+
+header h1::before {
+	content: "";
+	background-color: crimson;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	left: 14px;
+	top: 34px;
+	border-radius: 50%;
+}
+
+header h1::after {
+	content: "";
+	background-color: blue;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	left: 30px;
+	top: 34px;
+	border-radius: 50%;
+}
+
+header input {
+	width: 200px;
+	border: none;
+	padding: 0.3rem;
+	border-radius: 8px;
+}
+
+header div {
+	display: flex;
+	gap: 1rem;
+}
+
+header button {
+	border: none;
+	background-color: transparent;
+	filter: invert(90%);
+}
