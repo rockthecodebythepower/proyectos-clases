@@ -1,0 +1,1 @@
+console.log(Math.random(["pepe", "pepito", "pepazo"]));

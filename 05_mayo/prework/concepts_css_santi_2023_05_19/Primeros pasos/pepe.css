@@ -1,0 +1,41 @@
+/*? EL NIVEL DE JERARQUÍA MÁS ALTO SERÁ EL ESTILO EN LÍNEA */
+
+
+/*! SELECTOR POR ETIQUETA (h1, h2, h3, p, div) TODOS LOS ELEMENTOS DE ESA ETIQUETA */
+/*? NIVEL DE IMPORTANCIA o JERARQUÍA ES BASTANTE BAJO */
+
+h1 {
+    color: blue;
+}
+
+label {
+    background-color: red;
+}
+
+
+/*! SELECTOR POR CLASE SIEMPRE IRÁN PRECEDIDOS DEL . Y LUEGO EL NOMBRE DE LA CLASE PEGADO DESPUÉS DEL PUNTO TODOS LOS ELEMENTOS CUYA CLASE SEA PEPITO */
+/*? NIVEL DE IMPORTANCIA o JERARQUÍA MAYOR QUE EL SELECTOR POR ETIQUETA */
+
+.josito {
+    background-color: green;
+}
+
+
+/** Tenéis que coger con un selector únicamente los label que tengan la clase pepito, es decir si mi label y mi input tienen la clase pepito quiero que únicamente le demos un background-color: black a el label y no al input aunque tengan la misma clase */
+
+label.josito {
+    background-color: black;
+}
+
+
+/*! SELECTOR POR ID SIEMPRE IRÁN PRECEDIDOS DEL # Y LUEGO EL NOMBRE DEL ID PEGADO DESPUÉS DEL HASTAG TODOS LOS ELEMENTOS CUYO ID SEA PASSWORD */
+/*? NIVEL DE IMPORTANCIA o JERARQUÍA MAYOR QUE EL SELECTOR POR CLASE */
+
+#password {
+    background-color: orange;
+    color: white;
+    border-radius: 40px;
+    border: 2px dotted black;
+}
+
+

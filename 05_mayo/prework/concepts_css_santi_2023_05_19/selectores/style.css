@@ -1,0 +1,11 @@
+div {
+  margin: 20px;
+  border: black solid 3px;
+  width: 100px;
+  height: 100px;
+}
+
+.juanillo,
+.pepito {
+  background-color: orange;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "buttontroll",
+  "version": "1.0.0",
+  "description": "This is a troll component for a class to learn some react and to publish a react component on npm",
+  "main": "ButtonTroll.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "RockTheCode",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^18.2.0"
+  }
+}

@@ -1,0 +1,12 @@
+.buttonTroll {
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: #2d82d2;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.troll {
+    position: absolute;
+}

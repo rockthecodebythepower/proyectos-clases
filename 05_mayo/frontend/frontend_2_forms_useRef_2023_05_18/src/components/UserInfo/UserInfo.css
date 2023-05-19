@@ -1,0 +1,59 @@
+.input:focus {
+  background-color: black;
+  color: white;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px;
+}
+
+.userinfo > label {
+  color: var(--primary);
+}
+
+.userinfo > input {
+  padding: 8px 12px;
+  font-size: 25px;
+  color: var(--stroke);
+  border-radius: 10px;
+}
+
+.userinfo > input[type="file"] {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.labelGuay {
+    cursor: pointer;
+    --bg: #e74c3c;
+    --text-color: #fff;
+    position: relative;
+    border: none;
+    background: var(--bg);
+    color: var(--text-color);
+    padding: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.2s;
+    border-radius: 5px;
+    opacity: 0.8;
+    letter-spacing: 1px;
+    box-shadow: #c0392b 0px 7px 2px, #000 0px 8px 5px;
+  }
+  
+  .labelGuay:hover {
+    opacity: 1;
+  }
+  
+  .labelGuay:active {
+    top: 4px;
+    box-shadow: #c0392b 0px 3px 2px,#000 0px 3px 5px;
+  }
