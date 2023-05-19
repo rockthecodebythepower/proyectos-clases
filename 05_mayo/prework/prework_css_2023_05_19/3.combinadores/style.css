@@ -1,0 +1,19 @@
+/* Combinador de hijos directos */
+main > h1 {
+	color: crimson;
+}
+
+/* Combinador de descendientes */
+main li {
+	color: green;
+}
+
+/* Combinador de hermanos adyacentes */
+.paragraph + h3 {
+	color: orange;
+}
+
+/* Combinador de hermanos generales adyacentes */
+.quote ~ h3 {
+	color: purple;
+}

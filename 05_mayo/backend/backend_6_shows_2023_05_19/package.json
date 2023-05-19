@@ -1,0 +1,21 @@
+{
+	"name": "backend_6_shows_2023_05_19",
+	"version": "0.0.1",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js",
+		"dev": "nodemon index.js"
+	},
+	"keywords": [],
+	"author": "Antonio Rosales <antoniorosalesmartinez90gmail.com>",
+	"license": "MIT",
+	"dependencies": {
+		"dotenv": "^16.0.3",
+		"express": "^4.18.2",
+		"mongoose": "^7.1.2"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.22"
+	}
+}

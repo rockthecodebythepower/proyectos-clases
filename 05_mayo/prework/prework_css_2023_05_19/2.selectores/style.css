@@ -1,0 +1,33 @@
+/* Selector de etiqueta */
+h1 {
+	color: blue;
+	font-size: 35px;
+	font-weight: 900;
+}
+
+/* Selector de clase */
+.paragraph {
+	color: crimson;
+}
+
+/* Selector por id */
+#paragraph {
+	color: green;
+}
+
+/* Selector múltiple */
+h3,
+h4 {
+	color: orange;
+}
+
+/* Selector universal */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Selector por atributo */
+a[href="www.google.com"] {
+	color: lightblue;
+}
