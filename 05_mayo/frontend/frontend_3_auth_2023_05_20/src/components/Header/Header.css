@@ -1,0 +1,19 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 2rem;
+	align-items: center;
+}
+
+header ul {
+	display: flex;
+	gap: 1rem;
+	list-style: none;
+}
+
+.logout {
+	border: none;
+	background: transparent;
+	padding: 0;
+	margin: 0;
+}
