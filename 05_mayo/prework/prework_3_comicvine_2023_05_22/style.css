@@ -1,0 +1,17 @@
+:root {
+	--primary: #000000;
+	--secondary: #fcf3df;
+	--tertiary: #ffb727;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans", sans-serif;
+}
+
+body {
+	background-color: var(--secondary);
+	color: var(--primary);
+}

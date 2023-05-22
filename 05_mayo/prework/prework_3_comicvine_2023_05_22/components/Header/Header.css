@@ -1,0 +1,23 @@
+header {
+	height: 12vh;
+	background-color: var(--primary);
+	color: var(--tertiary);
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	font-weight: bolder;
+}
+
+h1 {
+	color: var(--tertiary);
+	text-shadow: 0 1px 0px var(--secondary), 1px 0 0px var(--secondary),
+		1px 2px 1px var(--secondary), 2px 1px 1px var(--secondary),
+		2px 3px 2px var(--secondary), 3px 2px 2px var(--secondary),
+		3px 4px 2px var(--secondary), 4px 3px 3px var(--secondary),
+		4px 5px 3px var(--secondary), 5px 4px 2px var(--secondary),
+		5px 6px 2px var(--secondary), 6px 5px 2px var(--secondary),
+		6px 7px 1px var(--secondary), 7px 6px 1px var(--secondary),
+		7px 8px 0px var(--secondary), 8px 7px 0px var(--secondary);
+}

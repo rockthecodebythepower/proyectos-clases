@@ -1,0 +1,40 @@
+main {
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+}
+
+#issues-container {
+	display: grid;
+	list-style-type: none;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
+}
+
+#issues-container li {
+	background-color: var(--tertiary);
+	padding: 1rem;
+	color: var(--primary);
+	border: 4px solid var(--primary);
+}
+
+#issues-container img {
+	height: 400px;
+	width: 280px;
+	border: 4px solid var(--primary);
+}
+
+button {
+	padding: 0.5rem;
+	background-color: var(--primary);
+	color: var(--tertiary);
+	text-transform: uppercase;
+	font-weight: 900;
+	border: none;
+}
+
+h2 {
+	text-transform: uppercase;
+}
