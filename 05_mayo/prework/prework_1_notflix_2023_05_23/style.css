@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: var(--paragraph);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+:root {
+  --background: rgb(29, 26, 26);
+  --contrast: black;
+  --border: rgb(66, 63, 63);
+  --paragraph: whitesmoke;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--background);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header > div > img {
+  width: 150px;
+}
+
+header > div > h2 {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+header > nav > ul {
+  display: flex;
+  gap: 40px;
+  font-weight: 600;
+}
+
+#top {
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.desktop {
+  display: flex;
+}
+.mobile {
+  display: none;
+  font-size: 20px;
+}
+
+#top > ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.li_top {
+  display: flex;
+}
+
+.li_top > span {
+  font-size: 200px;
+  font-weight: 700;
+  color: var(--contrast);
+  text-shadow: 4px 4px 0 var(--border), 4px -4px 0 var(--border),
+    -4px 4px 0 var(--border), -4px -4px 0 var(--border), 4px 0px 0 var(--border),
+    0px 4px 0 var(--border), -4px 0px 0 var(--border), 0px -4px 0 var(--border);
+  margin-right: -30px;
+}
+
+.li_top > div {
+  width: 150px;
+  height: 200px;
+}
+
+.li_top > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.listado-peliculas {
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.listado-peliculas > h2 {
+  font-weight: 400;
+}
+
+.listado-peliculas > ul {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  height: 220px;
+  overflow-x: scroll;
+}
+
+.listado-peliculas > ul > li {
+  width: 100%;
+  height: 180px;
+  min-width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.listado-peliculas > ul > li:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px -2px var(--paragraph);
+}
+
+.listado-peliculas > ul > li > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*! SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--paragraph);
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border);
+}
+
+@media (max-width: 1373px) {
+  #top > ul > li:nth-child(4),
+  #top > ul > li:nth-child(5) {
+    display: none;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+  }
+}
+
+@media (max-width: 575px) {
+  header > div > h2 {
+    display: none;
+  }
+  header > div > img {
+    width: 100px;
+  }
+  .listado-peliculas > h2 {
+    font-size: 20px;
+  }
+  /* .listado-peliculas > ul {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    overflow: hidden;
+  } */
+}
