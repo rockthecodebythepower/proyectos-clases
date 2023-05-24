@@ -1,0 +1,35 @@
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 4rem;
+	padding: 2rem;
+}
+
+main form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	border: var(--border);
+	border-radius: var(--border-radius);
+	padding: 2rem;
+}
+
+main input {
+	background-color: transparent;
+	color: var(--tertiary);
+	border: 2px solid var(--primary);
+	border-radius: var(--border-radius);
+	padding: 0.2rem 0.5rem;
+}
+
+main button {
+	border-radius: var(--border-radius);
+	width: fit-content;
+	padding: 0.2rem 0.5rem;
+	background-color: var(--highlight);
+	color: var(--tertiary);
+	border: none;
+}

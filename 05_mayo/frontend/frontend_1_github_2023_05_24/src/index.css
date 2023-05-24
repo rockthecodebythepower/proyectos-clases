@@ -1,0 +1,20 @@
+:root {
+	--primary: #2d333b;
+	--secondary: #1c2128;
+	--tertiary: #cdd9e5;
+	--highlight: #347d39;
+	--border-radius: 0.5rem;
+	--border: 2px dashed var(--primary);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+	background-color: var(--secondary);
+	color: var(--tertiary);
+}

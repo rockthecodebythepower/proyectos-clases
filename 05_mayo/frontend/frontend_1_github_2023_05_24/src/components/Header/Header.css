@@ -1,0 +1,13 @@
+header {
+	display: flex;
+	gap: 2rem;
+	padding: 0 2rem;
+	align-items: center;
+	background-color: var(--primary);
+}
+
+header img {
+	height: 40px;
+	width: 40px;
+	filter: invert(100%);
+}
