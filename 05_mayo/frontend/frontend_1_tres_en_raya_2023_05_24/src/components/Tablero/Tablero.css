@@ -1,0 +1,8 @@
+.tablero {
+    width: 604px;
+    height: 604px;
+    border: 2px solid var(--secondary);
+    background-color: var(--background);
+    display: flex;
+    flex-wrap: wrap;
+}

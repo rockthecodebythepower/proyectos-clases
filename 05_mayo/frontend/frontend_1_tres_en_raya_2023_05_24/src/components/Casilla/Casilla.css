@@ -1,0 +1,19 @@
+.casilla {
+    width: 200px;
+    height: 200px;
+    border: 2px solid var(--secondary);
+    cursor: pointer;
+    font-size: 100px;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#O {
+    background-color: var(--primary);
+}
+
+#X {
+    background-color: var(--terciary);
+}

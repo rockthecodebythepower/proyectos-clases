@@ -1,0 +1,48 @@
+.login > img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.modal {
+    display: none;
+}
+
+.modalOpened {
+    display: flex;
+    padding: 50px;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--background);
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.modalOpened > form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+form > input {
+    border-radius: 10px;
+    border: 3px solid black;
+    padding: 12px 7px;
+}
+
+form > button {
+    border-radius: 10px;
+    border: 3px solid black;
+    padding: 12px 7px;
+    background-color: var(--terciary);
+    cursor: pointer;
+}
