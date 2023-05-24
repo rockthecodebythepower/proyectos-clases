@@ -1,0 +1,157 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+	--primary: #050407;
+	--secondary: #f9f9f9;
+	--tertiary: rgba(249, 249, 249, 0.288);
+}
+
+body {
+	background-color: var(--primary);
+	color: var(--secondary);
+	background-image: url(./assets/images/background.png);
+}
+
+/* Rellenamos los iconos */
+.material-symbols-outlined {
+	font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+/* HEADER */
+header {
+	display: flex;
+	padding: 0.5rem 2rem;
+	align-items: center;
+	gap: 2rem;
+}
+
+header > img {
+	height: 60px;
+	width: auto;
+}
+
+header ul {
+	display: flex;
+	list-style-type: none;
+	gap: 2rem;
+}
+
+header a {
+	color: var(--secondary);
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-size: 0.8rem;
+}
+
+header a:hover {
+	border-bottom: 1px solid var(--secondary);
+}
+
+header span {
+	transform: scale(0.8);
+}
+
+/* Ocultamos por defecto la lista de links en mobile */
+.mobile-links {
+	display: none;
+}
+
+@media screen and (max-width: 950px) {
+	.mobile-links {
+		display: flex;
+	}
+
+	.desktop-links {
+		display: none;
+	}
+}
+
+/* BANNERS */
+.banners {
+	display: flex;
+	justify-content: flex-start;
+	overflow-x: auto;
+	margin: 0 2rem;
+	gap: 2rem;
+	height: 50vh;
+	padding: 0.8rem 0.8rem;
+	scroll-snap-type: x mandatory;
+}
+
+.banners > img {
+	height: 100%;
+	width: 100%;
+	border-radius: 0.5rem;
+	box-shadow: var(--primary) 0px 20px 30px -10px;
+	object-fit: contain;
+	scroll-snap-align: center;
+}
+
+.banners > img:hover {
+	box-shadow: var(--secondary) 0px 1px 4px, var(--secondary) 0px 0px 0px 3px;
+}
+
+img[alt="Ant-man Quantumania"] {
+	background-image: url(./assets/banners/antmanbg.jpeg);
+	background-size: cover;
+}
+
+img[alt="Guardians of the Galaxy"] {
+	background-image: url(./assets/banners/gotgbg.jpeg);
+	background-size: cover;
+}
+
+/* CUSTOM SCROLLBARS */
+::-webkit-scrollbar {
+	height: 4px;
+	width: 4px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--tertiary);
+	border-radius: 1rem;
+}
+
+/* CONTENT GALLERY */
+.content-gallery {
+	margin: 2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.content-gallery h2 {
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+
+.content-gallery div {
+	display: flex;
+	gap: 1rem;
+	overflow-x: auto;
+	padding: 0.8rem 0.2rem;
+}
+
+.content-gallery img {
+	height: 120px;
+	width: auto;
+	border-radius: 0.5rem;
+	box-shadow: var(--primary) 0px 20px 30px -10px;
+}
+
+.content-gallery img:hover {
+	box-shadow: var(--secondary) 0px 1px 4px, var(--secondary) 0px 0px 0px 3px;
+}
