@@ -1,0 +1,16 @@
+header {
+	height: 14vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+header ul {
+	display: flex;
+	list-style-type: none;
+	gap: 2rem;
+}
+
+.active {
+	color: whitesmoke;
+}
