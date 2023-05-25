@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+}
+
+:root {
+  --background: #faeee7;
+  --primary: #fffffe;
+  --secondary: #ffc6c7;
+  --terciary: #c3f0ca;
+  --button: #ff8ba7;
+  --stroke: #33272a;
+}
+
+input {
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: var(--stroke);
+  color: var(--primary);
+}
+
+.boton-enviar {
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+}

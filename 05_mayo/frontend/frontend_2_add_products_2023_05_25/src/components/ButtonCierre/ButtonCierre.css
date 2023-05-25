@@ -1,0 +1,10 @@
+.button-cierre {
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: var(--stroke);
+    color: var(--primary);
+    position: absolute;
+    top: 20px;
+    cursor: pointer;
+
+}

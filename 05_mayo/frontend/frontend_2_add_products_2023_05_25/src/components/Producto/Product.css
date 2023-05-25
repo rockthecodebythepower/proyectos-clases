@@ -1,0 +1,11 @@
+.producto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: var(--terciary);
+    border: 3px solid var(--stroke);
+}

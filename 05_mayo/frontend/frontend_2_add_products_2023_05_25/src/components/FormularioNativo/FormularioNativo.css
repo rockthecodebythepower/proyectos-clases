@@ -1,0 +1,24 @@
+.native-form {
+    border-radius: 10px;
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: 500px;
+    position: absolute;
+    top: 25%;
+    right: 20px;
+    width: 0px;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.native-form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}

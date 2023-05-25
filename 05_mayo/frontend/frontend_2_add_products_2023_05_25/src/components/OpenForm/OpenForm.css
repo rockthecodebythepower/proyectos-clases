@@ -1,0 +1,20 @@
+.open-form {
+    position: absolute;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.open-form > img {
+    width: 70px;
+}
+
+.abierto {
+    width: 400px !important;
+    padding: 50px !important;
+    border: solid 3px var(--stroke) !important;
+}
