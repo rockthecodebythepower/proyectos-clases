@@ -1,0 +1,19 @@
+h1 {
+	color: crimson;
+	color: rgb(242, 156, 7);
+	color: rgba(87, 0, 0, 0.399);
+	color: #db2b2bf0;
+	color: rgb(220, 20, 60);
+}
+
+.box {
+	width: 400px;
+	height: 400px;
+
+	background: rgb(34, 193, 195);
+	background: linear-gradient(
+		0deg,
+		rgba(34, 193, 195, 1) 0%,
+		rgba(253, 187, 45, 1) 100%
+	);
+}

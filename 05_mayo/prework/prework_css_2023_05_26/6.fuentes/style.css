@@ -1,0 +1,11 @@
+@font-face {
+	font-family: "Aurebesh";
+	src: url(./assets/fonts/Aurebesh.otf);
+}
+
+h1 {
+	font-size: 25px;
+	font-weight: 900;
+	font-style: normal;
+	font-family: "Aurebesh";
+}

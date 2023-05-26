@@ -1,0 +1,23 @@
+{
+	"name": "backend_5_scrapping_poe_2023_05_26",
+	"version": "0.0.1",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js",
+		"dev": "nodemon index.js",
+		"scrapping": "node ./src/scrapping/scrapping.js"
+	},
+	"keywords": [],
+	"author": "Antonio Rosales <antoniorosalesmartinez90gmail.com>",
+	"license": "MIT",
+	"dependencies": {
+		"dotenv": "^16.0.3",
+		"express": "^4.18.2",
+		"mongoose": "^7.2.1",
+		"puppeteer": "^20.4.0"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.22"
+	}
+}
