@@ -1,0 +1,18 @@
+h1 {
+	display: inline;
+	border: 2px solid red;
+}
+
+span {
+	display: block;
+}
+
+h2 {
+	display: inline-block;
+	width: 200px;
+	border: 2px solid blue;
+}
+
+h3 {
+	display: none;
+}

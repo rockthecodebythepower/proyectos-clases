@@ -1,0 +1,185 @@
+:root {
+	--primary: #0f0e17;
+	--secondary: #fffffe;
+	--tertiary: #f25f4c;
+	--gradient: linear-gradient(
+		90deg,
+		var(--tertiary) 0%,
+		var(--secondary) 50%,
+		var(--tertiary)
+	);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+	color: var(--secondary);
+	background-color: var(--primary);
+	animation: fadeIn 3s;
+}
+
+a {
+	color: var(--secondary);
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 10vh;
+	padding: 0 2rem;
+	background-color: var(--tertiary);
+}
+
+header ul {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	gap: 1rem;
+	z-index: 1;
+}
+
+header nav {
+	display: flex;
+	gap: 1rem;
+}
+/* RESPONSIVE NAVBAR */
+label {
+	font-size: 30px;
+	cursor: pointer;
+}
+
+/* Ocultamos siempre el input, porque label se encargará de pulsarlo, pero no lo veremos */
+input {
+	display: none;
+}
+
+/* Vamos a controlar que se vean o no los elementos en desktop o mobile */
+
+/* Por defecto la hamburguesa no se va a ver */
+.hamburger-container {
+	display: none;
+}
+
+@media screen and (max-width: 700px) {
+	.hamburger-container {
+		display: inline;
+	}
+
+	/* Cuando no esté :checked no tendrá tamaño ni se verá */
+	.nav-links {
+		display: none;
+		position: absolute;
+		left: 0;
+	}
+
+	/* Cuando el input esté checked le damos tamaño al contenedor y disponemos de los elementos en su sitio */
+	#hamburger-input:checked ~ .nav-links {
+		top: 10vh;
+		background-color: var(--tertiary);
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 4rem;
+		align-items: center;
+		justify-content: center;
+		animation: expand 0.7s ease-in-out;
+		height: 90vh;
+	}
+}
+
+@keyframes expand {
+	0% {
+		transform: translateX(-1000px);
+		opacity: 0;
+		filter: blur(10px);
+	}
+
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+		filter: blur(0);
+	}
+}
+
+/* SCROLL */
+.scroll {
+	overflow: hidden;
+	padding: 2rem;
+}
+
+.scroll > ul {
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	font-size: 2rem;
+	gap: 2rem;
+	list-style: none;
+	animation: textScroll 15s linear infinite;
+}
+
+@keyframes textScroll {
+	0% {
+		left: 100%;
+		color: var(--secondary);
+	}
+
+	100% {
+		left: -140%;
+		color: var(--tertiary);
+	}
+}
+
+.fade {
+	padding: 2rem;
+}
+
+.fade p {
+	height: 314px;
+	overflow: hidden;
+	position: relative;
+	font-size: 16px;
+}
+
+.fade p::after {
+	content: "";
+	position: absolute;
+	height: 100px;
+	width: 100%;
+	bottom: 0;
+	right: 0;
+	background: linear-gradient(180deg, transparent, var(--primary));
+}
+
+.gradient {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.gradient h2 {
+	font-size: 3rem;
+	background: rgb(131, 58, 180);
+	background: var(--gradient);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}

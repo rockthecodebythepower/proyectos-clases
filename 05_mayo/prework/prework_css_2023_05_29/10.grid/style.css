@@ -1,0 +1,17 @@
+main {
+	display: grid;
+	/* Repite todas las columnas que puedan que como minimo tengan 200px y como máximo lo disponible hasta que quepan otros 200px */
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-auto-rows: 200px;
+	gap: 20px;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+img:first-child {
+	grid-row: span 2;
+}

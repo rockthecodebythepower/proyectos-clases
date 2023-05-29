@@ -1,0 +1,11 @@
+.box {
+	border: 2px solid black;
+	height: 200px;
+	width: 200px;
+	padding: 20px;
+	margin: 10px;
+	box-sizing: border-box;
+	overflow: auto;
+	box-shadow: rgba(0, 0, 0, 0.752) 0px 25px 50px -12px;
+	/* visibility: hidden; */
+}

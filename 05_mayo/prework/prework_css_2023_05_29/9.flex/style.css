@@ -1,0 +1,20 @@
+.box {
+	width: 200px;
+	height: 200px;
+	background-color: cadetblue;
+	font-size: 25px;
+	font-weight: 900;
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	gap: 20px;
+	flex-wrap: wrap;
+	border: 2px solid black;
+	min-height: 900px;
+}
