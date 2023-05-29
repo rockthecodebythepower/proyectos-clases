@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+  color: var(--paragraph);
+}
+
+:root {
+  --paragraph: #1d1d1d;
+  --background: whitesmoke;
+  --primary: #1360f5;
+  --secondary: #ecb32d3c;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 20px;
+    background-color: white;
+    margin: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: 20px;
+}
+
+body {
+  min-height: 100dvh;
+  background-color: var(--background);
+}
+
+.logo {
+  width: 100%;
+  min-width: 100px;
+}
+
+header > nav {
+  padding: 40px 80px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  height: 100px;
+}
+
+header > nav > div {
+  display: flex;
+  gap: 100px;
+}
+
+header > nav ul a {
+  color: var(--paragraph);
+  white-space: nowrap;
+}
+
+header > nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.login {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.boton-principal,
+.boton-secundario {
+  border-radius: 5px;
+  background-color: var(--primary);
+  color: var(--background);
+  padding: 10px 27px;
+  cursor: pointer;
+}
+
+.boton-secundario {
+  background-color: white;
+  color: var(--primary);
+}
+
+#hamburguesa {
+  display: none;
+}
+
+.menu-hamburguesa {
+  width: 50px;
+  cursor: pointer;
+}
+
+.div-hamburguesa {
+  display: none;
+}
+
+#hero {
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+#hero > div {
+  max-width: 455px;
+}
+
+#hero > div > h1 {
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+
+#hero > div > p {
+  margin-bottom: 20px;
+}
+
+#hero > img {
+  width: 50%;
+  max-width: 590px;
+  min-width: 225px;
+}
+
+#hero > div > div {
+  display: flex;
+  gap: 20px;
+}
+
+.tarjetas {
+  display: flex;
+  gap: 30px;
+  overflow-x: scroll;
+  padding: 20px 50px;
+}
+
+.tarjetas > li {
+    box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 10px 20px;
+    min-width: 260px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tarjetas > li > img {
+    width: 35px;
+    background-color: var(--secondary);
+    border-radius: 100%;
+    padding: 5px;
+}
+
+@media (max-width: 1064px) {
+  .login {
+    display: none;
+  }
+}
+
+@media (max-width: 680px) {
+  .login {
+    display: none;
+  }
+  header > nav ul {
+    display: flex;
+    flex-direction: column;
+    width: 0px;
+    overflow: hidden;
+    align-items: center;
+    gap: 30px;
+  }
+  .div-hamburguesa {
+    display: flex;
+  }
+  header > nav > div {
+    gap: 0px;
+  }
+  header > nav {
+    padding: 20px 40px;
+  }
+  .list-mobile {
+    width: 0px;
+    position: absolute;
+    overflow: hidden;
+    top: 90px;
+    right: 0px;
+    z-index: 1;
+    background-color: var(--paragraph);
+    border-radius: 5px;
+    transition: all 1s;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .list-mobile a {
+    color: white;
+  }
+  #hamburguesa:checked + .list-mobile {
+    width: 150px;
+  }
+}
