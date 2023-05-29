@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>The Test Page</title>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <p>Price: <span id="sqf_price" data-value="4.85">$4.85</span> per sq ft.</p>
+    <p>Piece Width: <span id="p_width" data-value="0.6">0.6 ft.</span></p>
+    <p>Piece Length: <span id="p_height" data-value="3">3 ft.</span></p>
+    <p>Pieces Per Bundle/Box: <span id="box_pnum" data-value="12">12</span></p>
+    <p>
+      <label for="sqFoot">Square Footage Needed:</label>
+      <input class="text" id="total_sqf" type="text" value="" />
+    </p>
+    <input
+      type="button"
+      id="btn_calculate"
+      onclick="javascript:calc_flooring();"
+      value="Calculate"
+    />
+    <p>Total Bundles/Boxes: <span id="total_boxes"></span></p>
+    <p>Total Price: $ <span id="total_price"></span></p>
+  </body>
+</html>

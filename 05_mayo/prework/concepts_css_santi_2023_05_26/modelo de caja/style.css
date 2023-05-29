@@ -1,0 +1,19 @@
+body > div {
+    height: 100px;
+    display: flex;
+    border: solid black 3px;
+    background-color: orange;
+    margin: 50px;
+    padding: 30px;
+}
+
+body > div div {
+    width: 100px;
+    height: 50px;
+    border: 3px solid black;
+    background-color: white;
+}
+
+p {
+    margin: 0px;
+}

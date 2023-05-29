@@ -1,0 +1,44 @@
+div {
+  margin: 20px;
+  border: black solid 3px;
+  width: 100px;
+  height: 100px;
+  transition: all, 1s;
+}
+
+.juanillo,
+.pepito {
+  background-color: orange;
+}
+
+.adyacent {
+  background-color: red;
+}
+
+/*! HERMANO ADYACENTE DEL DIV CON LA CLASE ADYACENT */
+.adyacent + div {
+  background-color: blue;
+}
+
+/*! HERMANOS QUE ESTÉN A CONTINUACIÓN */
+.adyacent ~ div {
+  border-radius: 20px;
+}
+
+/*! HIJOS DIVS DE AYACENT */
+.hijos div {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+}
+
+/*! HIJO DIRECTO DE ADYACENT */
+.hijos > div {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+}
+
+.hijos > div > div > div:hover {
+  transform: scale(1.3);
+}
