@@ -1,0 +1,44 @@
+header {
+    height: 10svh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+header img {
+    width: 25px;
+}
+
+header > nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+header > div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+header > div > div {
+    border-radius: 40px;
+    background-color: var(--secondary);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header > div > img {
+    height: 30px;
+    width: 30px;
+}
+
+.buscar {
+    background-color: transparent;
+}
+
+.logo {
+    width: 100px;
+}

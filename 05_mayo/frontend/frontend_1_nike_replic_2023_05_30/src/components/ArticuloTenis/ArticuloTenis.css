@@ -1,0 +1,24 @@
+.articulo_tenis {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: 300;
+}
+
+.articulo_tenis > div, .articulo_tenis > div > h4 {
+    font-weight: 400;
+}
+
+.articulo_tenis > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.articulo_tenis > img {
+    width: 100%;
+}
+
+.precio_rebajado {
+    color: red;
+}
