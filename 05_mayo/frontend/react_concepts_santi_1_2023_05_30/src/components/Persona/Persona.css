@@ -1,0 +1,18 @@
+.menor-de-edad, .mayor-de-edad {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 20px;
+    margin: 50px;
+    color: white;
+    padding: 30px;
+}
+
+.menor-de-edad {
+    background-color: rgb(121, 27, 27);
+}
+
+.mayor-de-edad {
+    background-color: rgb(59, 221, 59);
+}

@@ -1,0 +1,4 @@
+.personas {
+    display: flex;
+    flex-wrap: wrap;
+}
