@@ -1,0 +1,50 @@
+main {
+	padding: 2rem;
+}
+
+.gallery-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 2rem;
+	padding: 2rem 0;
+}
+
+.gallery-container li {
+	background-color: var(--tertiary);
+	padding: 1rem;
+	border-radius: 0.8rem;
+}
+
+.gallery-container img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	object-position: top;
+	margin-bottom: 0.5rem;
+	border-radius: 0.8rem;
+	filter: grayscale(80%);
+	transition: 0.8s ease-in-out;
+}
+
+.gallery-container img:hover {
+	filter: grayscale(0);
+}
+
+button {
+	display: block;
+	margin: 0 auto;
+	padding: 0.5rem 0.8rem;
+	text-transform: uppercase;
+	font-weight: 800;
+	border: none;
+	border-radius: 0.8rem;
+	background-color: var(--primary);
+}
+
+button:hover {
+	color: var(--tertiary);
+}
+
+.hidden {
+	display: none;
+}

@@ -1,0 +1,30 @@
+:root {
+	--primary: #ffffff;
+	--secondary: #000000;
+	--tertiary: #1d1e1f;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Helvetica, sans-serif;
+}
+
+body {
+	background-color: var(--secondary);
+	color: var(--primary);
+}
+
+a {
+	text-decoration: none;
+	color: var(--primary);
+}
+
+li {
+	list-style-type: none;
+}
+
+main {
+	min-height: 70vh;
+}
