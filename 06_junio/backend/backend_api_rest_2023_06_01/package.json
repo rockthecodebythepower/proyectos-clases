@@ -1,0 +1,26 @@
+{
+	"name": "backend_api_rest_2023_06_01",
+	"version": "0.0.1",
+	"description": "Nuestro primer Backend",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js",
+		"dev": "nodemon index.js"
+	},
+	"keywords": [
+		"API",
+		"REST",
+		"Node",
+		"Express"
+	],
+	"author": "Antonio Rosales <antoniorosalesmartinez90gmail.com>",
+	"license": "MIT",
+	"dependencies": {
+		"dotenv": "^16.1.3",
+		"express": "^4.18.2",
+		"mongoose": "^7.2.2"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.22"
+	}
+}

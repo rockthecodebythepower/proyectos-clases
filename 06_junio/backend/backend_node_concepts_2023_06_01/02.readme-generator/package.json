@@ -1,0 +1,22 @@
+{
+	"name": "02.readme-generator",
+	"version": "0.0.1",
+	"description": "Creamos un script que nos genera un README para nuestro perfil de GitHub",
+	"type": "module",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"keywords": [
+		"GitHub",
+		"Node",
+		"JavaScript",
+		"Scripting",
+		"Inquirer"
+	],
+	"author": "Antonio Rosales <antoniorosalesmartinez90gmail.com>",
+	"license": "MIT",
+	"dependencies": {
+		"inquirer": "^9.2.6"
+	}
+}

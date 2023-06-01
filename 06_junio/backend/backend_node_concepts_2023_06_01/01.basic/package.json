@@ -1,0 +1,18 @@
+{
+	"name": "01.basic",
+	"version": "0.0.1",
+	"description": "Este es el proyecto basico de NodeJS en Rock the Code",
+	"type": "module",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"keywords": [
+		"node",
+		"javascript",
+		"scripting",
+		"learning"
+	],
+	"author": "Antonio Rosales <antoniorosalesmartinez90gmail.com>",
+	"license": "MIT"
+}
