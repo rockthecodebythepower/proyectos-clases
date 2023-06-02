@@ -1,0 +1,22 @@
+:root {
+	--primary: rgb(39, 39, 39);
+	--secondary: rgb(210, 210, 210);
+	--tertiary: #ef5465;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+	color: var(--primary);
+	background-color: var(--secondary);
+}
+
+.dark {
+	color: var(--secondary);
+	background-color: var(--primary);
+}

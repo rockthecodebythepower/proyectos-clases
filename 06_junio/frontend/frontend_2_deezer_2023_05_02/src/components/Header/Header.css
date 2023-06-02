@@ -1,0 +1,40 @@
+header {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 2rem;
+	padding: 0 2rem;
+}
+
+header > img {
+	height: 38px;
+	width: auto;
+}
+
+header input,
+button {
+	height: 38px;
+}
+
+header input {
+	border: none;
+	border-radius: 0.5rem;
+	padding: 0 1rem;
+}
+
+header input:focus {
+	outline: 2px solid var(--tertiary);
+}
+
+header button {
+	background-color: var(--primary);
+	color: var(--secondary);
+	padding: 0 1rem;
+	border-radius: 0.5rem;
+	border: none;
+	font-weight: 600;
+}
+
+header button:hover {
+	color: var(--tertiary);
+}

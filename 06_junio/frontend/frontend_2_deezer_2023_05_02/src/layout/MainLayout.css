@@ -1,0 +1,6 @@
+.main-layout {
+	display: grid;
+	grid-template-rows: 14vh 1fr 10vh;
+	min-height: 100vh;
+	transition: 0.5s ease-in-out;
+}
