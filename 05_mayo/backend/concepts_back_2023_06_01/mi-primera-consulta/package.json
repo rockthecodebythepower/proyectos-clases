@@ -1,0 +1,16 @@
+{
+  "name": "pepito",
+  "version": "0.0.1",
+  "description": "askdflasdfjsdf",
+  "main": "index.js",
+  "scripts": {
+    "virus": "node C:/Users/MrCorocottax/Desktop/script.js",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^7.2.2"
+  }
+}

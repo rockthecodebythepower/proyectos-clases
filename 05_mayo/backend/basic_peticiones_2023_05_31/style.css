@@ -1,0 +1,23 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  color: rgb(51, 45, 45);
+}
+
+body {
+  min-height: 100svh;
+  background-color: rgb(253, 196, 90);
+}
+
+a {
+  text-transform: capitalize;
+}
+
+main {
+  height: 70svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

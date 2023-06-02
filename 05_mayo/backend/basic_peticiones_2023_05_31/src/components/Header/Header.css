@@ -1,0 +1,12 @@
+header > nav > ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 35px 20px;
+    background-color: rgb(180, 180, 252);
+}
+
+header a {
+    font-size: 25px;
+    font-weight: bolder;
+}
