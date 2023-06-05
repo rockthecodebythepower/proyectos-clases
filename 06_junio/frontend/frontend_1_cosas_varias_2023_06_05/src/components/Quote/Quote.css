@@ -1,0 +1,13 @@
+.quote {
+    width: 80%;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--primary);
+}
+
+.quote > p {
+    font-family: 'Lora', serif;
+}

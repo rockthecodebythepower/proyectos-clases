@@ -1,0 +1,13 @@
+.task {
+    display: flex;
+    gap: 20px;
+}
+
+.title {
+    color: black;
+}
+
+.completada {
+    color: rgb(163, 161, 161);
+    text-decoration: line-through;
+}

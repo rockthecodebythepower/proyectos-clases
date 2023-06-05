@@ -1,0 +1,50 @@
+.checklist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    background-color: white;
+    padding: 10px;
+    gap: 20px;
+    max-width: 500px;
+}
+
+.checklist > h2 {
+    align-self: flex-start;
+    color: black;
+}
+
+.checklist p {
+    width: 100%;
+    text-align: center;
+    color: rgb(199, 197, 197);
+}
+
+.tasks {
+    width: 100%;
+    border: solid rgb(199, 197, 197);
+    border-width: 1px 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 50px;
+    padding: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.checklist-footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.checklist-footer > button {
+    align-self: flex-end;
+    color: black;
+    background-color: transparent;
+    border: none;
+    width: 200px;
+}
+

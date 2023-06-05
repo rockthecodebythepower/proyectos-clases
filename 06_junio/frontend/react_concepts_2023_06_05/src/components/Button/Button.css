@@ -1,0 +1,25 @@
+.button {
+    padding: 9px 16px;
+    border-radius: 2px;
+    border: none;
+    color: #5D5E62;
+    background-color: transparent;
+    margin: 20px;
+}
+
+.high_emphasis {
+    color: white;
+    background-color: #239D62;
+}
+
+.medium_emphasis {
+    outline: 1px solid #5D5E62;
+}
+
+.low_emphasis {
+
+}
+
+button:disabled {
+    background-color: blue;
+}
