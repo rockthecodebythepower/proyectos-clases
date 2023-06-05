@@ -1,0 +1,22 @@
+form {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+form > button {
+	padding: 0.4rem 0.6rem;
+	background-color: var(--secondary);
+	color: var(--primary);
+	font-weight: 600;
+	border: none;
+	border-radius: 0.3rem;
+}
+
+form > input {
+	padding: 0.4rem 0.6rem;
+	border: none;
+	background-color: var(--highlight);
+	border-radius: 0.3rem;
+	color: var(--primary);
+}

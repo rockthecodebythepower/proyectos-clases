@@ -1,0 +1,24 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto";
+}
+
+:root {
+	--primary: #fffffe;
+	--secondary: #094067;
+	--tertiary: #5f6c7b;
+	--highlight: #90b4ce;
+}
+
+body {
+	background-color: var(--primary);
+	color: var(--tertiary);
+}
+
+h1,
+h2,
+h3 {
+	color: var(--secondary);
+}

@@ -1,0 +1,31 @@
+ol {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	background-color: var(--highlight);
+	padding: 3rem;
+	border-radius: 1rem;
+	list-style: none;
+	counter-reset: my-counter;
+}
+
+ol > div {
+	display: flex;
+	gap: 1rem;
+}
+
+ol button {
+	border: none;
+	background: transparent;
+}
+
+ol li {
+	color: var(--primary);
+	counter-increment: my-counter;
+}
+
+ol li::before {
+	content: counter(my-counter) ". ";
+	color: var(--tertiary);
+	font-weight: bold;
+}
