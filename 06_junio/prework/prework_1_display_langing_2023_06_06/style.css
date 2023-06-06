@@ -105,7 +105,7 @@ header > button {
   height: 600px;
   width: 100%;
   min-width: 500px;
-  max-width: 851px;
+  max-width: 651px;
   position: relative;
   margin-top: 50px;
 }
@@ -219,7 +219,28 @@ header > button {
   }
 }
 
+@media (max-width: 1070px) {
+  header {
+    padding: 18px 20px;
+  }
+}
+
+@media (max-width: 910px) {
+  header > nav {
+  gap: 38px;
+  }
+}
+
+@media (max-width: 860px) {
+  header > button {
+  display: none
+  }
+}
+
 @media (max-width: 670px) {
+  header > button {
+    display: blockd
+  }
   .gallery {
     height: 500px;
     width: 100%;
@@ -233,10 +254,6 @@ header > button {
     align-items: center;
     justify-content: center;
     width: 100%;
-  }
-
-  header {
-    padding: 18px 20px;
   }
 
   header > nav > ul {
