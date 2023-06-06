@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: var(--text);
+}
+
+:root {
+  --background: #ffffff;
+  --primary: #3461ff;
+  --text: #000000;
+  --secondary: #fafafa;
+  --paragraph: rgba(0, 0, 0, 0.6);
+}
+
+header {
+  display: flex;
+  padding: 18px 100px;
+  justify-content: space-between;
+}
+
+header > nav {
+  display: flex;
+  gap: 88px;
+  align-items: center;
+}
+
+header > nav > ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+header > button {
+  border-radius: 70px;
+  background-color: var(--primary);
+  color: var(--background);
+  border: none;
+  padding: 16px 24px;
+  cursor: pointer;
+  white-space: nowrap;
+  margin-left: 50px;
+}
+
+.presentacion > p {
+  text-transform: capitalize;
+}
+
+.hero {
+  display: flex;
+  padding: 16px 100px 46px 100px;
+  justify-content: space-around;
+  gap: 50px;
+}
+
+.presentacion {
+  width: 350px;
+}
+
+.presentacion > h1 {
+  font-size: 55px;
+  width: 350px;
+  line-height: 80px;
+}
+
+.presentacion > p {
+  color: var(--paragraph);
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+
+.presentacion > div {
+  display: flex;
+  gap: 12px;
+}
+
+.presentacion > div > input {
+  border-radius: 37px;
+  background-color: var(--secondary);
+  padding: 20px 18px;
+  width: 60%;
+  border: none;
+  outline: none;
+}
+
+.presentacion > div > button {
+  border-radius: 37px;
+  background-color: var(--primary);
+  padding: 20px 18px;
+  border: none;
+  cursor: pointer;
+  color: var(--background);
+}
+
+.gallery {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  height: 600px;
+  width: 100%;
+  min-width: 500px;
+  max-width: 851px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.gallery > div {
+  width: 100%;
+  height: 100%;
+  border-radius: 119.5px;
+  overflow: hidden;
+}
+
+.gallery > div > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+}
+
+.gallery > div:nth-child(3),
+.gallery > div:nth-child(6),
+.gallery > div:nth-child(7) {
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery > div:nth-child(3) > img {
+  object-fit: contain;
+  width: 60%;
+  height: 60%;
+  object-position: center;
+}
+
+.gallery > div:nth-child(5) > img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.gallery > div:nth-child(6) {
+  background-color: yellow;
+}
+
+.gallery > div:nth-child(7) {
+  background-color: #f1f4ff;
+}
+
+.gallery > div:nth-child(6) > img,
+.gallery > div:nth-child(7) > img {
+  object-fit: contain;
+  width: 60%;
+  height: 60%;
+  object-position: center;
+}
+
+.gallery > div:nth-child(1) {
+  grid-column: 1 / span 2;
+}
+
+.gallery > div:nth-child(4) {
+  grid-column: 2 / span 2;
+}
+
+.bocadillo-right,
+.bocadillo-left {
+  background-color: var(--text);
+  border-radius: 45.8px;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: matrix(-0.95, 0.31, 0.31, 0.95, 0, 0);
+  top: -30px;
+  right: 120px;
+}
+
+.bocadillo-right > img,
+.bocadillo-left > img {
+  width: 30%;
+}
+
+.bocadillo-left {
+  top: 380px;
+  transform: matrix(0.95, 0.31, -0.31, 0.95, 0, 0);
+  left: 170px;
+}
+
+.bocadillo-right > div,
+.bocadillo-left > div {
+  clip-path: polygon(100% 100%, 0% 100%, 100% 0%);
+  background-color: var(--text);
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  bottom: -20px;
+  left: 30px;
+  transform: rotate(180deg);
+}
+
+@media (max-width: 1320px) {
+  .bocadillo-left {
+    left: 130px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .hero {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 670px) {
+  .gallery {
+    height: 500px;
+    width: 100%;
+    min-width: 300px;
+  }
+
+  .hero {
+    padding: 16px 20px 46px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  header {
+    padding: 18px 20px;
+  }
+
+  header > nav > ul {
+    display: none;
+  }
+
+  .bocadillo-right {
+    left: 170px;
+  }
+
+  .bocadillo-left {
+    top: 300px;
+    left: 80px;
+  }
+}

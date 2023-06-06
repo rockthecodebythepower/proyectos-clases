@@ -1,0 +1,57 @@
+* {
+  margin: 0px;
+}
+
+/* form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: blanchedalmond;
+    padding: 30px;
+} */
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+  background-color: blanchedalmond;
+  padding: 30px;
+  justify-items: center;
+}
+
+form > div {
+  width: 50%;
+}
+
+.grid {
+    display: grid;
+    grid-template: 100px 1fr 100px / 1fr 4fr;
+    height: 100svh;
+    grid-template-areas: 
+    "my-header my-header"
+    "my-aside my-main"
+    "my-footer my-footer";
+}
+
+header {
+    grid-area: my-header;
+    background-color: orange;
+}
+
+main {
+    grid-area: my-main;
+    background-color: blue;
+}
+
+aside {
+    grid-area: my-aside;
+    background-color: red;
+}
+
+footer {
+    grid-area: my-footer;
+    background-color: black;
+}
