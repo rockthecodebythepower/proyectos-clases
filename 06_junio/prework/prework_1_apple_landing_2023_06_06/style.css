@@ -1,0 +1,167 @@
+:root {
+	--primary: #ffffff;
+	--secondary: #000000;
+	--tertiary: #3946af;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+html {
+	/* En html le indicamos que el tipo de "snap" es vertical */
+	scroll-snap-type: y mandatory;
+}
+
+body {
+	background-color: var(--primary);
+	color: var(--secondary);
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	color: var(--primary);
+	text-decoration: none;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+button {
+	padding: 0.7rem 1rem;
+	border-radius: 2rem;
+	min-width: 100px;
+	border: none;
+	background-color: var(--tertiary);
+	color: var(--primary);
+}
+
+button:hover {
+	background-color: #5f70ff;
+}
+
+.secondary-btn {
+	background-color: transparent;
+	border: 1px solid var(--tertiary);
+}
+
+header {
+	/* En cada uno de los elementos donde quiero que se encaje el snap le colocamos el align, start quiere decir que se va a colocar al principio del elemento */
+	scroll-snap-align: start;
+	height: 100vh;
+	background-color: var(--secondary);
+	color: var(--primary);
+}
+
+header > nav {
+	height: 8vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 2rem;
+}
+
+header > nav > ul {
+	display: flex;
+	gap: 1rem;
+}
+
+header > nav > div {
+	display: flex;
+	gap: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+	header > nav > ul {
+		display: none;
+	}
+}
+
+.hero {
+	height: 92vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 1rem;
+	padding-top: 3rem;
+	overflow: hidden;
+}
+
+.hero > div {
+	display: flex;
+	gap: 2rem;
+}
+
+.hero img {
+	height: 80%;
+	object-fit: cover;
+}
+
+main {
+	scroll-snap-align: start;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+main > h2 {
+	width: 280px;
+	text-align: center;
+}
+
+.selector {
+	display: flex;
+	gap: 1rem;
+}
+
+.selector a {
+	color: var(--secondary);
+}
+
+.selector .active {
+	font-weight: 700;
+	padding-bottom: 0.3rem;
+	border-bottom: 2px solid var(--secondary);
+}
+
+main ul {
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 2rem;
+	padding: 2rem;
+}
+
+main li {
+	border: solid #3947af27 1px;
+	border-radius: 2rem;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 0.5rem;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+		rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+main li .secondary-btn {
+	color: var(--tertiary);
+}
+
+@media screen and (max-width: 1200px) {
+	main {
+		padding: 2rem 0;
+	}
+}
