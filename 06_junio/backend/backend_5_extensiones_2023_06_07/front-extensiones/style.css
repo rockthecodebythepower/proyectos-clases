@@ -1,0 +1,34 @@
+#extensiones {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.extension {
+    border-radius: 10px;
+    width: 250px;
+    height: 150px;
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 0px 15px -3px #000000; 
+box-shadow: 0px 0px 15px -3px #000000;
+}
+
+.extension > p {
+    text-align: center;
+}
+
+.estrellas {
+    display: flex;
+    gap: 10px;
+}
+
+.estrellas > img {
+    width: 30px;
+}

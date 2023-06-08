@@ -1,0 +1,57 @@
+body {
+    background-color: rgb(60, 56, 56);
+    min-height: 100svh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+#peliculas {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#peliculas > div {
+    width: 200px;
+    height: 300px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#peliculas > div > p {
+    position: absolute;
+    border-radius: 20px;
+    padding: 5px;
+    bottom: 10px;
+    right: 10px;
+    background-color: orange;
+}
+
+#botones {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    padding: 4px 6px;
+    border-radius: 10px;
+    background-color: rgb(215, 200, 200);
+    border: none;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+}
+
+.not-found {
+    width: 800px !important;
+}

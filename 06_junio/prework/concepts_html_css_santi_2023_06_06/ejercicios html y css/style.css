@@ -1,0 +1,27 @@
+/* quiero que el header de mi aplicación sea de color azul, ocupe de alto el 20% de la página, no tenga márgenes tenga un padding de 20px y dentro trendemos 3 elementos dentro de una lista desordenada que estarán en fila separados como mínimo 50px y como máximo todo lo que quieran y estos tres elementos son de color naranja */
+
+header {
+    background-color: blue;
+    height: 40dvh;
+    margin: 0px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+header > ul {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+
+header li {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+}

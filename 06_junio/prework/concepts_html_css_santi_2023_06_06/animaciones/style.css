@@ -1,0 +1,73 @@
+.imagen {
+  height: 50svh;
+  background-image: url("https://ethic.es/wp-content/uploads/2023/03/imagen.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  width: 50svw;
+  align-items: center;
+  animation: changeBackground2 2s forwards;
+}
+
+button {
+  position: absolute;
+  border: none;
+  background-color: white;
+  color: black;
+  width: 200px;
+  height: 100px;
+  font-size: 30px;
+  font-weight: 600;
+  top: 40%;
+  left: 40%;
+  z-index: 5;
+}
+
+button:hover ~ .imagen {
+  animation: changeBackground 2s forwards;
+}
+
+button:hover {
+    animation: shadow-inset-center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes changeBackground {
+  0% {
+    background-image: url("./assets/elefante.webp");
+  }
+  100% {
+    background-image: url("https://www.nationalgeographic.com.es/medio/2022/07/12/nebulosa-de-carina_00673698_2000x1158.jpg");
+  }
+}
+
+@keyframes changeBackground2 {
+  0% {
+    background-image: url("https://www.nationalgeographic.com.es/medio/2022/07/12/nebulosa-de-carina_00673698_2000x1158.jpg");
+  }
+  100% {
+    background-image: url("./assets/elefante.webp");
+  }
+}
+
+@-webkit-keyframes shadow-inset-center {
+  0% {
+    -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+@keyframes shadow-inset-center {
+  0% {
+    -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+  }
+}
