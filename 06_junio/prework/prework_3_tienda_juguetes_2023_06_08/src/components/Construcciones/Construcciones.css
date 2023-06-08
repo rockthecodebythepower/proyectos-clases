@@ -1,0 +1,19 @@
+.precio-final {
+    font-size: 30px;
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+.tachado {
+    opacity: 0.7;
+    text-decoration: line-through;
+}
+
+#productos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}

@@ -1,0 +1,8 @@
+.enlace {
+    background-color: var(--terciary);
+    border-radius: 10px;
+    padding: 8px 12px;
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: 500;
+}
