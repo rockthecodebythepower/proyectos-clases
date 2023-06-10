@@ -1,0 +1,7 @@
+header {
+	display: flex;
+	height: 10vh;
+	align-items: center;
+	gap: 4rem;
+	padding: 0 2rem;
+}

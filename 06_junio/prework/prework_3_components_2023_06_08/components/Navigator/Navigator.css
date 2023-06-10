@@ -1,0 +1,14 @@
+header > nav > ul {
+	display: flex;
+	gap: 2rem;
+	list-style: none;
+}
+
+header a {
+	text-decoration: none;
+	color: black;
+}
+
+header a:hover {
+	text-decoration: underline;
+}
