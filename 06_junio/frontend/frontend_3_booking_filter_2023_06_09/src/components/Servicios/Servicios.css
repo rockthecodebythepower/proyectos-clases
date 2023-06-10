@@ -1,0 +1,12 @@
+.servicios {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.servicios > p {
+    padding: 4px 8px;
+    background-color: var(--secondary);
+    color: var(--background);
+    border-radius: 20px;
+}

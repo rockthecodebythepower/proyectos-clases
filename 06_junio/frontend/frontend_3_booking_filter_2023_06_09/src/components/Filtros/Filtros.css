@@ -1,0 +1,7 @@
+.filtros {
+    position: absolute;
+    top: 11svh;
+    left: 0;
+    width: 180px;
+    background-color: var(--secondary);
+}

@@ -1,0 +1,17 @@
+.filtro {
+    color: var(--background);
+    font-weight: 300;
+    padding: 20px;
+    border: solid 1px var(--primary);
+}
+
+.filtro > h4 {
+    font-weight: 400;
+}
+
+.filtro > div {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    gap: 10px;
+}
