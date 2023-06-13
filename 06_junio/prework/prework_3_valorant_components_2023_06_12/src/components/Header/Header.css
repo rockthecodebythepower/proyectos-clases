@@ -1,0 +1,21 @@
+header {
+  height: 10svh;
+  background-color: var(--main);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+}
+
+header > h3 {
+    font-size: 30px;
+    font-weight: 400;
+    cursor: pointer;
+    color: var(--paragraph);
+    transition: all, 1s;
+    user-select: none;
+}
+
+header > h3:hover {
+    scale: 1.2;
+}

@@ -1,0 +1,15 @@
+.weapon {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    background-color: var(--secondary);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.weapon > img {
+    width: 80%;
+}
