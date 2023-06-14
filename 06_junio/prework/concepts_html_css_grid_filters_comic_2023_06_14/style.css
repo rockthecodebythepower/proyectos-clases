@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'VT323', monospace;
+}
+
+:root {
+    --bgColor: #faeee7;
+    --text: #594a4e;
+    --stroke: #33272a;
+    --main: #fffffe;
+    --highlight: #ff8ba7;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* blur -> desenfocar la imagen
+    drop-shadow -> poner un "relieve" o sombra a la imagen, esto queda bien especialmente con imágenes sin fondo
+    contrast -> meterle más contraste a la imagen
+    grayscale -> la escala de grises, 100% significa que no habrá otro color que no parta del gris;
+    staturate -> para la saturación de colores
+    brightness -> luminosidad, 0 significa negro
+*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* seleccionamos todos los elementos de mi html que tengan la clase page */
+.page {
+    height: 90svh;
+    display: grid;
+    background-color: var(--bgColor);
+    margin: 2.5svh;
+    gap: 30px;
+    width: 850px;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+}
+
+#page1 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 0.7fr;
+}
+
+#page1 > div {
+    background: url("./assets/fondo.jpg") fixed;
+    border-radius: 20px;
+    position: relative;
+}
+
+#page1 > div:nth-child(1) {
+    grid-column: 1 / 3;
+}
+
+#page1 > div:nth-child(1) > img:nth-child(1) {
+    position: absolute;
+    bottom: 0;
+    left: -35px;
+    width: 70%;
+    filter: drop-shadow(0px 0px 5px var(--highlight));
+}
+
+#page1 > div:nth-child(1) > img:nth-child(2) {
+    position: absolute;
+    top: -25px;
+    width: 25%;
+    right: 70px;
+    filter: drop-shadow(0px 0px 5px var(--highlight)) contrast(200%) blur(0.7px);
+}
+
+#page1 > div:nth-child(2) {
+    grid-column: 3 / 5;
+}
+
+/* sorpresa */
+#page1 > div:nth-child(2) > img {
+    position: absolute;
+    width: 60%;
+    bottom: -27px;
+    filter: drop-shadow(0px 0px 5px var(--highlight));
+}
+
+#page1 > div:nth-child(3) {
+    grid-column: 1 / 5;
+}
+
+/* bicho */
+#page1 > div:nth-child(3) > img:nth-child(1) {
+    position: absolute;
+    width: 50%;
+    filter: drop-shadow(0px 0px 4px var(--main)) grayscale(30%);
+    bottom: -120px;
+}
+
+/* meteorito */
+#page1 > div:nth-child(3) > img:nth-child(2) {
+    position: absolute;
+    width: 20%;
+    top: -50px;
+    right: 20px;
+    transform: rotate(20deg);
+    filter: drop-shadow(0px 0px 10px red) saturate(400%);
+}
+
+/* explosión */
+#page1 > div:nth-child(4) > img {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    filter: drop-shadow(0px 0px 10px red) saturate(600%) contrast(500%);
+}
+
+#page1 > div:nth-child(5) {
+    grid-column: 2 / 5;
+}
+
+/* cartel */
+#page1 > div:nth-child(5) > img {
+    width: 105%;
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+    filter: drop-shadow(0px 0px 10px rgb(74, 242, 74));
+}
+
+.flecha {
+    width: 70px;
+    position: absolute;
+    bottom: -20px;
+    cursor: pointer;
+    right: 0;
+    filter: brightness(0);
+}
+
+.flecha > img {
+    width: 100%;
+}
+
+@media (max-width: 990px) {
+    .page {
+        width: 300px;
+        padding: 15px;
+        gap: 15px;
+    }
+    #page1 > div:nth-child(1) > img:nth-child(1) {
+        left: -5px;
+        width: 100%;
+    }
+    #page1 > div:nth-child(1) > img:nth-child(2) {
+        top: -25px;
+        width: 75%;
+        right: 0px;
+    }
+    #page1 > div:nth-child(2) > img {
+        width: 100%;
+        bottom: -15px;
+    }
+    #page1 > div:nth-child(3) > img:nth-child(1) {
+        width: 100%;
+        bottom: -80px;
+    }
+    #page1 > div:nth-child(3) > img:nth-child(2) {
+        width: 40%;
+        top: -30px;
+        right: 0px;
+        transform: rotate(0deg);
+    }
+    #page1 > div:nth-child(4) {
+        grid-column: 1 / 3;
+    }
+    #page1 > div:nth-child(5) {
+        grid-column: 3 / 5;
+    }
+    #page1 > div:nth-child(5) > img {
+        width: 120%;
+        top: 40%;
+        left: -13px;
+    }
+}

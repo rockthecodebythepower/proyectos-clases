@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "VT323", monospace;
+}
+
+body {
+  padding: 20px;
+}
+
+/* las clases se seleccionan con . */
+/* TODOS los elementos que tengan la clase filter van a tener los siguientes estilos */
+.filter {
+  margin: 50px;
+}
+
+.filter > h2 {
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.filter > div {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+/* escojo los hijos directos que sean div de los elementos con la clase filter */
+.element {
+  margin: 20px;
+}
+
+.element > p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+/* BLUR -> DESENFOQUE */
+#blur > div > .element:nth-child(1) > img {
+  filter: blur(0px);
+}
+
+#blur > div > .element:nth-child(2) > img {
+  filter: blur(2px);
+}
+
+#blur > div > .element:nth-child(3) > img {
+  filter: blur(5px);
+}
+
+/* CONTRAST -> CONTRASTE */
+.contrast_img_1 {
+  filter: contrast(50%);
+}
+
+.contrast_img_2 {
+  filter: contrast(100%);
+}
+
+.contrast_img_3 {
+  filter: contrast(200%);
+}
+
+/* GRAYSCALE -> ESCALA DE GRISES */
+#grayscale > div > .element:nth-child(1) > img {
+  filter: grayscale(0%);
+}
+
+#grayscale > div > .element:nth-child(2) > img {
+  filter: grayscale(50%);
+}
+
+#grayscale > div > .element:nth-child(3) > img {
+  filter: grayscale(100%);
+}
+
+/* HUE-ROTATE -> LA ROTACIÓN DE LA GAMA DE COLORES POSIBLES */
+.hue_1 {
+  filter: hue-rotate(0deg);
+}
+
+.hue_2 {
+  filter: hue-rotate(180deg);
+}
+
+.hue_3 {
+  filter: hue-rotate(300deg);
+}
+
+/* INVERT -> INVIERTE LOS COLORES DE LA IMAGEN */
+#invert > div > .element:nth-child(1) > img {
+  filter: invert(0%);
+}
+
+#invert > div > .element:nth-child(2) > img {
+  filter: invert(50%);
+}
+
+#invert > div > .element:nth-child(3) > img {
+  filter: invert(100%);
+}
+
+/* OPACITY -> CAMBIA LA OPACIDAD DEL ELEMENTO */
+#opacity > div > .element:nth-child(1) > img {
+  filter: opacity(0);
+}
+
+#opacity > div > .element:nth-child(2) > img {
+  filter: opacity(0.5);
+}
+
+#opacity > div > .element:nth-child(3) > img {
+  filter: opacity(1);
+}
+
+/* BRIGHTNESS -> LA LUMINOSIDAD DE LA IMAGEN */
+#brightness > div > .element:nth-child(1) > img {
+  filter: brightness(0%);
+}
+
+#brightness > div > .element:nth-child(2) > img {
+  filter: brightness(100%);
+}
+
+#brightness > div > .element:nth-child(3) > img {
+  filter: brightness(200%);
+}
+
+/* SATURATE -> LA SATURACIÓN DE COLORES */
+#saturate > div > .element:nth-child(1) > img {
+  filter: saturate(0%);
+}
+
+#saturate > div > .element:nth-child(2) > img {
+  filter: saturate(100%);
+}
+
+#saturate > div > .element:nth-child(3) > img {
+  filter: saturate(200%);
+}
+
+/* SEPIA -> AUMENTA EL PORCENTAJE DE COMO DE SEPIA SE VE */
+#sepia > div > .element:nth-child(1) > img {
+  filter: sepia(0%);
+}
+
+#sepia > div > .element:nth-child(2) > img {
+  filter: sepia(50%);
+}
+
+#sepia > div > .element:nth-child(3) > img {
+  filter: sepia(100%);
+}
+
+/* DROP-SHADOW -> EL DROP-SHADOW ES LA SOMBRA QUE PARTE DE EL CONTORNO DE UN PNG SIN FONDO (el primer parámetro del drop-shadow son los píxeles que se encuentra a la derecha o izquiera, 0, es el centro, de ahí a valores negativos es izquierda y valores positivos derecha, ocurre lo mismo con el segundo parámetro que mueve de arriba a abajo la sombra con la misma metodología, el tercer parámetro es el difuminado de la sombra que le estamos dando en píxeles y por último el cuarto parámetro es el color de la sombra)*/
+#drop_shadow > div > .element:nth-child(1) > img {
+  filter: drop-shadow(0px 0px 0px black);
+}
+
+#drop_shadow > div > .element:nth-child(2) > img {
+  filter: drop-shadow(0px 0px 2px black);
+}
+
+#drop_shadow > div > .element:nth-child(3) > img {
+  filter: drop-shadow(0px 0px 3px orange);
+}
+
+
+/* COMBINED -> NO ES NINGUNA PROPIEDAD SÓLO JUGAMOS CON LOS VALORES QUE HEMOS DADO ANTES PARA VERLOS EN CONJUNTO */
+#combined > div > .element:nth-child(1) > img {
+  filter: blur(1px) contrast(50%) drop-shadow(0px 0px 3px orange) saturate(200%) brightness(200%);
+}
+
+#combined > div > .element:nth-child(2) > img {
+  filter: invert(100%) opacity(0.5);
+}
+
+#combined > div > .element:nth-child(3) > img {
+  filter: drop-shadow(0px 0px 2px black) sepia(100%);
+}
+
+
+@media (max-width: 600px) {
+    img {
+        width: 80px;
+    }
+}

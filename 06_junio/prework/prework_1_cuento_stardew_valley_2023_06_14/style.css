@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+    user-select: none;
+}
+
+:root {
+    --primary: #f0e4c6;
+    --secondary: #b8a57a;
+    --terciary: #4d6d40;
+}
+
+body {
+    overflow: hidden;
+}
+
+#app {
+    min-height: 100svh;
+    background-image: url(./assets/pared.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#app > img {
+    width: 70%;
+    filter: drop-shadow(0px 0px 5px black);
+    max-width: 630px;
+    margin-top: 200px;
+}
+
+#cuento {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 225px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#suelo {
+    width: 100%;
+    background-image: url(./assets/suelo.png);
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0px -9px 17px -8px #000000;
+}
+
+#pj1 {
+    transform: translateX(3000px);
+    animation: movimientoPersonaje 30s forwards;
+    position: relative;
+    width: fit-content;
+}
+
+#pj1 > img {
+    filter: drop-shadow(0px 0px 3px black) grayscale(50%);
+}
+
+#pj1 > #bocadillo {
+    background-color: var(--primary);
+    padding: 20px;
+    border-radius: 50px;
+    position: absolute;
+    width: 50svw;
+    height: 150px;
+    max-width: 200px;
+    top: -100px;
+    left: -100px;
+    box-shadow: 0px 0px 8px 0px #000000;
+    opacity: 0;
+    animation: bocadilloPersonaje 6s forwards;
+}
+
+#pj1 > #bocadillo > p:first-child {
+    opacity: 1;
+    overflow: hidden;
+    height: 100% !important;
+    animation: texto1 15s forwards;
+    position: absolute;
+}
+
+#pj1 > #bocadillo > p:last-of-type {
+    opacity: 0;
+    overflow: hidden;
+    animation: texto2 16s forwards;
+    position: absolute;
+}
+
+/* EMPIEZA PJ2 */
+#pj2 {
+    transform: translateX(3000px);
+    animation: 10s 25s movimientoPersonaje forwards; 
+    position: relative;
+    width: fit-content;
+}
+
+#pj2 > img {
+    filter: drop-shadow(0px 0px 3px black) invert(100%);
+}
+
+#pj2 > #bocadillo {
+    background-color: var(--primary);
+    padding: 20px;
+    border-radius: 50px;
+    position: absolute;
+    width: 50svw;
+    height: 150px;
+    max-width: 200px;
+    top: -100px;
+    left: -100px;
+    box-shadow: 0px 0px 8px 0px #000000;
+    opacity: 0;
+    animation: 21s 6s bocadilloPersonaje forwards; 
+}
+
+#pj2 > #bocadillo > p {
+    opacity: 1;
+    overflow: hidden;
+    position: absolute;
+}
+
+@keyframes texto1 {
+    90% {
+        opacity: 1;
+    } 
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes texto2 {
+    90% {
+        opacity: 0;
+    } 
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bocadilloPersonaje {
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes movimientoPersonaje {
+    20% {
+        transform: translateX(0);
+    }
+    80% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-3000px);
+    }
+}
