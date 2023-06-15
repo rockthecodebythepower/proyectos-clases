@@ -1,0 +1,20 @@
+.flecha {
+    background-color: var(--primary);
+    border-radius: 100%;
+    padding: 20px;
+    width: 70px;
+    cursor: pointer;
+    transition: all, 1s;
+}
+
+.flecha:hover {
+    background-color: var(--secondary);
+}
+
+.stepper {
+    height: 100%;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

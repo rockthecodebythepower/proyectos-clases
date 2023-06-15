@@ -1,0 +1,15 @@
+.form3 {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+    gap: 50px;
+}
+
+.form3 > select {
+    padding: 4px 8px;
+    height: 50px;
+    background-color: var(--background);
+    border: 3px solid var(--terciary);
+    border-radius: 10px;
+}

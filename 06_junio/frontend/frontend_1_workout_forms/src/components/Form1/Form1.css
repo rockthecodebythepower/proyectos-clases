@@ -1,0 +1,27 @@
+.form1 {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.form1 > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.form1 > div > label {
+    font-size: 30px;
+}
+
+.form1 > div > input {
+    padding: 4px 8px;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    color: var(--background);
+    text-align: center;
+}

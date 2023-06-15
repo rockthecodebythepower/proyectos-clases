@@ -1,0 +1,22 @@
+.ejercicio > img {
+    width: 200px;
+}
+
+.ejercicio {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 50px;
+    border-radius: 10px;
+    border: solid 3px var(--terciary);
+    padding: 20px;
+}
+
+.ejercicio > p:last-of-type {
+    text-align: center;
+    width: 100%;
+}
+
+.not_found {
+    padding: 50px;
+}
