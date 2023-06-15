@@ -1,0 +1,19 @@
+button {
+  background-color: transparent;
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: 0.5s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.selected {
+  background-color: var(--tertiary);
+  color: var(--primary);
+}

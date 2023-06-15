@@ -1,0 +1,31 @@
+.products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.products > nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.gallery {
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: repeat(2, 200px);
+  grid-auto-rows: 100px;
+  gap: 1rem;
+}
+
+.gallery li {
+  border: 0.5px dashed var(--secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}

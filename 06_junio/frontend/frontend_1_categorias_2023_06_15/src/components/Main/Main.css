@@ -1,0 +1,7 @@
+main > nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  gap: 2rem;
+}

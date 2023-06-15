@@ -1,0 +1,11 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer > p::first-letter {
+  text-transform: uppercase;
+}
