@@ -1,0 +1,12 @@
+{
+  "name": "03.random_number",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Antonio Rosales <antoniorosalesmartinez90gmail.com>",
+  "license": "MIT"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "01.file_system",
+  "version": "1.0.0",
+  "description": "Proyecto de prueba para comprobar el funcionamiento de File System en NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "write": "node write.js",
+    "read": "node read.js"
+  },
+  "keywords": [
+    "fs",
+    "node",
+    "javascript"
+  ],
+  "author": "Antonio Rosales <antoniorosalesmartinez90gmail.com>",
+  "license": "MIT"
+}
