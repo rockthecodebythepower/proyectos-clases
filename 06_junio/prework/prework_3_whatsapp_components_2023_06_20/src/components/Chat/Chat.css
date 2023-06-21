@@ -1,0 +1,54 @@
+.chat {
+    height: 150px;
+    width: 100%;
+    border-bottom: 2px solid var(--stroke);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    background-color: var(--primary);
+    transition: all, 1s;
+}
+
+.chat:hover {
+    background-color: var(--secondary);
+}
+
+.div_img {
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+.div_img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.chat > h3 {
+    position: absolute;
+    top: 20px;
+    left: 40%;
+}
+
+.info {
+    width: 50%;
+    margin-left: 50px;
+}
+
+.info > p {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: 10px;
+}
+
+.info > p:last-of-type {
+    color: var(--stroke);
+    font-weight: 300;
+}

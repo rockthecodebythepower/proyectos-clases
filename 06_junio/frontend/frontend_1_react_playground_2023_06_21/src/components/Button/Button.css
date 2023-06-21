@@ -1,0 +1,11 @@
+.cssFilterButton {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--secondary);
+    cursor: pointer;
+}
+
+.cssFilterButton:hover {
+    outline: 3px solid var(--primary);
+}

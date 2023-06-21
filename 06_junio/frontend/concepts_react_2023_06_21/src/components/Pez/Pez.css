@@ -1,0 +1,32 @@
+.pez, .pez_caro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+    border-radius: 10px;
+    position: relative;
+}
+
+.pez_caro {
+    border-color: red;
+}
+
+.pez > img, .pez_caro > img {
+    width: 50px;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+    right: 10px;
+}
+
+.pez > div, .pez_caro > div {
+    width: 200px;
+    height: 200px;
+}
+
+.pez > div > img, .pez_caro > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

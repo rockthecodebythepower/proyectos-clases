@@ -1,0 +1,13 @@
+.cssFilters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cssFilters > div {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}

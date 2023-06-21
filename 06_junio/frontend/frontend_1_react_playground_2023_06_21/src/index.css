@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Kanit', sans-serif;
+}
+
+:root {
+  --primary: #ff6b6b;
+  --secondary: #ffd9b8;
+  --terciary: #76b6fe;
+}

@@ -1,0 +1,22 @@
+.botones {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10svh;
+    margin-top: 50px;
+}
+
+.botones > button {
+    background-color: var(--secondary);
+    padding: 10px 20px;
+    font-size: 30px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.botones > h3 {
+    font-size: 40px;
+}

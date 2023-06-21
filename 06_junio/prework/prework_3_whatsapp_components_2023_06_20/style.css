@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Kanit', sans-serif;
+}
+
+:root {
+  --primary: #fff;
+  --secondary: #25d466;
+  --stroke: #128c7e;
+}
+
+#app {
+  width: 90%;
+  height: 90svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5svh 5%;
+}

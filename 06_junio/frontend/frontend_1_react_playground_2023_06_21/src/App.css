@@ -1,0 +1,10 @@
+.playground {
+  height: 100svh;
+  width: 100%;
+  background-color: var(--terciary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}

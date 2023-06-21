@@ -1,0 +1,21 @@
+.personajes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    padding-top: 100px;
+}
+
+.personajes > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.personajes > div > img {
+    width: 200px;
+}

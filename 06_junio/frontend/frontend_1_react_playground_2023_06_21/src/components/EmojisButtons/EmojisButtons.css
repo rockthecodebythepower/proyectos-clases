@@ -1,0 +1,17 @@
+.buttons_emojis {
+    display: flex;
+    gap: 30px;
+}
+
+.buttons_emojis > button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--secondary);
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.buttons_emojis > button:hover {
+    outline: 3px solid var(--primary);
+}
