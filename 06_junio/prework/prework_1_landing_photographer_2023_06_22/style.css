@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* el * es un selector que se refiere a absolutamente todas las etiquetas */
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    font-family: 'Kanit', sans-serif;
+}
+
+:root {
+    --primary: #FFFFFF;
+    --secondary: #4CAF4F;
+    --terciary: #F5F7FA;
+    --text: #4D4D4D;
+}
+
+/* selector por etiqueta */
+header {
+    height: 10svh;
+    /* small viewport height -> el alto de la vista de la pantalla más pequeño posible */
+    background-color: var(--terciary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+}
+
+header > nav > ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+header a {
+    color: var(--text);
+}
+
+header > div {
+    display: flex;
+    gap: 30px;
+}
+
+#login {
+    background-color: transparent;
+    color: var(--secondary);
+    padding: 10px;
+    cursor: pointer;
+}
+
+#sign_up {
+    padding: 10px;
+    border-radius: 6px;
+    background-color: var(--secondary);
+    color: var(--primary);
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+#mobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100svh;
+    background-color: var(--secondary);
+    width: 0px;
+    overflow: hidden;
+    transition: all, 1s;
+}
+
+#mobile > nav > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70svh;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+#mobile > nav > ul a {
+    color: var(--primary);
+    font-size: 20px;
+}
+
+#mobile > div {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#mobile #login {
+    color: var(--primary);
+}
+
+#mobile #sign_up {
+    color: var(--secondary);
+    background-color: var(--primary);
+}
+
+input:checked + #mobile {
+    width: 250px;
+}
+
+input {
+    display: none;
+}
+
+label > img {
+    width: 50px;
+    cursor: pointer;
+}
+
+#x {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: all, 1s;
+}
+
+#x:hover {
+    transform: rotate(90deg);
+}
+
+label {
+    display: none;
+}
+
+
+/* HASTA AQUÍ LOS ESTILOS PARA HEADER */
+
+/* LOS ESTILOS PARA LA SECCIÓN HERO */
+#hero {
+    display: flex;
+    background-color: var(--terciary);
+    height: 70svh;
+    align-items: center;
+    gap: 50px;
+    padding: 0px 50px;
+    justify-content: space-around;
+}
+
+#hero > div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+    max-width: 410px;
+}
+
+#hero > div > h1 {
+    margin: 0;
+    font-size: 40px;
+    color: var(--text);
+}
+
+#hero > div > h1 > span {
+    color: var(--secondary);
+}
+
+#hero > div > p {
+    color: var(--text);
+    opacity: 0.6;
+}
+
+#hero > div > button {
+    padding: 10px;
+    border-radius: 6px;
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+#hero > img {
+    width: 50%;
+    max-width: 400px;
+    min-width: 200px;
+}
+
+@media (max-width: 700px) {
+    #hero {
+        flex-direction: column;
+        padding-top: 100px;
+    }
+}
+
+@media (min-width: 1110px) {
+    input:checked + #mobile {
+        width: 0px;
+    }
+}
+
+/* esta parte de código va a entrar en funcionamiento HASTA que el ancho sea como máximo de 1110px */
+@media (max-width: 1110px) {
+    header > div {
+        display: none;
+    }
+    header > nav {
+        display: none;
+    }
+    label {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    input:checked + #mobile {
+        width: 100%;
+    }
+}
