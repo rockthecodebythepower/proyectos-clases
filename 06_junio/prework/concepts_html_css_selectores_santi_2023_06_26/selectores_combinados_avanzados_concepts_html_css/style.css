@@ -1,0 +1,35 @@
+/* el * se refiere a TODO en el caso de css -> todas las etiquetas, lo solemos utilizar para quitar los estilos por defecto */
+* {
+    margin: 0px;
+}
+
+
+/* la , nos servirá para seleccionar varios elementos y darles estilos a ambos, es para no escribir los estilos dos veces, cada vez que veo una , es un nuevo comienzo */
+div, section {
+    background-color: blue;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+/* SELECCIONAR TODOS LOS DIV QUE ESTÉN DENTRO DE OTRO DIV (independientemente de si son hijos, nietos...)*/
+div div {
+    width: 50px;
+    height: 50px;
+}
+
+/* > SELECCIONAR TODOS LOS DIV HIJOS DIRECTOS DE OTROS DIV */
+div > div {
+    background-color: orange;
+}
+
+
+/* SELECTOR POR ATRIBUTO, no se suele usar mucho */
+a[href="https://github.com/"] {
+    color: red;
+}
