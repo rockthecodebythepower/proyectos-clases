@@ -1,0 +1,11 @@
+header nav {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+header > nav {
+  background-color: blue;
+  color: red;
+  font-size: 20px;
+}

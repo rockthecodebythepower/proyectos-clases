@@ -1,0 +1,104 @@
+/* CSS -> CASCADE STYLE SHEET -> HOJA DE ESTILOS EN CASCADA */
+
+/* con selectores nos referimos a la manera de referenciarnos a un elemento de html mediante nuestra hoja de estilos */
+
+/* Hay muchísimas maneras de poder referenciarme o seleccionar algún elemento. */
+
+/* Hay algunos que me van a venir mejor en unos momentos específicos que otros -> hay tantos porque muchas veces se requiren */
+
+/* h1 {
+    color: red;
+} */
+
+/* body > h1 {
+    color: blue;
+} */
+
+/* body h1:first-child {
+    color: green;
+} */
+
+/* .titulo {
+    color: purple;
+} */
+
+/* #titulo_id {
+    color: orange;
+} */
+
+
+/*? IMPORTANCIA O ESPECIFICIDAD DE LOS SELECTORES */
+/** (0,0,0)  muy poco importante */
+/** (0,0,1)  un poco importante */
+/** (0,1,0)  importante */
+/** (1,0,0)  muy importante */
+
+
+/*! SELECTORES POR ETIQUETA (0,0,1) */
+/*? un selector por etiqueta es aquel selector que selecciona un elmento sin ningún caracter adicional y que se refiere al nombre de la etiqueta del elemento en el html */
+/** con estos selectores hay que tener cuidado, porque estamos seleccionando todos los elementos de una misma etiqueta -> este tipo de selectores se suelen utilizar para dar estilos muy generales o para etiquetas que nosotros sabemos que sólo deberían estar una vez en toda nuestra página  */
+
+div, section {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 20px;
+    background-color: orange;
+}
+
+div {
+    border-radius: 20px;
+}
+
+
+/*! SELECTORES POR CLASE (0,1,0) */
+/*? un selector por clase es aquel selecetor que selecciona un elemento mediante el nombre de la clase del mismo precedido con un . -> <div class="paquito"></div>
+.paquito  */
+/** estos selectores los podemos utilizar en la mayoría de ocasiones aunque cuantos más selectores "pro" conozcamos tenderemos a usarlo menos */
+/* una clase la puedo utilizar tantas veces como quiera sin límite ni de etiqueta ni de nada */
+
+/* seleccionando TODOS los elementos que tengan la clase circulo */
+
+.circulo {
+    border-radius: 100%;
+    background-color: orangered;
+}
+
+/* .rojo {
+    border-radius: 30px;
+} */
+
+div {
+    border-radius: 0px;
+}
+
+section {
+    border: 2px solid red;
+}
+
+/* quiero que todas las secciones que tengan la clase círculo tengan un border-radius de 35px, pero el problema que tengo es que no tengo manera de cambiar este border-radius en las secciones en concreto porque la clase es más imporante */
+
+/* seleccionar todas las secciones cuya clase es circulo */
+
+section.circulo {
+    border-radius: 35px;
+}
+
+
+/*! SELECTORES POR ID (1,0,0) */
+/*? un selector por iud es aquel selecetor que selecciona un elemento mediante el nombre del id del mismo precedido con una # -> <div id="paquito"></div>
+#paquito  */
+/** estos selectores deberían ser únicos de cada elemento (un id es lo equivalente a un dni para las personas) -> los ids tenemos que tratar de que sean identificadores únicos (el código o la página no van ni a explotar ni a quejarse porque nosotros utilicemos el mismo id para varios elementos, pero, tenderemos a evitarlo ) */
+
+#azulito {
+    background-color: blue;
+}
+
+.circulo {
+    background-color: purple !important;
+}
+
+/*? si le pones !important a un estilo al final de la línea ese estilo será el más imporante DE LA HOJA DE ESTILOS */
+
+/* se recomienda no ABUSAR del !important */
