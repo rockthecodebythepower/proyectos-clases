@@ -1,0 +1,42 @@
+.hero {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  gap: 10px;
+}
+
+.hero > img {
+  width: 300px;
+  height: auto;
+}
+
+.hero p {
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.hero > h1 {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.social > a {
+  text-decoration: none;
+}
+
+.social img {
+  height: 40px;
+  width: auto;
+  filter: invert(100%);
+}
+
+.shop {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}

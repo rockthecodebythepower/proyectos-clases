@@ -1,0 +1,37 @@
+:root {
+  --primary: #dfe4e3;
+  --secondary: #0d0d0d;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary);
+  background-image: url(https://www.sleep-token.com/wp-content/themes/sleeptoken4/img/light-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--secondary);
+  letter-spacing: 4px;
+}
+
+.fade {
+  animation: fadeIn 1.2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,19 @@
+button {
+  background-color: transparent;
+  border: 2px solid var(--secondary);
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.button-active {
+  background-color: var(--secondary);
+  color: var(--primary);
+}

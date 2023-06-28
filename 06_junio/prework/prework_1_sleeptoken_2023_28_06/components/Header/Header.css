@@ -1,0 +1,20 @@
+header {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+header > img {
+  height: 40px;
+}
+
+.header-active {
+  background-color: var(--primary);
+  height: 60px;
+  filter: invert(100%);
+  z-index: 1;
+}

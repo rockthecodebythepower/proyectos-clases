@@ -1,0 +1,19 @@
+footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > img {
+  width: 250px;
+}
+
+footer > video {
+  width: 450px;
+  height: auto;
+  padding: 10px;
+  border: 2px solid var(--secondary);
+}
