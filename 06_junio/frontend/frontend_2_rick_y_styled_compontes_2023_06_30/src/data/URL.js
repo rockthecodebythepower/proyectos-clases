@@ -1,0 +1,1 @@
+export const BASIC_URL = "https://rickandmortyapi.com/api/"

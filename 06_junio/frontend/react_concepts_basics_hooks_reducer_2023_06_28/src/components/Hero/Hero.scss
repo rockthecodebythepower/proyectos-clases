@@ -1,0 +1,28 @@
+#hero {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    height: 90svh;
+
+    div {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: flex-start;
+
+        h1 {
+            font-size: 40px;
+            margin: 0;
+        }
+
+        button {
+            padding: 8px;
+            background-color: transparent;
+            border: none;
+        }
+
+    }
+
+}

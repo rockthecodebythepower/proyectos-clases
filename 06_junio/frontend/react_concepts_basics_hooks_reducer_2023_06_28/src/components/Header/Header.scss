@@ -1,0 +1,25 @@
+/* nesting es la manera que tiene scss de entender unos elementos que están dentro de otros */
+
+header {
+    height: 10svh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+
+    nav {
+        ul {
+            display: flex;
+            gap: 30px;
+        }
+    }
+
+    div {
+        button {
+            background-color: transparent;
+            border-radius: 10px;
+            padding: 8px;
+            border: none;
+        }
+    }
+}

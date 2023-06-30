@@ -1,0 +1,25 @@
+.modal {
+    position: fixed;
+    width: 50%;
+    padding: 50px;
+    border: 3px solid black;
+    background-color: var(--primary);
+    border-radius: 20px;
+    top: 40%;
+    left: 30%;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.comments  {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 40px;
+}

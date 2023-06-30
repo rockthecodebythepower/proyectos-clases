@@ -1,0 +1,23 @@
+header {
+    height: 13svh;
+    padding: 30px;
+    background-color: var(--terciary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > img {
+    width: 20%;
+    max-width: 220px;
+    min-width: 155px;
+    filter: invert(1);
+}
+
+header > input {
+    height: 60%;
+    border-radius: 20px;
+    border: none;
+    width: 40%;
+    text-align: center;
+}

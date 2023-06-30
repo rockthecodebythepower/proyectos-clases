@@ -1,0 +1,10 @@
+.etiquetas {
+  display: flex;
+  font-size: 40px;
+  gap: 30px;
+  justify-content: center;
+}
+
+.etiquetas > p {
+  cursor: pointer;
+}
