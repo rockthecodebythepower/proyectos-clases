@@ -1,0 +1,43 @@
+.star {
+    width: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.filters {
+    display: flex;
+    padding: 30px;
+    background-color: var(--secondary);
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.filters > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.filter-price {
+    display: flex;
+    gap: 15px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.filter-price > p {
+    cursor: pointer;
+    transition: all, 1s;
+}
+
+button {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--primary);
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}

@@ -1,0 +1,27 @@
+.place {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px;
+}
+
+.img_wrp {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.img_wrp > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.info {
+    display: flex;
+    gap: 40px;
+}

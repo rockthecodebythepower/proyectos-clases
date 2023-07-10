@@ -1,0 +1,12 @@
+header {
+    height: 10svh;
+    background-color: var(--primary);
+}
+
+header > ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    height: 100%;
+}

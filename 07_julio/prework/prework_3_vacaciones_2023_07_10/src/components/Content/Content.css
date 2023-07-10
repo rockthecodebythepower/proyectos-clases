@@ -1,0 +1,5 @@
+main {
+    min-height: 90svh;
+    background-color: var(--background);
+    padding: 30px;
+}

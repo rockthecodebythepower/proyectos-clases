@@ -1,0 +1,38 @@
+.holiday {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.holiday:hover > .img-wrp {
+    scale: 1.1;
+}
+
+.holiday > .img-wrp {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all, 1s;
+    border: 3px solid var(--primary);
+}
+
+.holiday > .img-wrp > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.info {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.info img {
+    width: 20px;
+}
