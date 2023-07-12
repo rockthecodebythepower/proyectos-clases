@@ -1,0 +1,155 @@
+:root {
+  --primary: rgb(193, 0, 0);
+  --secondary: rgb(16, 16, 16);
+  --tertiary: rgb(239, 239, 239);
+  font-family: "Lato", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--secondary);
+  color: var(--tertiary);
+  height: 200vh;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary);
+}
+
+a {
+  text-decoration: none;
+  color: var(--tertiary);
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+li {
+  list-style-type: none;
+}
+
+/* HEADER */
+header {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  position: fixed;
+  background-color: var(--secondary);
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  padding: 8px;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: var(--secondary);
+}
+
+footer > ul {
+  display: flex;
+  gap: 20px;
+}
+
+/* VIDEOBG */
+.videoBg {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.videoBg > video {
+  height: 100%;
+  object-position: center;
+  position: absolute;
+  z-index: -1;
+}
+
+/* TRAILER */
+.trailer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+.trailer > video {
+  width: 70%;
+}
+
+/* MAIN */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+main > img {
+  width: 400px;
+}
+
+main > p {
+  max-width: 450px;
+  text-align: justify;
+}
+
+main > h2 {
+  text-transform: uppercase;
+}
+
+/* GALLERY */
+
+.gallery {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 250px;
+  gap: 10px;
+}
+
+.gallery > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(30%);
+  transition: 0.3s ease-in-out;
+}
+
+.gallery > img:hover {
+  filter: saturate(100%);
+}
+
+.gallery > img:nth-child(1) {
+  object-position: left;
+  grid-column: 1/3;
+}
