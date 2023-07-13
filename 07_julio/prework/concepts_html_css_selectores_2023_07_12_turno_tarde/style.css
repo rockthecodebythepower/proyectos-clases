@@ -1,0 +1,127 @@
+/* cada vez que hay una , estamos empezando de 0 un nuevo selector */
+/* esto está seleccionando todos los h1 y todos los h2 */
+h1, h2 {
+    color: red;
+}
+
+.small {
+    font-size: 20px;
+}
+
+#unico {
+    font-size: 50px;
+}
+
+h2.small {
+    background-color: blue;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px black;
+}
+
+/* cuando usamos un espacio para seleccionar realmente lo que estamos diciendo es que TODOS los div que están dentro de otro div tengan los siguientes estilos */
+div div {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+
+/* cuando usamos > para seleccionar realmente lo que estamos diciendo es que UNICAMENTE LOS DIV QUE SEAN HIJOS DIRECTOS de otro div tengan los siguientes estilos */
+/* div > div {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+} */
+
+button {
+    margin: 100px;
+    height: 50px;
+    width: 100px;
+    /* border: none; */
+    border-radius: 20px;
+    /* background-color: black;
+    color: white; */
+    transition: all, 5s;
+}
+
+button:disabled {
+    border: none;
+}
+
+button:hover {
+    background-color: red;
+}
+
+button:nth-of-type(4) {
+    width: 60px;
+    height: 30px;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+#pseudo::before {
+    content: '"';
+}
+
+#pseudo::after {
+    content: '"';
+}
+
+p::first-line {
+    color: red;
+}
+
+p::first-letter {
+    font-size: 40px;
+}
+
+
+/* selecciono el botón que sea hermano ADYACENTE del elemento que tenga el id hermanos */
+#hermanos + button {
+    transform: rotate(90deg);
+}
+
+/* selecciono todos los botones que sean hermanos del elemento que tenga el id hermanos */
+#hermanos ~ button {
+    scale: 1.5;
+}
+
+/*! * TODO */
+
+/* .small orange {
+
+}
+
+<div class="small">
+    <orange/>
+</div>
+
+orange > .small
+
+<orange>
+    <element class="small"/>
+</orange>
+
+
+orange .small 
+<orange>
+    <element class="small"/>
+</orange>
+
+
+orange.small */
+
+
+div[pepe="pepito"] {
+    background-color: purple;
+}

@@ -1,0 +1,131 @@
+/* un selector me permite referenciarme a un elemento para ponerle unos estilos */
+/* selector por etiqueta */
+.importante {
+  color: red;
+}
+p {
+  color: blue;
+}
+#grande {
+  font-size: 40px;
+}
+
+/* TODOS los elementos de mi html van a tener los siguientes estilos */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+:root {
+  --background: black;
+  --p-size: 50px;
+}
+
+p {
+  background-color: var(--background);
+  font-size: var(--p-size);
+}
+
+div {
+  padding: 30px;
+}
+
+/* la coma significa que empiezo de 0 a seleccionar otra cosa */
+p,
+div {
+  border: orange 3px solid;
+}
+
+a {
+  color: red;
+}
+
+button:disabled {
+  background-color: red;
+}
+
+h1 {
+  margin: 50px;
+  font-size: 100px;
+  position: relative;
+}
+
+h1::before {
+  content: "pepito";
+  color: red;
+}
+
+h1::after {
+  content: "";
+  background-color: blue;
+  width: 0px;
+  transition: all, 1s;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+/* cogemos el pseudoelemento after únicamente cuando hacemos hover a los h1 */
+h1:hover::after {
+  width: 100%;
+}
+
+.abuelo {
+  background-color: blue;
+}
+
+/*! CSS - CASCADE STYLE SHEET - HOJA DE ESTILOS EN CASCADA */
+
+/* seleccionando TODOS los div que sean hijos directos de los elementos que tengan la clase abuelo */
+.abuelo > div {
+  background-color: yellow;
+}
+
+/* seleccionamos TODOS los div que estén dentro del abuelo, independientemente de a que nivel */
+/* .abuelo div {
+    background-color: pink;
+} */
+
+/* .padre {
+    background-color: yellow;
+} */
+
+.hijo {
+  background-color: red;
+}
+
+/* los botones desabilitados y luego el hermano adyacente que sea también un botón */
+button:disabled + button {
+    background-color: pink;
+}
+
+button:disabled ~ button {
+    border-radius: 100%;
+}
+
+body > input:first-child {
+    width: 100%;
+}
+
+body > button:first-of-type {
+    height: 100px;
+}
+
+body > button:last-child {
+    height: 50px;
+}
+
+body > button:last-of-type {
+    width: 100px;
+}
+
+body > button:nth-of-type(4) {
+    background-color: peru;
+}
+
+body > button:nth-of-type(2 + 3n) {
+    border: none;
+}
