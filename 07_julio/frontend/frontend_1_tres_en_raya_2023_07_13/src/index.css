@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Pangolin', cursive !important;
+  user-select: none;
+}
+
+:root {
+  --background: #ff0059;
+  --primary: #00a7fa;
+  --secondary: #faa700;
+  --terciary: #ffc300;
+}
