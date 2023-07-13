@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "Integral";
+  src: url(/Integral.otf);
+}
+
+:root {
+  --primary: #251f20;
+  --secondary: #fdbf18;
+  --tertiary: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary);
+  color: var(--tertiary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Integral", sans-serif;
+  color: var(--secondary);
+}
+
+h4{
+  font-size: 12px
+}
+
+h5{
+  font-size: 10px
+}
+
+p {
+  font-size: 10px;
+  letter-spacing: 1.2px;
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+  font-size: 12px;
+}
+
+a:hover {
+  color: var(--tertiary);
+}
+
+.active {
+  color: var(--tertiary);
+}
+
+main {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 0 40px;
+}
+
+li {
+  list-style-type: none;
+}
+
+input {
+  border: 2px solid black;
+  padding: 7px 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px black;
+}
+
+button {
+  border: 2px solid black;
+  padding: 5px 10px 8px 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px black;
+  background-color: var(--secondary);
+  font-family: "Integral", sans-serif;
+}
+
+form{
+  display: flex;
+  gap: 20px
+}

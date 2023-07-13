@@ -1,0 +1,20 @@
+.issues article  img {
+  width: 150px;
+  height: 250px;
+  object-fit: cover;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px black;
+  filter: saturate(0%);
+  transition: 0.5s ease-in-out;
+}
+
+.issues article  img:hover {
+  filter: saturate(100%)
+}
+
+.issues section {
+display:flex;
+flex-wrap: wrap;
+gap: 20px;
+}

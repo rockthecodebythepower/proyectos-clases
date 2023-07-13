@@ -1,0 +1,32 @@
+.characters article > img {
+  width: 150px;
+  height: 250px;
+  object-fit: cover;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px black;
+}
+
+.characters section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+  padding: 40px;
+}
+
+
+.characters section > article{
+  display:flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.characters section > article > div{
+  display:flex;
+  flex-direction: column;
+  gap:5px;
+}
+
+.characters h3{
+  max-width: 50px;
+}

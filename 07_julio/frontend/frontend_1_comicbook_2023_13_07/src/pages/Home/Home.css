@@ -1,0 +1,8 @@
+main > img{
+  height: 300px;
+  width: 70%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 10px 10px black;
+  border: 2px solid black
+}
