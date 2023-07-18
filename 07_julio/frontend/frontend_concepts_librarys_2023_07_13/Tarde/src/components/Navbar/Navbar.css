@@ -1,0 +1,17 @@
+nav {
+    height: 10svh;
+    background-color: rgb(252, 153, 3);
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10svh;
+}
+
+nav a {
+    color: black;
+    font-size: 40px;
+    font-weight: bolder;
+}

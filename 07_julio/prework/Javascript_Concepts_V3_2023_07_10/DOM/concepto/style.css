@@ -1,0 +1,32 @@
+button {
+    transition: all, 1s;
+}
+.pepito {
+    width: 100px;
+}
+.juanito {
+    width: 50px;
+}
+
+.img-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+    width: 70px;
+}
+
+.menu {
+    height: 100svh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0px;
+    overflow: hidden;
+    background-color: orange;
+    transition: 1s all;
+}
+
+.open {
+    width: 300px;
+}

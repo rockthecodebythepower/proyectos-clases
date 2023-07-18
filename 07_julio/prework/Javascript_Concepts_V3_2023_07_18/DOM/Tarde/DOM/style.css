@@ -1,0 +1,26 @@
+h1 {
+    color: red;
+}
+
+.img-menu {
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0px;
+    height: 100svh;
+    background-color: orange;
+    transition: all, 1s;
+}
+
+.open {
+    width: 200px;
+}

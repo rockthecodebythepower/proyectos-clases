@@ -1,0 +1,21 @@
+#ourform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90svh;
+    background-color: beige;
+}
+
+#ourform > form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#ourform > form div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}

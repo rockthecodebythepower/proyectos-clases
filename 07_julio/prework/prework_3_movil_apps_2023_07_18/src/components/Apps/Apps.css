@@ -1,0 +1,83 @@
+.apps {
+  height: 100svh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-content: flex-start;
+  justify-content: center;
+  padding: 20px;
+}
+
+.apps > div > div {
+    width: 70px;
+    height: 70px;
+}
+
+.apps > div > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* .apps > div  */
+
+.apps > div {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.apps > div > h3 {
+    text-align: center;
+}
+
+@keyframes movimientoDrag {
+    32% {
+        transform: rotate(25deg);
+    }
+    63% {
+        transform: rotate(-25deg);
+    }
+}
+
+.drag {
+    animation: 1s infinite movimientoDrag ease-in-out;
+}
+
+#agrupacion {
+    background-color: rgba(255, 255, 255, 0.323);
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px;
+    gap: 10px;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+#agrupacion h3 {
+    display: none;
+}
+
+#agrupacion > div {
+    width: 30px;
+    height: 30px;
+}
+
+#agrupacion > div > div {
+    width: 30px;
+    height: 30px;
+}
+
+#agrupacion > div > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

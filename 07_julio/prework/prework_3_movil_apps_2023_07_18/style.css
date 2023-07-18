@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --letter: white;
+}
+
+/* viewport height */
+/* small viewport height */
+
+body {
+  height: 100vh;
+  background-image: url(https://e1.pxfuel.com/desktop-wallpaper/747/166/desktop-wallpaper-48-minimal-fondos-de-pantalla-minimalista-para-celular-android-minimalistic.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, label {
+  color: var(--letter);
+}

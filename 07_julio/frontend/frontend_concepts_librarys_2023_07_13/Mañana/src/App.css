@@ -1,0 +1,10 @@
+a {
+  margin: 50px;
+  font-size: 50px;
+  text-decoration: none;
+  color: black;
+}
+
+.activo {
+  border-bottom: 3px solid black;
+}
