@@ -1,0 +1,12 @@
+.about{
+  padding: 60px 20px 0 20px;
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: justify;
+}
+
+.about strong{
+  color: var(--tertiary);
+  font-style: italic;
+}

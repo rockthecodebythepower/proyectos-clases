@@ -1,0 +1,31 @@
+.filmography{
+  padding: 20px;
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filmography img{
+  width: 200px;
+  height: auto;
+  box-shadow: 7px 7px 5px -3px rgba(0,0,0,0.45);
+  filter: saturate(0);
+  transition: 0.5s ease-in-out;
+}
+
+.filmography img:hover{
+  filter: saturate(100%)
+}
+
+.filmography li{
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filmography ul{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) ;
+  gap: 10px;
+}

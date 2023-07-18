@@ -1,0 +1,16 @@
+header{
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 20px;
+  position: fixed;
+  background-color: var(--primary);
+  width: 100%;
+  z-index: 1;
+}
+
+header ul{
+  display:flex;
+  gap: 20px;
+}

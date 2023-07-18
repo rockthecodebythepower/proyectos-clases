@@ -1,0 +1,15 @@
+.contact{
+  padding: 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact p{
+  padding-top:10px;
+  border-top: 1px solid var(--tertiary);
+  width: 100%;
+  text-align: center;
+}
