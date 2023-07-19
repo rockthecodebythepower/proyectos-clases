@@ -1,0 +1,37 @@
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container.row {
+  flex-direction: row;
+}
+
+.flex-container.column {
+  flex-direction: column;
+}
+
+.flex-container.none{
+  gap: 0;
+}
+
+.flex-container.small{
+  gap: 5px;
+}
+
+.flex-container.large{
+  gap: 10px;
+}
+
+.flex-container.xl{
+  gap: 20px;
+}
+
+.flex-container.no-wrap{
+flex-wrap: nowrap
+}
+
+.flex-container.wrap{
+  flex-wrap: wrap
+}

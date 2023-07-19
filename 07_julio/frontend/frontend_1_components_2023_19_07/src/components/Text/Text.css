@@ -1,0 +1,31 @@
+p.primary {
+  color: var(--secondary);
+}
+
+p.secondary {
+  color: rgb(152, 152, 152);
+}
+
+p.warning {
+  color: orange;
+}
+
+p.danger {
+  color: crimson;
+}
+
+p.small {
+  font-size: 12px;
+}
+
+p.base {
+  font-size: 16px;
+}
+
+p.large {
+  font-size: 24px;
+}
+
+p.xl {
+  font-size: 30px;
+}
