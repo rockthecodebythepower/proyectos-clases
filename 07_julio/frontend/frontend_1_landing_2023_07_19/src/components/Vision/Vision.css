@@ -1,0 +1,41 @@
+#graphs {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#vision {
+    margin: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info {
+    width: 40%;
+    margin-bottom: 100px;
+}
+
+.info > .slogan {
+    color: var(--primary);
+    margin-bottom: 0px;
+    text-align: left;
+}
+
+.info > h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.info > p {
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .info {
+        width: 80%;
+    }
+}

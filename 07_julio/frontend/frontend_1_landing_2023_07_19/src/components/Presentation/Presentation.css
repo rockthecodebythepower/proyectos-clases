@@ -1,0 +1,59 @@
+#presentation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.slogan {
+    color: var(--primary);
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.left > div {
+    order: 1;
+}
+
+#presentation h2 {
+    font-size: 35px;
+}
+
+#presentation > div {
+    width: 35%;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+.title {
+    text-align: center;
+}
+
+.title2 {
+    text-align: right;
+    position: relative;
+}
+
+.title2::before {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: var(--primary);
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+#presentation button {
+    background-color: var(--secondary);
+    color: var(--text);
+    border: none;
+    padding: 10px 12px;
+    margin-top: 20px;
+}
+
+#presentation > img {
+    width: 60%;
+    max-width: 460px;
+    min-width: 225px;
+}

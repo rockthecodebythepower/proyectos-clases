@@ -1,0 +1,6 @@
+h1 {
+  font-size: 200px !important;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+}

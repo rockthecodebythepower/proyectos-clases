@@ -1,0 +1,11 @@
+header {
+    height: 15svh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+header > img {
+    width: 100px;
+}

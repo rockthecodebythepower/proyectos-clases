@@ -1,0 +1,15 @@
+.graph {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 250px;
+}
+
+.graph > img {
+    width: 100px;
+}
+
+.graph > p {
+    padding-left: 20px;
+}
+

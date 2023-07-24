@@ -1,0 +1,19 @@
+.numeros {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.numeros > li {
+    border-radius: 5px;
+    border: 1px solid rgb(183, 183, 183);
+    padding: 10px 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#elegido {
+    border: 2px solid red;
+}

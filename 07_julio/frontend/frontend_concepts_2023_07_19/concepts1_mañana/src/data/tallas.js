@@ -1,0 +1,1 @@
+export const tallas = [39, 40, 41, 42, 43, 44];

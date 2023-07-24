@@ -1,0 +1,31 @@
+header {
+    background-color: orange;
+    position: absolute;
+}
+
+.right, .left {
+    height: 100svh;
+    top: 0;
+    width: 10vw;
+}
+
+.right {
+    right: 0;
+}
+
+.left {
+    left: 0;
+}
+
+.top, .bottom {
+    height: 10svh;
+    width: 100vw;
+}
+
+.top {
+    top: 0;
+}
+
+.bottom {
+    bottom: 0;
+}
