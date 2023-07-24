@@ -1,0 +1,175 @@
+:root {
+  --primary: rgb(12, 12, 12);
+  --secondary: rgb(236, 236, 236);
+  --tertiary: rgb(155, 155, 155);
+  --transparent: rgba(0, 0, 0, 0.83);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+p.detail {
+  color: var(--tertiary);
+}
+
+header {
+  height: 100vh;
+  background: radial-gradient(
+      circle,
+      rgba(119, 122, 251, 0) 0%,
+      rgba(0, 0, 0, 0.684) 100%
+    ),
+    url(https://is1-ssl.mzstatic.com/image/thumb/Features126/v4/10/55/ad/1055adef-baa8-7a94-7efb-ab6d530d876b/195d49c6-e180-48a2-937f-7c0c7f040d78.png/3358x1889sr.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  top: 20px;
+  margin: 0 20px;
+  background-color: var(--transparent);
+  border-radius: 40px;
+}
+
+header ul img {
+  height: 14px;
+  width: auto;
+  filter: invert(50%);
+}
+
+header li {
+  padding: 10px 15px;
+  height: 40px;
+  border-radius: 40px;
+  color: var(--tertiary);
+  transition: 0.4s;
+}
+
+header li:hover,
+.active {
+  background-color: var(--secondary);
+  color: var(--primary);
+  transform: scale(1.2);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  font-weight: 700;
+}
+
+.header-detail {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header-detail img {
+  width: 70%;
+}
+
+.header-detail button {
+  background-color: var(--secondary);
+  color: var(--primary);
+  border: none;
+  padding: 10px 25px;
+  font-weight: 900;
+  border-radius: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+main h2::after {
+  content: "▶";
+  padding-left: 10px;
+}
+
+main ul {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+main ul img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+main ul li {
+  transition: 0.4s;
+}
+
+main ul:hover > :not(:hover) {
+  filter: opacity(50%);
+}
+
+.info {
+  background-color: var(--secondary);
+  color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  gap: 20px;
+}
+
+.info h3 {
+  font-size: 25px;
+}
+
+.info > img {
+  height: 40px;
+  width: auto;
+}
+
+.partners{
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  width: 70%;
+}
+
+.partners img {
+  mix-blend-mode: multiply;
+  height: 60px;
+  width: auto;
+}
+
+.partners .apple4k {
+  height: 20px;
+}
