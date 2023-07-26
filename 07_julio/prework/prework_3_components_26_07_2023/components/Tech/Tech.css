@@ -1,0 +1,11 @@
+.tech {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.tech:hover > .tech-card:not(:hover) {
+  filter: opacity(50%);
+}

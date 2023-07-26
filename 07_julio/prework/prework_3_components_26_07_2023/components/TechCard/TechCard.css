@@ -1,0 +1,17 @@
+.tech-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tech-card img {
+  width: auto;
+  height: 150px;
+  object-fit: cover;
+}
+
+.tech-card h3{
+  color: var(--secondary)
+}

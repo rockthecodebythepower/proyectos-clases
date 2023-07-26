@@ -1,0 +1,35 @@
+:root {
+  --primary: rgb(17, 17, 17);
+  --secondary: rgb(239, 239, 239);
+  --tertiary: cadetblue;
+  font-family: "Helvetica", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--tertiary);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
