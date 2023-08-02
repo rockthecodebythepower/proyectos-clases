@@ -1,0 +1,37 @@
+button.btn,
+button.primary {
+  padding: 8px 25px;
+  border: 2px solid black;
+  border-radius: 12px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: 0.4s;
+}
+
+button.btn:hover {
+  background-color: black;
+  color: whitesmoke;
+}
+
+button.secondary {
+  border: none;
+  text-decoration: underline;
+}
+
+button.warning {
+  background-color: orange;
+}
+
+button.error {
+  background-color: crimson;
+}
+
+button.small {
+  font-size: 10px;
+  padding: 5px 10px;
+}
+
+button.large {
+  font-size: 28px;
+  padding: 20px 60px;
+}

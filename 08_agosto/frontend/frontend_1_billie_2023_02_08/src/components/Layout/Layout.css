@@ -1,0 +1,8 @@
+.layout {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows:
+    14vh
+    1fr
+    8vh;
+}

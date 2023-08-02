@@ -1,0 +1,11 @@
+.albumcard {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.albumcard img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}

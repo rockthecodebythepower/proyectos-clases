@@ -1,0 +1,7 @@
+.video {
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid var(--tertiary);
+  width: 450px;
+  aspect-ratio: 3/2;
+}
