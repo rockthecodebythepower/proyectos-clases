@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "hd hd hd hd hd hd"
+    "nav main main main main main"
+    "nav main main main main main"
+    "nav main main main main main"
+    "nav ft ft ft ft ft";
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 14vh 10vh 1fr 10vh;
+    grid-template-areas:
+    "hd"
+    "nav"
+    "main"
+    "ft"
+    ;
+  }
+}
+
+header {
+  background-color: crimson;
+  grid-area: hd;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav {
+  background-color: cadetblue;
+  grid-area: nav;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+main {
+  background-color: olivedrab;
+  grid-area: main;
+}
+
+footer {
+  background-color: violet;
+  grid-area: ft;
+}
