@@ -1,0 +1,136 @@
+:root {
+  --primary: rgb(231, 231, 231);
+  --secondary: rgb(16, 16, 16);
+  --tertiary: grey;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--primary);
+  color: var(--secondary);
+  letter-spacing: 1.2px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: var(--tertiary);
+}
+
+li {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Special Elite", cursive;
+}
+
+header {
+  height: 100px;
+  width: auto;
+  display: grid;
+  place-items: center;
+}
+
+header > img {
+  height: 60px;
+  width: auto;
+}
+
+.progress {
+  position: fixed;
+  height: 10px;
+  width: 100%;
+  background: var(--secondary);
+  transform-origin: 0 50%;
+  animation: grow-progress auto linear;
+  animation-timeline: scroll();
+  z-index: 1;
+}
+
+@keyframes grow-progress {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+nav > ul {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.preview {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+main > h2 {
+  padding: 20px;
+  text-align: center;
+}
+
+main > .gallery {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 350px;
+}
+
+main > .gallery > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: fadeIn auto linear both;
+  animation-timeline: view();
+  animation-range: entry 80%;
+}
+
+.about {
+  padding: 20px;
+}
+
+.about > p {
+  padding: 10px;
+  text-align: center;
+  animation: fadeIn auto linear both;
+  animation-timeline: view();
+  animation-range: entry 80%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
