@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Lora', serif;
+}
+
+:root {
+    --background: #FFFFFF;
+    --primary: #F53838;
+    --paragraph: #4F5665;
+    --title: #0B132A;
+    --stroke: #DDDDDD;
+}
+
+h1 {
+    margin: 0;
+}
+
+p, label, a {
+    color: var(--paragraph);
+    font-weight: 500;
+}
+
+body {
+    background-color: var(--background);
+    padding-bottom: 100px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    height: 12svh;
+    align-items: center;
+}
+
+#header > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#header > div > h4 {
+    font-weight: 500;
+}
+
+#header > div > h4 > span {
+    font-weight: 700;
+}
+
+#header > nav {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+#header > nav > ul {
+    display: flex;
+    gap: 15px;
+}
+
+#header > nav > div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#header > nav > div > a:first-child {
+    color: var(--title);
+    font-weight: 700;
+}
+
+#header > nav > div > a:last-child {
+    color: var(--primary);
+    font-weight: 700;
+    border: 1px solid var(--primary);
+    border-radius: 50px;
+    padding: 12px 25px;
+}
+
+/* main */
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    position: relative;
+}
+
+#hero > div {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    margin-top: 50px;
+    gap: 100px;
+}
+
+#hero > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+    width: 50%;
+    max-width: 600px;
+}
+
+#hero > div > div > h1 {
+    font-size: 45px;
+    font-weight: 500;
+}
+
+#hero > div > div > h1 > span {
+    font-weight: 700;
+}
+
+#hero > div > div > button {
+    background-color: var(--primary);
+    border: none;
+    padding: 17px 30px;
+    border-radius: 10px;
+    color: var(--background);
+    font-weight: 700;
+    font-size: 20px;
+    box-shadow: 0px 32px 50px -14px var(--primary);
+}
+
+#hero > div > img {
+    width: 50%;
+    max-width: 600px;
+    min-width: 250px;
+}
+
+#hero > ul {
+    display: flex;
+    width: 80%;
+    background-color: var(--background);
+    padding: 30px;
+    border-radius: 10px;
+    justify-content: space-around;
+    gap: 30px;
+    box-shadow: 0px 20px 50px -50px var(--paragraph);
+}
+
+#hero > ul > li {
+    background-color: white;
+    width: 100%;
+    border-right: 1px solid var(--stroke);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#hero > ul > li:last-child {
+    border: none;
+    padding-bottom: 0;
+}
+
+#features {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    gap: 100px;
+    padding: 50px;
+    justify-content: center;
+    position: relative;
+}
+
+#features > img {
+    width: 50%;
+    max-width: 600px;
+    min-width: 250px;
+}
+
+#features > div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#features > div > h2 {
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+#features > div > ul > li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#features > div > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    #header {
+        padding: 20px;
+    }
+    #header > nav > div {
+        display: none;
+    }
+    #hero > div > div {
+        width: 100%;
+        height: 50svh;
+    }
+    #hero > div > img {
+        position: absolute;
+        filter: opacity(0.2);
+        right: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    #hero > ul {
+        flex-direction: column;
+        width: 30%;
+        gap: 50px;
+        min-width: 250px;
+    }
+    #hero > ul > li {
+        border-right: none;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-bottom: 1px solid var(--stroke);
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 730px) {
+    #features > img {
+        position: absolute;
+        left: 20px;
+        filter: opacity(0.2);
+        top: 0;
+    }
+    #features > div {
+        width: 100%;
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    #header > nav {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+    #hero > div > div > h1 {
+        font-size: 30px;
+    }
+    #features > div > h2 {
+        font-size: 25px;
+    }
+    #hero > div > div {
+        padding-top: 50px;
+    }
+    #hero > div > img {
+        top: 20px;
+        left: 20px;
+    }
+}
