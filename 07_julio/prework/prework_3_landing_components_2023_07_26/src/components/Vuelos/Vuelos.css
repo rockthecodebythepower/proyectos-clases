@@ -1,0 +1,26 @@
+.vuelos {
+    background-color: var(--terciary);
+    box-shadow: 0px 2px 80px 2px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    padding: 32px 24px;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vuelos ul {
+    display: flex;
+    gap: 50px;
+}
+
+.vuelos li {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.vuelos li > div {
+    display: flex;
+    gap: 10px;
+}

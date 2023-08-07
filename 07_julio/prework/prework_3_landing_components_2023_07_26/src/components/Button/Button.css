@@ -1,0 +1,25 @@
+.myButton {
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: var(--primary);
+    padding: 13px 28px;
+    border-radius: 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.high {
+    background-color: var(--primary);
+    color: var(--terciary);
+    box-shadow: 0px 8px 16px 0px rgba(250, 116, 54, 0.16);
+}
+
+.medium {
+    outline: 1px solid var(--primary);
+}
+
+/* .low {
+
+} */

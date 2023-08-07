@@ -1,0 +1,17 @@
+body {
+    padding: 100px;
+}
+
+img {
+    width: 100px;
+}
+
+.rojo {
+    color: red;
+}
+
+#desordenar {
+    width: 100px;
+    height: 25px;
+    transition: all, 1s;
+}

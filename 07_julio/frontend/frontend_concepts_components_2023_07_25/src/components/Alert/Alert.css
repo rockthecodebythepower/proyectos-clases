@@ -1,0 +1,33 @@
+.alert {
+    padding: 10px;
+    margin: 30px;
+    min-width: 200px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.alert > h3, .alert > p {
+    margin: 0;
+    padding: 0;
+}
+
+.alert > img {
+    width: 20px;
+}
+
+.warning {
+    background-color: rgb(254, 209, 126);
+}
+
+.success {
+    background-color: rgb(109, 255, 172);
+}
+
+.error {
+    background-color: rgb(254, 75, 75);
+}
+
+.info {
+    background-color: rgb(126, 205, 254);
+}

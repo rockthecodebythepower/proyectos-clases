@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --background: #d8e5e6;
+  --grass: #78c850;
+  --fire: #f05030;
+  --water: #3899f8;
+  --rock: #b8a058;
+  --poison: #b058a0;
+  --electric: #f8d030;
+  --ice: #58c8e0;
+  --flying: #98a8f0;
+  --bug: #a8b820;
+  --normal: #a8a090;
+  --ground: #e9d6a4;
+  --fairy: #e79fe7;
+  --fighting: #a05038;
+  --psychic: #f870a0;
+  --steel: #a8a8c0;
+  --ghost: #6060b0;
+  --dragon: #7860e0;
+}
+
+#root {
+  min-height: 100svh;
+  background-color: var(--background);
+  padding-bottom: 100px;
+}
