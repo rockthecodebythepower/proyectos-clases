@@ -1,0 +1,35 @@
+.btn {
+  padding: 5px 15px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgb(26, 26, 26);
+  color: whitesmoke;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: whitesmoke;
+  color: rgb(26, 26, 26);
+}
+
+.btn.small {
+  padding: 2px 8px;
+}
+
+.btn.large {
+  padding: 10px 25px;
+}
+
+.btn.link{
+  background: transparent;
+  border: none;
+  color: cadetblue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.btn.danger{
+  background-color: crimson;
+  color: black;
+  font-weight: 600;
+}
