@@ -1,0 +1,9 @@
+img { 
+  width: 300px;
+  height: 300px;
+  margin: 100px;
+}
+
+.circle {
+    border-radius: 200px;
+}

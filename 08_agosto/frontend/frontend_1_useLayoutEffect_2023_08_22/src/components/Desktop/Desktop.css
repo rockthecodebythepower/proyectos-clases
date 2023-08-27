@@ -1,0 +1,10 @@
+#desktop {
+    min-height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/comic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

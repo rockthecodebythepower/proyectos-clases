@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+#prendas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.prenda {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.prenda > div:not(.precios) {
+    width: 200px;
+    height: 300px;
+}
+
+.prenda > div:not(.precios) > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.descuento {
+    padding: 5px;
+    border-radius: 4px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+
+.precios {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.precioAnterior {
+    opacity: 0.6;
+    text-decoration: line-through;
+}
+
+.precioSinDescuento {
+    font-size: 20px;
+}
+
+.precioFinal {
+    font-size: 20px;
+    color: red;
+}

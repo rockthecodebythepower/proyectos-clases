@@ -1,0 +1,53 @@
+img {
+    width: 50px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
+}
+
+nav {
+    height: 100svh;
+    background-color: rgb(50, 47, 47);
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+}
+
+nav.closed {
+    animation: close 1s forwards;
+}
+
+nav.opened {
+    animation: open 1s forwards;
+}
+
+@keyframes open {
+    0% {
+        width: 0px;
+        margin-left: 50%;
+    }
+    100% {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@keyframes close {
+    0% {
+        width: 100%;
+        margin-left: 0;
+    }
+    100% {
+        width: 0px;
+        margin-left: 50%;
+    }
+}
+
+/* .main {
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  */

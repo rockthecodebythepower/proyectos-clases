@@ -1,0 +1,38 @@
+#main {
+  min-height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main.light {
+  background-color: var(--background_light);
+  color: var(--text_light);
+}
+
+#main.dark {
+  background-color: var(--background_dark);
+  color: var(--text_dark);
+}
+
+.modo {
+  width: 60px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.caracol {
+  width: 50%;
+}
+
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 100px;
+}

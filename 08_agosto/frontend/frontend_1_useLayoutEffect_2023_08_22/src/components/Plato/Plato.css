@@ -1,0 +1,77 @@
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.voltear {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 3px solid black;
+}
+
+.flip-card-front {
+  color: black;
+}
+
+.flip-card-front > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 50px;
+  background-color: white;
+}
+
+.telon {
+  height: 0px;
+  position: absolute;
+  width: 100%;
+  transition: all 1s;
+  overflow: hidden;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(161, 137, 137, 0.579);
+}
+
+.flip-card-front:hover .telon {
+  height: 100%;
+  padding: 10px;
+}
+
+.flip-card-back > div > ul, .flip-card-back > div  {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}

@@ -1,0 +1,10 @@
+#aprendizajes {
+    min-height: 90svh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding-top: 100px;
+    background-image: url("https://www.transparenttextures.com/patterns/diagonal-striped-brick.png");
+}

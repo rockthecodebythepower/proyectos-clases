@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="filtros">
+      <div>
+        <label>Prendas con descuento</label>
+        <input id="filtroDescuento" type="checkbox" checked />
+      </div>
+      <div>
+        <label>Busca tu talla</label>
+        <select id="filtroTalla">
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+        </select>
+      </div>
+      <button id="reset">Ver todos</button>
+    </div>
+    <div id="prendas"></div>
+    <script src="index.js"></script>
+  </body>
+</html>

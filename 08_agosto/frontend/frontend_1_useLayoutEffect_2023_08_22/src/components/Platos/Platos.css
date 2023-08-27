@@ -1,0 +1,14 @@
+.platos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  flex-wrap: wrap;
+  padding: 100px 0px;
+}
+
+@media (min-width: 400px) {
+  .platos {
+    padding: 100px;
+  }
+}

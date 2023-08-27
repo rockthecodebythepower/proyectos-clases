@@ -1,0 +1,16 @@
+header {
+    height: 10svh;
+    background-color: rgb(48, 44, 44);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .enlace {
+    color: white;
+    font-weight: 400;
+}
+
+header .seleccionado {
+    border-bottom: 2px solid white;
+}

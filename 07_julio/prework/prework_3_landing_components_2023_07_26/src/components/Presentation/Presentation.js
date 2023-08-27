@@ -9,6 +9,7 @@ export const Presentation = () => {
             <h1>Get started your exciting ${Span("journey")}
             with us.
             </h1>
+            ${Button("pepito", "Nuevo botón")}
             <p>A Team of experienced tourism professionals will provide you with the best advice and tips for your desire place.</p>
             ${Button("medium", "Discover Now")}
         </div>
