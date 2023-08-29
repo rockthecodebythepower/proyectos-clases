@@ -1,0 +1,15 @@
+#personajes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.personaje {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

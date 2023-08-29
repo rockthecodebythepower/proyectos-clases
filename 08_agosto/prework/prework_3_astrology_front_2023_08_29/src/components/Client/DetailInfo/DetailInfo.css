@@ -1,0 +1,8 @@
+.detailInfo {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    padding: 50px;
+    padding-left: 75px;
+    height: 500px;
+}
