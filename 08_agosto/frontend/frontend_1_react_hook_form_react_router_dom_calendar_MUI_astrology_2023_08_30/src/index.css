@@ -1,0 +1,29 @@
+/* estilos globales */
+
+/* MONTSERRAT */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* LORA */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --primary: #ffffff;
+  --secondary: #f5f5f5;
+  --terciary: #e8e8e8;
+  --stroke1: #dbdbdb;
+  --stroke2: #bfbfbf;
+  --text: black;
+}
+
+p, h1, h2, h3, h4, h5, h6, label, a {
+  color: var(--text);
+}

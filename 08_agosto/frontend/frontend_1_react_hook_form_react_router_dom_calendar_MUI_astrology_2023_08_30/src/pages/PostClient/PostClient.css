@@ -1,0 +1,40 @@
+.postClient {
+    min-height: 90svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.postClient > form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    row-gap: 50px;
+    column-gap: 100px;
+}
+
+.postClient > form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.postClient > form > div > input, .postClient > form > div > select {
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: solid 2px var(--terciary);
+}
+
+.postClient > form > button {
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: solid 2px var(--stroke2);
+    background-color: var(--secondary);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.postClient > form > button:hover {
+    background-color: var(--terciary);
+    border-color: var(--text);
+}

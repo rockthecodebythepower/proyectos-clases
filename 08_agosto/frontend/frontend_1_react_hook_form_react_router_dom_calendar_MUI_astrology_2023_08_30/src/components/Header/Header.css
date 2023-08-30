@@ -1,0 +1,21 @@
+#navbar {
+    height: 10svh;
+    background-color: var(--secondary);
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    height: 10svh;
+}
+
+.activo {
+    border-bottom: 3px solid var(--stroke2);
+    padding: 5px;
+}
+
+.no_activo {
+    padding: 5px;
+}
