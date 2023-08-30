@@ -1,0 +1,12 @@
+.contact {
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact > h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+}
