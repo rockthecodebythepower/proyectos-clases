@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* selecciono todos los elementos de mi página */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --background: #FFFFFF;
+    --primary: #FFF3E3;
+    --secondary: #B88E2F;
+    --terciary: #F4F5F7;
+    --text: #3A3A3A;
+}
+
+header {
+    height: 10svh; /* small viewport height */
+    background-color: var(--background);
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logoContainer > h3 {
+    font-size: 25px;
+}
+
+header > nav > ul {
+    display: flex;
+    width: 50vw;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.iconos {
+    display: flex;
+    gap: 20px;
+}
+
+/* HERO */
+#hero {
+    height: 60svh;
+    background-image: url("./assets/bgImage.png");
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+#wellcome {
+    height: 340px;
+    width: 400px;
+    background-color: var(--primary);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+#wellcome > button {
+    background-color: var(--secondary);
+    color: var(--background);
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 20px 50px;
+    margin-top: 20px;
+}
+
+#wellcome > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 600;
+}
+
+#wellcome h1 {
+    font-size: 40px;
+    font-weight: 900;
+    margin: 0;
+    color: var(--secondary);
+}
+
+
+/* PRODUCTOS */
+
+
+#ourProducts {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#ourProducts > h2 {
+    font-size: 35px;
+    color: var(--text);
+}
+
+#ourProducts > button, .products > li > div:first-child > button {
+    color: var(--secondary);
+    padding: 20px 40px;
+    font-weight: 500;
+    background-color: var(--background);
+    border: solid 2px var(--secondary);
+    cursor: pointer;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px;
+    justify-content: center;
+}
+
+.products > li {
+    background-color: var(--terciary);
+    position: relative;
+}
+
+.products > li > div:first-child {
+    height: 0px;
+    overflow: hidden;
+    /* transición para que cuando cambiemos una propiedad del elemento ocurra paulatinamente o de poco en poco */
+    transition: all 1s;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.521);
+    flex-direction: column;
+    gap: 20px;
+}
+
+.addToCartIcons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.addToCartIcons > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--background);
+}
+
+.addToCartIcons > div:last-child > img {
+    width: 20px;
+    filter: invert(1);
+}
+
+.products > li:hover > div:first-child {
+    height: 100%;
+}
+
+.info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--text);
+}
+
+.info > p {
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+/* este trozo de código entra en vigor únicamente cuando la pantalla es menor de 825px */
+@media (max-width: 825px) {
+    .iconos {
+        display: none;
+    }
+    .logoContainer > h3 {
+        display: none;
+    }
+    header > nav > ul {
+        width: 80vw;
+    }
+    header {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    #wellcome {
+        height: 250px;
+        width: 300px;
+        padding: 20px;
+    }
+    
+    #wellcome > button {
+        font-size: 10px;
+        padding: 10px 30px;
+        margin-top: 10px;
+    }
+    
+    #wellcome > div > p {
+        font-size: 14px;
+    }
+    
+    #wellcome h1 {
+        font-size: 30px;
+    }
+}
