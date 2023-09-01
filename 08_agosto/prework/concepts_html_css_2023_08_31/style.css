@@ -1,0 +1,65 @@
+
+/* primer div 3 hijos */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+/* 1 hijo del header este contiene la imagen */
+.logoDiv {
+    width: 20%;
+    max-width: 100px;
+}
+
+/* esta es literalmente la imagen */
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* 2 hijo del header este contiene los "enlaces" */
+.navBar > ul {
+    display: flex;
+    width: 50vw;
+    gap: 30px;
+    justify-content: space-around;
+    list-style: none;
+}
+
+/* cada hijo de mi navbar (4) */
+.item {
+
+}
+
+/* 3 hijo del header este contiene el input */
+.inputBuscador {
+
+}
+
+/* el input */
+.input {
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* siempre y cuando el ancho de pantalla sea MENOR de 770px */
+@media (max-width: 770px) {
+    /* si se cumple la condición este código se ejecuta */
+    .inputBuscador {
+        display: none;
+    }
+    .header {
+        padding: 20px;
+    }
+    .navBar > ul {
+        width: 70%;
+        gap: 20px;
+    }
+}
