@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --background: #ffffff;
+  --primary: #f7f7f7;
+  --secondary: #fafafa;
+  --highlight: #f6973f;
+  --text: #1e1e1e;
+}
+
+/* . -> el punto me sirve para referenciar a una clase del html 
+
+HTML <div class="pepe">
+
+CSS .pepe
+
+*/
+
+/* # -> la almohadilla me sirve para referenciar a un id del html 
+
+HTML <div id="unico">
+
+CSS #unico
+
+*/
+
+#header {
+  height: 80svh; /* small viewport height */
+  /* medida "más pequeña" de la altura del dispositivo*/
+  background-image: url(./assets/imagenPrincipal.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.gradient {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  /* background: linear-gradient(to bottom, #00000000 0%, #ffffff 100%); */
+  background: linear-gradient(to bottom, #00000000 0%, #000000 100%);
+}
+
+.primeraParte {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  color: var(--background);
+}
+
+.primeraParte > nav > ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.segundaParte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 70px 20% 0px 20%;
+}
+
+.segundaParte > h1 {
+  color: var(--background);
+  font-size: 50px;
+  text-transform: capitalize;
+  text-align: center;
+  margin: 0px;
+}
+
+.segundaParte > p {
+  color: var(--background);
+  font-weight: 200;
+  text-align: center;
+}
+
+.input {
+  border-radius: 20px;
+  background-color: #ffffff2b;
+  border: 1px solid var(--background);
+  color: var(--background);
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.input > input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--background);
+}
+
+.input > input::placeholder {
+  color: var(--background);
+  font-weight: 200;
+}
+
+.input > img {
+  background-color: var(--highlight);
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.menu {
+  display: none;
+  cursor: pointer;
+}
+
+#choosing {
+  display: flex;
+  gap: 100px;
+  min-height: 30svh;
+  align-items: center;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+#choosing > h2 {
+  font-size: 30px;
+}
+
+#choosing > ul {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.item-choos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 260px;
+}
+
+.item-choos > h3 {
+  font-size: 25px;
+}
+
+.item-choos > p {
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.more {
+  color: var(--highlight);
+}
+
+@media (max-width: 1200px) {
+  .segundaParte {
+    padding: 50px 10% 0px 10%;
+  }
+}
+
+@media (max-width: 790px) {
+  .segundaParte > h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu {
+    display: block;
+  }
+  .primeraParte > nav {
+    display: none;
+  }
+  .bolso {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .segundaParte > h1 {
+    font-size: 25px;
+  }
+  .segundaParte {
+    padding: 20px;
+  }
+  .segundaParte > p {
+    font-size: 14px;
+  }
+  .input {
+    padding: 5px;
+  }
+  .input > img {
+    background-color: var(--highlight);
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 100%;
+  }
+}
+
+@media (max-height: 800px) {
+  .input {
+    background-color: #050505a1;
+  }
+}
+
+@media (max-height: 500px) {
+  #header {
+    height: 100svh;
+  }
+  .segundaParte {
+    padding: 20px 20% 0px 20%;
+  }
+  .segundaParte > h1 {
+    font-size: 25px;
+  }
+  .segundaParte > p {
+    font-size: 14px;
+  }
+  .input {
+    padding: 5px;
+  }
+}
