@@ -1,0 +1,32 @@
+:root {
+  --primary: #24337f;
+  --secondary: #87ceeb;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  color: var(--secondary);
+  background-color: var(--primary);
+}
+
+header{
+  padding: 30px;
+  text-align: center;
+}
+
+h1{
+  margin-bottom: 20px;
+  text-transform: lowercase;
+  letter-spacing: 4px;
+  font-size: 60px;
+}
+
+p{
+  text-align: justify;
+}
