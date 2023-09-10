@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --stroke: #212121;
+    --background: #ffffff;
+    --highlight: #ff6600;
+    --primary: #e6e6e6;
+    --secondary: #000000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: var(--primary);
+}
+
+.logo {
+    width: 100px;
+}
+
+.linkList {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+.link > a {
+    color: var(--stroke);
+    font-weight: 600;
+}
+
+.menu {
+    display: none;
+    position: relative;
+    z-index: 2;
+}
+
+.abierto {
+    width: 200px;
+}
+
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin: 100px 50px;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.producto > div {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    border: 3px solid var(--stroke);
+    overflow: hidden;
+}
+
+.producto > div > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 20px;
+}
+
+.filters > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filters > div > label, .filters > div > select, .filters > div > input  {
+    display: flex;
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid var(--stroke);
+}
+
+.filters > div > select, .filters > div > input  {
+    text-align: center;
+}
+
+.filters > div > label {
+    border: none;
+}
+
+#buttons > button {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid var(--stroke);
+}
+
+#buttons {
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 560px) {
+    header > nav {
+        width: 0px;
+        height: 100svh;
+        position: absolute;
+        right: 0;
+        overflow: hidden;
+        top: 0;
+        transition: all 0.5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--primary);
+    }
+    .linkList {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 70%;
+    }
+    .menu {
+        display: block;
+        width: 50px;
+        cursor: pointer;
+    }
+}
+

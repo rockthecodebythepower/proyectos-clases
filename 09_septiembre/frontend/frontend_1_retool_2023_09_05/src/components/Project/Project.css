@@ -1,0 +1,46 @@
+.project {
+    display: flex;
+    padding: 30px;
+    border-bottom: 1px solid rgb(159, 159, 159);
+    flex-direction: column;
+    height: 10svh;
+    transition: all 0.5s;
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.infoPrev {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10svh;
+}
+
+.detail {
+    margin-top: 100px;
+    height: 80svh;
+}
+
+.abierto {
+    height: 90svh;
+}
+
+.estado {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+.revision {
+    background-color: rgb(255, 188, 63);
+}
+
+.completado {
+    background-color: rgb(108, 255, 108);
+}
+
+/* .espera {
+    background-color: rgb(255, 81, 81);
+} */

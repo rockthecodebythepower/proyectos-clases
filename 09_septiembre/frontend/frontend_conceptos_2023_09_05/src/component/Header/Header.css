@@ -1,0 +1,15 @@
+header {
+    position: absolute;
+    height: 10svh;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}

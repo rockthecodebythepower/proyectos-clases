@@ -1,0 +1,13 @@
+#closeSession {
+
+    border: 2px solid black;
+    background-color: rgb(255, 88, 88);
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 2;
+    right: 10px;
+    bottom: 10px;
+
+}
