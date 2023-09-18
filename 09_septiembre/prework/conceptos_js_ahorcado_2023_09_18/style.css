@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#palabra {
+    display: flex;
+    gap: 25px;
+    margin: 40px;
+    font-size: 40px;
+}
+
+#palabra > div {
+    border-bottom: 2px solid black;
+    width: 40px;
+}
+
+#palabra > div > h3 {
+    opacity: 0;
+    text-align: center;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+#palabra > div > .acertada {
+    opacity: 1;
+}
+
+#teclado {
+    display: flex;
+    gap: 20px;
+    margin: 40px;
+    font-size: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#teclado > p {
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: rgb(255, 229, 181);
+    padding: 10px;
+    transition: all 0.5s;
+}
+
+#teclado > p:hover {
+    background-color: rgb(255, 205, 112);
+}

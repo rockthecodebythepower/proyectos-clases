@@ -1,0 +1,28 @@
+#register-form {
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+#register-form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#register-form > div > input {
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 1px solid grey;
+}
+
+#send {
+    padding: 10px 20px;
+    background-color: rgb(242, 242, 242);
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
