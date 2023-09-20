@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: var(--secondary_font);
+}
+
+:root {
+  --primary_font: "Mooli", sans-serif;
+  --secondary_font: "Roboto", sans-serif;
+
+  --background: #fdfcfc;
+  --primary: #f6f6f6;
+  --secondary: #8eadd5;
+
+  --text_dark: black;
+  --text_light: #fdfcfc;
+}
+
+body {
+  background-color: var(--background);
+}
+
+p,
+label,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text_dark);
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: var(--secondary);
+  color: var(--text_light);
+  border: none;
+  position: relative;
+  z-index: 2;
+}
+
+.ball {
+  position: absolute;
+  top: 100px;
+  left: -190px;
+  background: radial-gradient(circle, #a8a8ff 0%, var(--background) 60%);
+  width: 300px;
+  height: 400px;
+  border-radius: 100%;
+  z-index: 2;
+}
+
+.ball2 {
+  top: 550px;
+  right: 50px;
+  left: auto;
+  background: radial-gradient(circle, #a8a8ff 0%, var(--background) 60%);
+}
+
+#principal_header {
+  display: flex;
+  padding: 30px 60px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 99999999999999999999999999;
+  background-color: var(--background);
+}
+
+/* voy a seleccionar TODOS los h3 que estén directamente dentro de principal header */
+#principal_header > h3 {
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+#principal_header > nav > ul {
+  display: flex;
+  gap: 30px;
+}
+
+.menu {
+  display: none;
+}
+
+/* section hero */
+#hero {
+  display: flex;
+  padding: 30px 60px;
+  padding-top: 150px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+#hero > div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 400px;
+  align-items: flex-start;
+}
+
+#hero > div > h1 {
+  margin: 0;
+  position: relative;
+  z-index: 2;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+#hero > div > p {
+  position: relative;
+  z-index: 2;
+  text-transform: capitalize;
+}
+
+#hero > img {
+  position: relative;
+  z-index: 3;
+}
+
+/* compañías */
+#companies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 180px;
+  gap: 20px;
+}
+
+#companies > h5 {
+  opacity: 0.5;
+  font-weight: 400;
+}
+
+#companies > div {
+  width: 80%;
+  height: 70px;
+  background-color: var(--primary);
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 680px;
+  min-width: 340px;
+}
+
+#companies > div > img {
+  width: 15%;
+}
+
+/* el código que yo ponga dentro de la media query, ÚNICA Y EXCLUSIVAMENTE se va a interpretar por el buscador CUANDO la condición que hemos puesto se cumpla: SIEMPRE Y CUANDO LA PÁGINA TENGA UN ANCHO MENOR A 670PX ENTONCES HARÁS LO QUE TENGO DENTRO */
+@media (max-width: 670px) {
+  #principal_header > nav {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  #principal_header {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 1020px) {
+  #hero {
+    padding: 30px;
+    padding-top: 150px;
+  }
+  #hero > div {
+    width: 300px;
+    align-items: center;
+  }
+  #hero > div > h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+  #hero > div > p {
+    text-align: center;
+  }
+  #hero > img {
+    width: 350px;
+  }
+}
+
+@media (min-width: 1400px) {
+  #hero {
+    justify-content: space-around;
+  }
+}
