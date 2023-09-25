@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtros</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <p class="mostrar">Mostrar Filtros</p>
+    <div id="filters">
+        <div>
+            <label>Filtrar por iniciales</label>
+            <div id="iniciales">
+            </div>
+        </div>
+        <div>
+            <label>Filtrar por nombre</label>
+            <input id="name" placeholder="Manolito..."/>
+        </div>
+        <div>
+            <label>Filtrar por email</label>
+            <input id="email" placeholder="manolito@yahoo.com"/>
+        </div>
+        <div>
+            <label>Filtrar por teléfono</label>
+            <input id="phone" placeholder="309-34943"/>
+        </div>
+        <div>
+            <label>Filtrar por ciudad</label>
+            <select id="city">
+                <option value="">Todas</option>
+            </select>
+        </div>
+        <button id="limpiar">Limpiar Filtros</button>
+    </div>
+    <div id="usersContainer"></div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.characters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.paginacion {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.paginacion > p {
+    cursor: pointer;
+    user-select: none;
+}

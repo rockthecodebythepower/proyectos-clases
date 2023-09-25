@@ -1,0 +1,42 @@
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 300px;
+    height: 350px;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card > h3 {
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.image {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 200px;
+    height: 230px;
+    cursor: pointer;
+    border: 3px solid var(--primary);
+    transition: all 0.5s;
+}
+
+.grayscale {
+    filter: grayscale(1);
+}
+
+.image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vuelta {
+    transform: rotate(180deg);
+}

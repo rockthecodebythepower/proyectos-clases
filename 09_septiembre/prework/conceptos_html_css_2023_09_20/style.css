@@ -1,0 +1,153 @@
+.caja {
+  background-color: orange;
+  line-height: 13px;
+  margin: 50px;
+  padding: 30px;
+  /* border: 10px solid black; */
+  outline: 10px solid black;
+  display: flex;
+  /* grid-template-columns: repeat(auto-fit, minmax(70px, 1fr)); */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* @media (max-width: 430px) {
+    .caja {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 334px) {
+    .caja {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+} */
+
+.caja > div {
+  width: 70px;
+  height: 70px;
+  background-color: blue;
+}
+
+.elemento:first-of-type {
+  position: relative;
+  background-color: gold;
+}
+
+.elemento:nth-of-type(2) {
+  background-color: green;
+}
+
+.elemento:nth-of-type(3) {
+  background-color: azure;
+}
+
+.marca {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background-color: red;
+}
+
+.menu {
+    width: 50px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+.desplegable {
+    height: 100svh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    background-color: rgb(69, 63, 63);
+    transition: all 0.5s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px;
+}
+
+#check:checked + .desplegable {
+    width: 230px;
+    padding: 30px;
+}
+
+.desplegable a {
+    color: antiquewhite;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+/* 
+input:checked {
+    width: 500px;
+    height: 500px;
+}
+ */
+
+/* CSS -> CASCADE STYLE SHEET -> HOJA DE ESTILOS EN CASCADA */
+
+/* SELECTOR POR ID MUY ESPECÍFICO */
+/* selecciona el elemento con el id unico */
+/* #unico {
+    background-color: aqua;
+} */
+
+/* SELECTOR DE HIJOS 0,1,1 MEDIANAMENTE ESPECÍFICO */
+/* selecciona todos los elementos que tengan la clase cuerpito que se encuentren dentro del body, absolutamente todos, sin tener en cuenta si son hijos directos de body o no */
+/* body .cuerpito {
+
+} */
+
+/* SELECTOR DE HIJOS 0,1,1 MEDIANAMENTE ESPECÍFICO */
+/* selecciona todos los elementos que tengan la clase cuerpito que se encuentren dentro del body y sean hijos directos */
+/* body > .cuerpito {
+
+} */
+
+/* SELECTOR COMBINADO DE ETIQUETA Y CLASE 0,1,1 MEDIANAMENTE ESPECÍFICO */
+/* selecciona todas las etiquetas body que tengan la clase cuerpito */
+/* body.cuerpito {
+    background-color: black;
+} */
+
+/* SELECTOR POR CLASE UN POCO ESPECÍFICO */
+/* selecciona todos los elementos que tengan la clase cuerpito */
+/* .cuerpito {
+    background-color: blue;
+} */
+
+/* SELECTOR POR ETIQUETA MUY POCO ESPECÍFICO */
+/* selecciona todas las etiquetas body de mi página */
+/* body {
+    background-color: orange;
+} */
+
+/* LO MENOS ESPECÍFICO DE TODOS LOS SELECTORES */
+/* selecciona todos los elementos de mi página */
+/* * {
+
+} */
+
+/* especificidad */
+
+
+/* 90% de las cosas las podéis seleccionar con selector por clase */
+/* 90% de las cosas en cuanto a posiciones podéis hacerlas con flex o con grid*/

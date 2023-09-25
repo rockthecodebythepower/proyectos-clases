@@ -1,0 +1,18 @@
+.foco {
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  position: fixed;
+  z-index: -2;
+  aspect-ratio: 1;
+  background: radial-gradient(ellipse at center, #ffffff 0%, var(--background) 100%);
+}
+
+.blur {
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  position: fixed;
+  z-index: -1;
+  backdrop-filter: blur(12vmax);
+}
