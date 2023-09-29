@@ -1540,16 +1540,21 @@ const users = [
   },
 ];
 
+// crear arrays vacíos para las iniciales y las ciudades, que son dos tipos de filtros que vamos a tener que rellenar de manera dinámica mediante js, porque no voy a crear cada inicial de una en una en html ni cada ciudad que serían opciones del select.
 const INICIALES = [];
 const CITIES = [];
 
+// voy guardando cada uno de los posibles valores que quiero filtrar
 let LETRA_SELECCIONADA = "";
 let NAME_VALUE = "";
 let EMAIL_VALUE = "";
 let PHONE_VALUE = "";
 let CITY_VALUE = "";
+
+// los nuevos usuarios que quiero mostrar
 let USERS_FILTERED = [];
 
+// declaración
 const filtrar = (array) => {
   USERS_FILTERED = array.filter(
     (element) =>
@@ -1562,21 +1567,32 @@ const filtrar = (array) => {
   print(USERS_FILTERED);
 };
 
+// declaración
 const limpiarLetras = () => {
+  // selecciona todas la letras 
   const allDivs = document.querySelectorAll(".divInicial");
+  // las recorre para acceder a cada una de ellas
   for (const element of allDivs) {
+    // les cambia el backgroundColor 
     element.style.backgroundColor = "var(--secondary)";
   }
 };
 
+// declaración
 const seleccionarLetra = (letra, div) => {
   limpiarLetras();
+  // le cambia el backgroundColor a la seleccionada en este momento
   div.style.backgroundColor = "var(--terciary)";
+  // guardamos el valor en la variable
   LETRA_SELECCIONADA = letra;
+  // filtramos
   filtrar(users);
 };
 
+// declaración
+// vamos a preparar la lógica de las iniciales
 const getIniciales = (usersArray) => {
+  // recorremos todos los usuarios y guardamos las iniciales de cada uno de ellos sin que se repita ninguna
   for (const user of usersArray) {
     if (!INICIALES.includes(user.name[0])) {
       INICIALES.push(user.name[0]);
@@ -1585,8 +1601,10 @@ const getIniciales = (usersArray) => {
 
   INICIALES.sort();
 
+  // seleccionamos el div donde vamos a pintarlas
   const inincialesDiv = document.querySelector("#iniciales");
 
+  // recorremos el array de iniciales y las pintamos
   for (const inicial of INICIALES) {
     const divInicial = document.createElement("div");
     const letra = document.createElement("h3");
@@ -1594,6 +1612,7 @@ const getIniciales = (usersArray) => {
     divInicial.className = "divInicial";
     letra.textContent = inicial;
 
+    // le damos la funcionalidad a las iniciales
     divInicial.addEventListener("click", (e) =>
       seleccionarLetra(inicial, divInicial)
     );
@@ -1603,7 +1622,9 @@ const getIniciales = (usersArray) => {
   }
 };
 
+// declaración
 const getCities = (usersArray) => {
+  // mismo que getIniciales pero con las ciudades
   for (const user of usersArray) {
     if (!CITIES.includes(user.city)) {
       CITIES.push(user.city);
@@ -1612,16 +1633,22 @@ const getCities = (usersArray) => {
 
   CITIES.sort();
 
+  // selecciono donde las quiero pintar
   const select = document.querySelector("#city");
 
+  // recorro el array de ciudades
   for (const city of CITIES) {
+    /* pinto cada option */
     select.innerHTML += `<option value="${city}">${city}</option>`;
   }
 };
 
+// declaración
 const print = (array) => {
+  // seleccionamos el div donde queremos pintar los usuarios filtrados o todos los usuarios
   const usersContainer = document.querySelector("#usersContainer");
 
+  // lo primero que añado es un div con todas las propiedades que van a tener los usuarios, a nivel informativo
   usersContainer.innerHTML = `
     <div class="info">
         <h3>Nombre</h3>
@@ -1632,12 +1659,14 @@ const print = (array) => {
     </div>
 `;
 
+  // si no he encontrado ningún usuario con esas características muestro un h4 informativo de que no coincide
   if (!array.length) {
     usersContainer.innerHTML += `
         <h4 class="notFound">No se han encontrado usuarios con esos filtros</h4>
     `;
   }
 
+  // en el caso de que si que tenga recorro el array y pinto cada uno de ellos
   for (const element of array) {
     usersContainer.innerHTML += `
         <div class="user">
@@ -1651,22 +1680,32 @@ const print = (array) => {
   }
 };
 
+// selector del párrafo mostrar, lo selecciono porque quiero que cuando le hagan click "abra" el div de los filtros para poder utilizarlos
 const pMostrar = document.querySelector(".mostrar");
 
+// declaración
+// cambiar una clase a un div y cambiar el texto a un párrafo
 const abrir = () => {
+  // seleccionar el div de los filtros
   const filters = document.querySelector("#filters");
 
+  // preguntar que clase tiene para saber que texto poner
   if (filters.className !== "abierto") {
+    // si está abierto ponermos cerrar Filtros
     pMostrar.textContent = "Cerrar Filtros";
   } else {
+    // si no está abierto ponermos mostrar filtros
     pMostrar.textContent = "Mostrar Filtros";
   }
 
+  // cambiar la clase abierto a filters, ponerla o quitarla dependiendo de si la tiene o no
   filters.classList.toggle("abierto");
 };
 
+// añadimos al párrafo seleccionado previamente el escuchador de eventos click para que cuando le hagan click ejecute la función abrir
 pMostrar.addEventListener("click", abrir);
 
+// selectores de los filtros
 const inputName = document.querySelector("#name");
 const inputEmail = document.querySelector("#email");
 const inputPhone = document.querySelector("#phone");
@@ -1684,6 +1723,7 @@ const getValue = (variable, input) => {
   } else {
     CITY_VALUE = input.value;
   }
+
   filtrar(users);
 };
 
@@ -1694,11 +1734,14 @@ selectCity.addEventListener("change", () => getValue("city", selectCity));
 
 getIniciales(users);
 getCities(users);
+// el primer pintado de usuarios sin filtrar ni nada
 print(users);
 
+// seleccionamos el botón de limpiar
 const limpiarButton = document.querySelector("#limpiar");
 
 const limpiar = () => {
+  // resetea TODOS los valores
   LETRA_SELECCIONADA = "";
   NAME_VALUE = "";
   EMAIL_VALUE = "";
@@ -1709,7 +1752,9 @@ const limpiar = () => {
   inputPhone.value = "";
   limpiarLetras();
   selectCity.value = "Abernathyside";
-  filtrar(users);
+  // pinta con todos los usuarios
+  print(users);
 };
 
+// cuando hagamos click llamamos a la función limpiar
 limpiarButton.addEventListener("click", limpiar);

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <form action="/action.php" method="POST" name="Subir piso">
+
+        <div>
+            <label for="name">Nombre:</label>
+            <input id="name" type="text" value="nombre de ejemplo" required>
+        </div>
+        <br>
+        <div>
+            <label for="age">fecha de nacimiento:</label>
+            <input id="age" type="date">
+        </div>
+        <br>
+        <div>
+            <label for="check">¿Aceptas los terminos?</label>
+            <input id="check" type="checkbox" required>
+        </div>
+        <br>
+        <div>
+            <input id="hidden" type="hidden" value="Spain">
+        </div>
+        <div>
+            <label for="color">Elige tu color favorito</label>
+            <input id="color" type="color">
+        </div>
+        <br>
+        <div>
+            <label for="hour">Para saber que no eres un robot elige que hora es ahora</label>
+            <input id="hour" type="time">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="tucorreo@tudominio.com">
+        </div>
+        <br>
+        <div>
+            <label for="photos">Pon las fotos de tu casa</label>
+            <input id="photos" type="file" multiple>
+        </div>
+        <br>
+        <div>
+            <label for="dni">Numero de DNI</label>
+            <input id="dni" type="number" max="99999999" min="9999999" required>
+        </div>
+        <br>
+        <div>
+            <label for="tel">Número de teléfono</label>
+            <input id="tel" type="tel" placeholder="+34 672384922">
+        </div>
+        <br>
+        <div>
+            <label for="password">Contraseña</label>
+            <input id="password" type="password" required maxlength="10" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+        </div>
+        <br>
+        <div>
+            <label for="happy">Como de contento estás?</label>
+            <input id="happy" type="range" min="300" max="7000" value="501">
+        </div>
+        <br>
+        <div>
+            <label for="radio">Radio</label>
+            <input id="radio" type="radio">
+        </div>
+        <br>
+        <div>
+            <label for="city">Elige tu ciudad</label>
+            <select id="city">
+                <option disabled selected>Cualquier ciudad</option>
+                <option value="Madrid">Madriddddd</option>
+                <option value="Barcelona">Barcelona</option>
+                <option value="Murcia">Murcia</option>
+                <option value="Asturias">Asturias</option>
+            </select>
+        </div>
+        <div>
+            <label for="textarea">Escribenos como te defines</label>
+            <textarea id="textarea"></textarea>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar formulario</button>
+            <button type="reset" disabled>Limpiar formulario</button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </form>
+    <!-- 
+        POST -> PUBLICAR
+        GET -> OBTENER
+     -->
+  </body>
+</html>
