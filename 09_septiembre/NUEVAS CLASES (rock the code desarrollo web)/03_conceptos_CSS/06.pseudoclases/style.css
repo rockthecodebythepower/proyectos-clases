@@ -1,0 +1,39 @@
+p:first-child {
+  color: orange;
+}
+
+img {
+  filter: grayscale(100%);
+}
+
+img:hover {
+  filter: grayscale(0);
+}
+
+p:nth-child(3) {
+  color: green;
+}
+
+li:nth-child(even) {
+  color: grey;
+}
+
+li:last-child {
+  color: red;
+}
+
+h2::before {
+  content: "⚛️";
+}
+
+h2::after {
+  content: "💿";
+}
+
+li{
+  list-style-type: none;
+}
+
+li::before{
+  content: "✔️"
+}

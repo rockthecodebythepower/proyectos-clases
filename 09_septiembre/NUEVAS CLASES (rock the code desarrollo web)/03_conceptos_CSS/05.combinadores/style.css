@@ -1,0 +1,15 @@
+li:first-of-type + li {
+  color: orange;
+}
+
+h1 ~ p {
+  color: crimson;
+}
+
+.caja > p {
+  color: green;
+}
+
+.caja2 p {
+  color: blue;
+}

@@ -1,0 +1,17 @@
+p {
+  color: orange;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+body {
+  background-color: cadetblue;
+}
+
+.subtitle {
+  color: green;
+}
+
+#heading{
+  color: white
+}

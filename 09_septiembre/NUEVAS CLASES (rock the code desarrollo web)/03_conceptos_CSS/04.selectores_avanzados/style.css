@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+}
+
+a[href="http://twitter.com"]{
+  color: lightblue
+}
+
+a[href="http://thepower.education"]{
+  color: green
+}
