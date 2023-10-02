@@ -1,0 +1,151 @@
+/* seleccionar el div con el id caja */
+/* #caja {
+    background-color: orange;
+    padding-top: 100px;
+    height: 250px;
+    box-sizing: border-box;
+    margin-left: 50px;
+    border: 10px solid yellow;
+}
+
+#caja > h3 {
+    background-color: black;
+    color: white;
+}
+
+#caja2 {
+    background-color: red;
+    padding-top: 100px;
+    height: 250px;
+    box-sizing: border-box;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+#caja2 > h3 {
+    background-color: black;
+    color: white;
+} */
+
+
+/* #imagen {
+    width: 80vw;
+    height: 300px;
+    background-color: orange;
+    padding: 20px;
+    box-sizing: border-box;
+    min-width: 300px;
+    max-width: 500px;
+    margin: 30px;
+    width: 150vw;
+}
+
+#main {
+    background-color: black;
+    min-height: 80svh;
+    max-height: 90svh;
+    en horizontal me ocultas
+    overflow-x: hidden;
+    en vertical me scrolleas
+    overflow-y: scroll;
+} */
+
+/* #pelota {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: orange;
+}
+
+#geometrico {
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    background-color: blue;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    padding: 30px;
+}
+
+#geometrico:hover {
+    animation: estrellaAnimacion 5s forwards ease-in-out;
+}
+
+@keyframes estrellaAnimacion {
+   0% {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+   }
+   100% {
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+   }
+} */
+
+#cajita {
+    /* background-color: pink;
+    margin: 30px;
+    padding: 50px; */
+    /* padding: 30px significa que por todos lados voy a a añadir un padding de 30px  */
+    /* padding: 30px; */
+
+    /* padding-top: 30px significa que por arriba voy a a añadir un padding de 30px  */
+    /* padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 0px; */
+
+    /* abreviaciones cada posición */
+    /* padding: 30px  20px  30px  20px; */
+    /*          top  right bottom left */
+
+    /* abreviaciones cada eje */
+    /* padding:    30px               10px; */
+    /*          top y bottom     right y left */
+
+    /* border-width: 30px;
+    border-style: outset;
+    border-color: orange; */
+    
+    /* border-top-width: 20px;
+    border-right-width: 10px;
+    border-bottom-width: 30px;
+    border-left-width: 5px;
+
+    border-top-style: groove;
+    border-right-style: inset;
+    border-bottom-style: solid;
+    border-left-style: outset;
+
+    border-top-color: orange;
+    border-right-color: black;
+    border-bottom-color: blue;
+    border-left-color: red; */
+
+    /* abreviaciones border */
+    /* border: groove 10px orange; */
+    /*   el orden no afecta al resultado: estilo de borde, ancho de borde y color de borde    */
+
+    /* border-radius: 100% 20% 10% 50%;
+    box-shadow: 0px 0px 25px -6px blue; */
+}
+
+#bloque {
+    height: 100px;
+    background-color: orange;
+    display: block;
+    width: 100px;
+}
+
+#input {
+    height: 100px;
+    width: 200px;
+    background-color: rgb(255, 224, 167);
+    display: inline-block;
+}
+
+#label {
+    height: 100px;
+    width: 100px;
+    /* estas propiedades como tiene display inline no funcionan */
+    background-color: blue;
+    color: white;
+    display: inline;
+}
