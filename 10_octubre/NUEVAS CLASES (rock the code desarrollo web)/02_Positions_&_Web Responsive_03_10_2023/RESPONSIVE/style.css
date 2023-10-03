@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+}
+
+header {
+    height: 200px;
+    width: 100%;
+    background-color: rgb(140, 140, 255);
+}
+
+main {
+    height: 563px;
+    width: 100%;
+    background-color: rgb(140, 255, 144);
+}
+
+footer {
+    height: 200px;
+    width: 100%;
+    background-color: rgb(255, 140, 140);
+}
+
+
+/* el código que ponga entre llave y llave de la media query va a funcionar UNICAMENTE cuando cumpla la condición indicada: max-width: 700px -> únicamente vamos a ejecutar el código de dentro cuando mi página cumpla que su ancho máximo sea 700px, es decir, que sea menor de 700px de ancho */
+@media ((min-width: 300px) and (max-width: 700px)) {
+    main {
+        background-color: rgb(255, 140, 220);
+    }
+    footer {
+        background-color: rgb(118, 54, 54);
+    }
+}
+
+@media (min-width: 1500px) {
+    header {
+        width: 50%;
+        margin: auto;
+        border-radius: 40px;
+        height: 500px;
+    }
+}

@@ -1,0 +1,104 @@
+/* #block {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(255, 209, 124);
+    margin: 20px;
+}
+
+#block2 {
+    height: 100px;
+    background-color: rgb(124, 194, 255);
+    top: 0;
+}
+ */
+
+/* POSITIONS */
+
+/* POR DEFECTO ESTA ES LA POSICIÓN UTILIZADA */
+/* STATIC */
+/* NO te permite utilizar las propiedades top bottom left right */
+
+/* RELATIVE */
+/* TE permite utilizar las propiedades top bottom left right */
+/* las medidas de separación que utilicemos en esas propiedades van a ser RELATIVOS a su posición anterior */
+/* AUNQUE nosotros movamos visualmente el elemento, seguirá dejando un espacio ocupado por el donde estaba anteriormente aunque ahora ya no esté ahí */
+
+/* ABSOLUTE */
+/* TE permite utilizar las propiedades top bottom left right */
+/* las medidas de separación que utilicemos serán RELATIVOS al elemento PADRE más cercano con una posición que NO sea static, es decir, si le pongo bottom: 0, estará abajo del todo DEL ELEMENTO con una posición DISTINTA a static más cercano en cuanto a jerarquía */
+/* JEGGAN SOLUTION: El absoluto  toma como referencia al primer elemento jerárquicamente anterior que no tenga marcada
+  una posición estática. De no haber ningún padre con posición que no sea estática, el elemento se posicionará con respecto al documento. */
+/* nada más poner una posición absolute, nuestro elemento no ocupará ningún espacio en el documento, es decir, no empujará nada ni hacia los lados ni hacia abajo */
+/* importante jugar con el z-index para ver elementos absolutos por encima de otros, puesto que se utiliza cuando tenemos dos elementos solapados el z-index para mover las capas visibles */
+
+/* FIXED */
+/* que es lo mismo que la absolute pero se queda pegado para siempre como si pusieramos un postit en nuestra pantalla */
+
+/* STICKY */
+/* es una mezcla del relative y el fixed se suele utilizar para nav "pegado" */
+
+.tablero {
+  width: 600px;
+  height: 600px;
+  border: 3px solid black;
+  margin: auto;
+  position: relative;
+}
+
+.bloque {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255, 209, 124);
+  /* le quiero abajo a la derecha */
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  right: 0;
+}
+
+.bloque > p {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+}
+
+.bloque2 {
+  width: 250px;
+  height: 250px;
+  background-color: rgb(124, 194, 255);
+  z-index: 1;
+  position: relative;
+}
+
+
+.portada {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+.portada > h1 {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    right: 35%;
+    font-size: 40px;
+    color: white;
+    margin: auto;
+}
+
+.portada > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flechita {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    position: sticky;
+    top: 10px;
+    right: 10px;
+}
