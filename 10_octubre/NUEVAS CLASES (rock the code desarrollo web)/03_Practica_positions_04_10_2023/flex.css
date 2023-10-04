@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* selector de todos los elementos de mi página */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* todas las variables que introduzca en la pseudoclase root van a estar disponibles para cualquier elemento */
+:root {
+
+    /* COLORS */
+    --rtc-color-1: #FFFFFF;
+    --rtc-color-2: #0B1B35;
+    --rtc-color-3: #FF6600;
+    --rtc-color-4: #8A898E;
+
+    /* BACKGROUNDS */
+    --rtc-primary-background: var(--rtc-color-1);
+    --rtc-button-background: var(--rtc-color-3);
+
+    /* TEXTS */
+    --rtc-text-0: var(--rtc-color-1);
+    --rtc-text-50: var(--rtc-color-4);
+    --rtc-text-100: var(--rtc-color-2);
+
+    /* PADDINGS */
+    --rtc-padding-s: 10px;
+    --rtc-padding-m: 20px;
+    --rtc-padding-l: 30px;
+
+    /* MARGINS */
+    --rtc-margins-s: 10px;
+    --rtc-margins-m: 20px;
+    --rtc-margins-l: 30px;
+
+    /* BORDER RADIUS */
+    --rtc-border-radius: 10px;
+
+}
+
+a, label, p, h1, h2, h3, h4, h5, h6, button, div {
+    color: var(--rtc-text-100);
+}
+
+button {
+    padding: var(--rtc-padding-s) var(--rtc-padding-m);
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.main_button {
+    color: var(--rtc-text-0);
+    background-color: var(--rtc-button-background);
+    border-radius: var(--rtc-border-radius);
+}
+
+.secondary_button {
+    background-color: transparent;
+}
+
+#header {
+    padding: var(--rtc-padding-l);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.session > button {
+    margin-left: var(--rtc-margins-s);
+}
+
+#menu {
+    width: 35px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+}
+
+@media (max-width: 1070px) {
+    #header > .session {
+       display: none;
+    }
+}
+
+@media (max-width: 730px) {
+    #header > .navigator {
+       display: none;
+    }
+    #menu {
+        display: inline-block;
+    }
+    .logo {
+        width: 200px;
+    }
+}

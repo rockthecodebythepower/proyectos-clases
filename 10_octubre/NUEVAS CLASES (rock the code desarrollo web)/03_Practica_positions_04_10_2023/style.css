@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* selector de todos los elementos de mi página */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* todas las variables que introduzca en la pseudoclase root van a estar disponibles para cualquier elemento */
+:root {
+
+    /* COLORS */
+    --rtc-color-1: #FFFFFF;
+    --rtc-color-2: #0B1B35;
+    --rtc-color-3: #FF6600;
+    --rtc-color-4: #8A898E;
+
+    /* BACKGROUNDS */
+    --rtc-primary-background: var(--rtc-color-1);
+    --rtc-button-background: var(--rtc-color-3);
+
+    /* TEXTS */
+    --rtc-text-0: var(--rtc-color-1);
+    --rtc-text-50: var(--rtc-color-4);
+    --rtc-text-100: var(--rtc-color-2);
+
+    /* PADDINGS */
+    --rtc-padding-s: 10px;
+    --rtc-padding-m: 20px;
+    --rtc-padding-l: 30px;
+
+    /* MARGINS */
+    --rtc-margins-s: 10px;
+    --rtc-margins-m: 20px;
+    --rtc-margins-l: 30px;
+
+    /* BORDER RADIUS */
+    --rtc-border-radius: 10px;
+
+}
+
+a, label, p, h1, h2, h3, h4, h5, h6, button, div {
+    color: var(--rtc-text-100);
+}
+
+button {
+    padding: var(--rtc-padding-s) var(--rtc-padding-m);
+    border: none;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.main_button {
+    color: var(--rtc-text-0);
+    background-color: var(--rtc-button-background);
+    border-radius: var(--rtc-border-radius);
+}
+
+.secondary_button {
+    background-color: transparent;
+}
+
+#header {
+    padding: var(--rtc-padding-l);
+    position: relative;
+}
+
+#header > * {
+    display: inline-block;
+}
+
+.list > li {
+    display: inline-block;
+    margin-left: var(--rtc-margins-l);
+}
+
+.navigator {
+    position: absolute;
+    left: 40%;
+    top: 48px;
+}
+
+.session {
+    position: absolute;
+    right: 50px;
+    top: 38px;
+}
+
+.session > button {
+    margin-left: var(--rtc-margins-s);
+}
+
+/* HERO */
+#hero {
+    position: relative;
+    min-height: 70svh;
+    padding: var(--rtc-padding-l);
+}
+
+.info {
+    width: 30%;
+    display: inline-block;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    min-width: 480px;
+    z-index: 1;
+}
+
+.info > h1 {
+    font-size: 50px;
+}
+
+.info > p {
+    margin-bottom: var(--rtc-margins-l);
+}
+
+#hero_img {
+    position: absolute;
+    right: 10%;
+    height: 500px;
+    width: 500px;
+    display: inline-block;
+}
+
+#hero_img > img {
+    position: absolute;
+    width: 100%;
+}
+
+#hero_img > img:last-child {
+    top: 30%;
+}
+
+
+/* SERVICES */
+#services {
+    padding: var(--rtc-padding-l);
+    position: relative;
+    min-height: 60svh;
+}
+
+#services > * {
+    position: absolute;
+}
+
+#services > h4 {
+    color: var(--rtc-text-50);
+    font-weight: 400;
+    left: 50%;
+}
+
+#services > h2 {
+    left: 37%;
+    top: 50px;
+    font-size: 30px;
+}
+
+#services > article {
+    top: 150px;
+    width: 22%;
+    text-align: center;
+}
+
+#services > article > img {
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+#services > article > h3, #services > article > p {
+    margin-bottom: 20px;
+}
+
+#services > article:nth-of-type(2) {
+    left: 38%;
+}
+
+#services > article:last-of-type  {
+    left: 76%;
+}
+
+
+/* MENU */
+#menu {
+    width: 35px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+}
+
+@media (max-width: 1235px) {
+    #hero_img {
+        opacity: 0.3;
+    }
+}
+
+@media (max-width: 1070px) {
+    #header > .session {
+       display: none;
+    }
+}
+
+/* el código que yo ponga dentro de la media únicamente ocurre cuando mi página es menor de 730px */
+@media (max-width: 730px) {
+    #header > .navigator {
+       display: none;
+    }
+    #menu {
+        display: inline-block;
+    }
+    .logo {
+        width: 200px;
+    }
+}
+
+@media (max-width: 560px) {
+    .info {
+        width: 80%;
+        min-width: 250px;
+    }
+    .info > h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .info > p {
+        text-align: center;
+    }
+    .info > button {
+        position: absolute;
+        left: 30%;
+    }
+    #hero_img {
+        right: 0;
+        width: 400px;
+    }
+}
