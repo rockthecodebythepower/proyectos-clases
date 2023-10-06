@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer {
+    height: 10svh;
+    background-color: rgb(137, 137, 255);
+}
+
+footer {
+    background-color: rgb(255, 124, 124);
+}
+
+body {
+    display: flex;
+
+    /* indicar que el eje principal es el vertical y el secundario el horizontal */
+    flex-direction: column;
+
+    /* el eje principal se maneja con justify-content */
+    justify-content: space-between;
+
+    /* aumento el espacio disponible */
+    min-height: 100svh;
+}
+
+/* es el padre de aside y main */
+#content {
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
+    width: 15%;
+    background-color: rgb(255, 212, 132);
+    min-height: 80svh;
+    min-width: 100px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+main {
+    width: 85%;
+    min-height: 80svh;
+    background-color: rgb(255, 223, 229);
+    min-width: 600px;
+}
+
+@media (max-width: 650px) {
+    #content {
+        flex-direction: column;
+    }
+    aside {
+        min-height: 10svh;
+        width: 100%;
+    }
+    main {
+        min-width: 0px;
+        width: 100%;
+        min-height: 70svh;
+    }
+}

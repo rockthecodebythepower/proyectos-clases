@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+    gap: 100px;
+}
+
+/* aquí estoy seleccionando TODOS los hijos directos del header que son a los que el display flex les va a afectar directamente */
+/* header > * {
+    border: solid 3px black;
+} */
+
+ul.flex-container {
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+    gap: 70px;
+}
+
+h1 {
+    min-width: 237px;
+}
+
+@media (max-width: 830px) {
+    ul.flex-container {
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100px;
+    }
+    header {
+        align-items: start;
+        gap: 20px;
+    }
+    h1 {
+        font-size: 20px;
+        min-width: 148px;
+    }
+}
+
+/* justify-content: afecta a un eje */
+/* align-items: afecta al otro eje */

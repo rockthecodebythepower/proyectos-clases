@@ -1,0 +1,173 @@
+/* CONTENEDOR -> cualquier etiqueta que tenga la capacidad de contener algo lo consideraremos Contenedor cuando le hayamos puesto el display:flex */
+.contenedor {
+    display: flex;
+    height: 400px;
+    background-color: #ffd17b;
+    /* flex-direction: column; */
+    align-items: center; /* eje secundario */
+    justify-content: space-around; /* eje principal */
+    /* flex-wrap: wrap; */
+    flex-flow: row nowrap;
+    gap: 40px;
+  /*   align-content: center; */
+}
+
+/* Elemento (item) -> cualquier etiqueta que esté dentro (ser hijo directo) de un display flex */
+.item {
+    height: 100px;
+    /* width: 100px; */
+    background-color: rgb(133, 133, 255);
+    color: white;
+    font-size: 40px;
+    border-radius: 10px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:nth-child(1) {
+    background-color: #7bc1ff;
+    order: 1;
+    flex-basis: 200px;
+    flex-shrink: 1;
+    /* factor de crecimiento por defecto es 0, lo que significa que ningún elemento hijo crecerá, si le ponemos valores numéricos crecerán en consecuencia */
+    /* flex-grow: 1; */
+
+    /* factor de decrecimiento por defecto es 1, lo que significa que todos los elementos hijo decrecerán, si le ponemos valores numéricos mayores a 1 decrecerán en consecuencia y si ponemos 0 no decrecerán */
+
+}
+
+.item:nth-child(2) {
+    background-color: #ff7bde;
+    flex-basis: 200px;
+    /* flex-grow: 2; */
+    flex-shrink: 2;
+}
+
+.item:nth-child(3) {
+    background-color: #ff7b7b;
+    order: -1;
+    /* flex-basis: 200px; */
+    /* flex-grow: 4; */
+    /* flex-shrink: 8; */
+    flex: 4 8 200px;
+}
+
+.item:nth-child(4) {
+    background-color: #ffbb7b;
+    order: -25;
+    flex-basis: 200px;
+}
+
+
+/* .item:nth-child(odd) {
+    align-self: start;
+}
+
+.item:nth-child(even) {
+    align-self: end;
+} */
+
+/* .item:first-child {
+    background-color: rgb(255, 126, 126);
+    align-self: start;
+}
+
+.item:nth-child(3) {
+    background-color: rgb(253, 255, 126);
+    align-self: end;
+} */
+
+/*! PROPIEDADES COMPARTIDAS O GENÉRICAS DE FLEX */
+/*? GAP */ /* es una propiedad que me permite separar mis elementos hijos entre sí con una unidad de medida: 
+
+/** VALOR POR DEFECTO: gap: 0; */
+
+
+/*! PROPIEDADES ÚNICAS DE DISPLAY FLEX */
+/* una propiedad única es una propiedad que sólo vamos a poder utilizar en el caso de que hayamos configurado el contenedor como display: flex; */
+
+/*? FLEX-DIRECTION */ /* es una propiedad que indica la dirección de mis elementos. MODIFICA LOS EJES DEL CONTENEDOR: 
+! row -> EJE PRINCIPAL HORIZONTAL  
+! column -> EJE PRINCIPAL VERTICAL*/
+
+/** VALOR POR DEFECTO: flex-direction: row; */
+/* VALORES: 
+    row: en fila
+    row-reverse: en fila del revés
+    column: en columna
+    column-reverse: en columna del revés
+*/
+
+/*? JUSTIFY-CONTENT */ /* es una propiedad que me permitirá alinear los elementos en el EJE PRINCIPAL */
+
+/** VALOR POR DEFECTO: justify-content: flex-start; */
+/* VALORES: 
+    flex-start: Nos lleva el contenido al PRINCIPIO de nuestro contenedor
+    start: Nos lleva el contenido al PRINCIPIO de nuestro contenedor
+    flex-end: Nos lleva el contenido al FINAL de nuestro contenedor
+    end: Nos lleva el contenido al FINAL de nuestro contenedor
+    center: Nos lleva el contenido al CENTRO de nuestro contenedor
+    space-evenly: Separa nuestros elementos a partes iguales dejando el mismo espacio en los bordes
+    space-around: Separa nuestros elementos a partes iguales pero el borde lo deja con menos espacio
+    space-between: Separa nuestros elementos al máximo del espacio disponible del contenedor
+*/
+
+/*? ALIGN-ITEMS */ /* es una propiedad que me permitirá alinear los elementos en el EJE TANGENTE */
+
+/** VALOR POR DEFECTO: align-items: flex-start; */
+/* VALORES: 
+    flex-start: Nos lleva el contenido al PRINCIPIO de nuestro contenedor
+    start: Nos lleva el contenido al PRINCIPIO de nuestro contenedor
+    flex-end: Nos lleva el contenido al FINAL de nuestro contenedor
+    end: Nos lleva el contenido al FINAL de nuestro contenedor
+    center: Nos lleva el contenido al CENTRO de nuestro contenedor
+    stretch: Alinea los hijos estirándolos para que ocupen la totalidad del contenedor
+    baseline: Alinea los hijos en relación a la base del contenido de los hijos del contenedor
+*/
+
+/*? FLEX-WRAP */ /* es una propiedad que me permitirá "envolver" los elementos y pasarlos a otra linea o columna cuando no quepan*/
+
+/** VALOR POR DEFECTO: flex-wrap: nowrap; */
+/* VALORES: 
+    nowrap: no envuelve y por lo tanto los elementos nunca pasarán a otra línea o columna
+    wrap: envuelve y nos pasa los elementos a otra línea o columna cuando no caben
+    wrap-reverse: lo mismo del wrap pero le da la vuelta
+*/
+
+/*? ALIGN-CONTENT */ /* es una propiedad que me permitirá alinear los elementos en el EJE TANGENTE en bloque */
+
+/** VALOR POR DEFECTO: align-content: flex-start; */
+/* VALORES: 
+    flex-start: Nos lleva el contenido al PRINCIPIO de nuestro contenedor
+    start: Nos lleva el contenido al PRINCIPIO de nuestro contenedor
+    flex-end: Nos lleva el contenido al FINAL de nuestro contenedor
+    end: Nos lleva el contenido al FINAL de nuestro contenedor
+    center: Nos lleva el contenido al CENTRO de nuestro contenedor
+    space-evenly: Separa nuestros elementos a partes iguales dejando el mismo espacio en los bordes
+    space-around: Separa nuestros elementos a partes iguales pero el borde lo deja con menos espacio
+    space-between: Separa nuestros elementos al máximo del espacio disponible del contenedor
+*/
+
+/*! ABREVIACIONES */
+/* flex-start -> start */
+/* flex-end -> end */
+/* flex-flow: <flex-direction> <flex-wrap> */
+
+
+/*! PROPIEDADES ÚNICAS DE ELEMENTOS FLEX */
+/* los elementos que se encuentran dentro de un contenedor flex recibirán de manera implícita cierta capacidad para utilizar algunas propiedades únicas de flex */
+
+/*? ALIGN-SELF */ /* es una propiedad que me permitirá alinear un único elemento donde quiera como el align-items */
+
+/** VALOR POR DEFECTO: align-self: el valor de align-items; */
+/* VALORES: 
+    flex-start: Nos lleva el contenido al PRINCIPIO de nuestro contenedor
+    start: Nos lleva el contenido al PRINCIPIO de nuestro contenedor
+    flex-end: Nos lleva el contenido al FINAL de nuestro contenedor
+    end: Nos lleva el contenido al FINAL de nuestro contenedor
+    center: Nos lleva el contenido al CENTRO de nuestro contenedor
+    stretch: Alinea los hijos estirándolos para que ocupen la totalidad del contenedor
+    baseline: Alinea los hijos en relación a la base del contenido de los hijos del contenedor
+*/
