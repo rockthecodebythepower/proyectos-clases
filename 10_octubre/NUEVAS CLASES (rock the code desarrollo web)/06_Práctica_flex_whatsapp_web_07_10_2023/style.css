@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  /* COLORS */
+  --rtc-color-000: white;
+  --rtc-color-100: #f7f7f7;
+  --rtc-color-200: #e3e3e3;
+  --rtc-color-300: #d0d0d0;
+  --rtc-color-400: #cfcfcf;
+  --rtc-color-500: #cccccc;
+  --rtc-color-600: #999999;
+  --rtc-color-700: #666666;
+  --rtc-color-800: #333333;
+  --rtc-color-900: black;
+
+  /* COLOR SPECIAL */
+  --rtc-sent-message: #d6ffe9;
+
+  /* SPACING */
+  --rtc-margin-xs: 10px;
+  --rtc-margin-s: 20px;
+  --rtc-margin-m: 30px;
+  --rtc-margin-l: 40px;
+  --rtc-margin-xl: 50px;
+  --rtc-margin-xxl: 60px;
+
+  --rtc-padding-xs: 10px;
+  --rtc-padding-s: 20px;
+  --rtc-padding-m: 30px;
+  --rtc-padding-l: 40px;
+  --rtc-padding-xl: 50px;
+  --rtc-padding-xxl: 80px;
+
+  --rtc-gap-xs: 10px;
+  --rtc-gap-s: 20px;
+  --rtc-gap-m: 30px;
+  --rtc-gap-l: 40px;
+  --rtc-gap-xl: 50px;
+  --rtc-gap-xxl: 60px;
+
+  /* BORDER RADIUS */
+  --rtc-border-radius-primary: 100%;
+  --rtc-border-radius-secondary: 5px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--rtc-gap-s);
+}
+
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--rtc-color-200);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--rtc-color-600);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--rtc-color-700);
+}
+
+/* MAQUETACIÓN PARA LOS MENSAJES */
+.message {
+  align-items: flex-start;
+  margin-bottom: var(--rtc-margin-m);
+  background-color: var(--rtc-color-000);
+  max-width: 50%;
+  border-radius: var(--rtc-border-radius-secondary);
+  padding: var(--rtc-padding-s);
+  position: relative;
+  padding-right: var(--rtc-padding-xxl);
+  border: 2px solid black;
+}
+
+/* ENVIADOS */
+.sent {
+  align-items: flex-end;
+  align-self: flex-end;
+  /* padding-left: var(--rtc-padding-xxl);
+    padding-right: var(--rtc-padding-s); */
+  background-color: var(--rtc-sent-message);
+}
+
+/* RECIBIDOS */
+/* .recieve {
+} */
+
+body {
+  display: flex;
+}
+
+#chats {
+  border-right: 1px solid var(--rtc-color-300);
+  height: 100svh;
+  width: 40%;
+  transition: width 0.5s;
+  overflow-y: scroll;
+  min-width: 400px;
+  justify-content: flex-start;
+}
+
+#principal {
+  height: 100svh;
+  width: 100%;
+  transition: width 0.5s;
+}
+
+#chats > div {
+  width: 100%;
+}
+
+#chats article {
+  display: flex;
+  border-top: 1px solid var(--rtc-color-200);
+  padding: var(--rtc-padding-s);
+  gap: var(--rtc-gap-s);
+  width: 100%;
+  justify-content: center;
+}
+
+#chats article > img {
+  width: 70px;
+}
+
+.primary-info {
+  align-items: flex-start;
+  width: 60%;
+}
+
+.primary-info > p {
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#principal {
+  gap: 0px;
+}
+
+#principal > header {
+  height: 10svh;
+  width: 100%;
+  background-color: rgb(255, 213, 135);
+  border-bottom: 1px solid var(--rtc-color-300);
+}
+
+#principal > div {
+  height: 80svh;
+  width: 100%;
+  background-color: var(--rtc-color-100);
+  border-bottom: 1px solid var(--rtc-color-300);
+  background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
+  padding: var(--rtc-padding-m);
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow-y: scroll;
+}
+
+.hour {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0.5;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+/* .sent > .hour {
+    left: 10px;
+} */
+
+.arrow {
+  background-color: var(--rtc-color-000);
+  width: 20px;
+  height: 20px;
+  clip-path: polygon(0 100%, 100% 35%, 100% 100%);
+  position: absolute;
+  bottom: 5px;
+  left: -20px;
+  border-bottom: 2px solid black;
+}
+
+.sent > .arrow {
+  background-color: var(--rtc-sent-message);
+  width: 20px;
+  height: 20px;
+  clip-path: polygon(0 100%, 0 35%, 100% 100%);
+  position: absolute;
+  bottom: 5px;
+  left: auto;
+  right: -20px;
+}
+
+#principal > footer {
+  height: 10svh;
+  width: 100%;
+  background-color: rgb(255, 135, 135);
+}
+
+@media (max-width: 900px) {
+  #chats {
+    width: 0px;
+    min-width: 0px;
+  }
+  #principal {
+    width: 100%;
+  }
+  .message {
+    max-width: 70%;
+    padding-right: var(--rtc-padding-xl);
+  }
+}
