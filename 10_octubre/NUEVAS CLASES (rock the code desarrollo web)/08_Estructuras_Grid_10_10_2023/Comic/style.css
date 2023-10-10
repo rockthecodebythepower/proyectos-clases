@@ -1,0 +1,71 @@
+.comic {
+  display: grid;
+  background-color: antiquewhite;
+  width: 70%;
+  height: 90svh;
+  margin: auto;
+  margin-top: 5svh;
+  border-radius: 15px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.vineta {
+  background-color: black;
+  border-radius: 15px;
+  background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
+  position: relative;
+}
+
+.vineta:nth-child(1) {
+  grid-column: 1 / 4;
+  grid-row: 1 / 3;
+}
+
+.vineta:nth-child(1) > img {
+  width: 80%;
+  position: absolute;
+  top: -46px;
+  left: -40px;
+  filter: drop-shadow(0px 0px 4px #ffff00);
+  animation: locura 0.2s infinite;
+}
+
+@keyframes locura {
+  0% {
+    filter: hue-rotate(0deg) blur(0px) drop-shadow(0px 0px 4px #ffff00);
+    transform: scale(1) contrast(200%);
+  }
+  100% {
+    filter: hue-rotate(360deg) blur(1px) drop-shadow(0px 0px 100px #ffff00) contrast(200%);
+    transform: scale(1.1);
+  }
+}
+
+.vineta:nth-child(2) {
+  grid-column: 4 / span 2;
+  grid-row: 1 / 3;
+}
+
+.vineta:nth-child(2) > img {
+  width: 70%;
+  position: absolute;
+  bottom: -6px;
+  right: -30px;
+  filter: drop-shadow(0px 0px 4px #ffffff);
+}
+
+.vineta:nth-child(3) {
+  grid-column: 1 / 6;
+}
+
+.vineta:nth-child(4) {
+  grid-row: 4 / 6;
+}
+
+.vineta:nth-child(5) {
+  grid-row: 4 / 6;
+  grid-column: 2 / 6;
+}

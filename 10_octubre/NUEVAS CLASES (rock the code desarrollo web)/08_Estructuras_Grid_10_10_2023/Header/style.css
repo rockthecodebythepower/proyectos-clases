@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: grid;
+    grid-template-columns: minmax(200px, 2fr) 6fr;
+    padding: 30px;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > img {
+    width: 100%;
+    max-width: 300px;
+}
+
+header > nav > ul {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.menu {
+    width: 30px;
+    display: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.menu > img {
+    width: 100%;
+}
+
+#checkbox {
+    display: none;
+}
+
+#checkbox:checked ~ nav {
+    width: 50%;
+}
+
+/* virgulilla */
+/* ~ */
+/* (ctrl + alt + 4) * 2 */
+
+@media (max-width: 650px) {
+    header > nav {
+        position: absolute;
+        top: 0;
+        height: 100svh;
+        right: 0;
+        width: 0px;
+        padding-top: 100px;
+        overflow: hidden;
+        background-color: #8d8dff;
+        transition: all 0.5s;
+    }
+    a {
+        color: white;
+    }
+    header > nav > ul {
+        display: grid;
+        gap: 40px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        justify-items: center;
+        height: 60%;
+    }
+    .menu {
+        display: block;
+    }
+}
+
+@media (min-width: 651px) {
+    #checkbox:checked ~ nav {
+        width: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    #checkbox:checked ~ nav {
+        width: 100%;
+        background-color: rgb(255, 135, 135);
+    }
+}

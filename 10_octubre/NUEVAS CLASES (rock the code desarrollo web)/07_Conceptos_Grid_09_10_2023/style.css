@@ -1,0 +1,88 @@
+/* fr -> es una fracción, es decir, el espacio disponible se divide en fracciones, y puedes usar esta medida para ocuparlas */
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    width: 80%;
+    background-color: rgb(255, 209, 125);
+    height: 500px;
+    gap: 5px;
+    margin: 200px 0px;
+}
+
+body {
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.item {
+    background-color: rgb(130, 130, 255);
+}
+
+/* .item:nth-child(1) {
+    grid-row: 2 / 4;
+    grid-column: 3 / 5;
+} */
+
+.item:nth-child(2) {
+    background-color: rgb(255, 136, 136);
+    /* grid-row: 2;
+    grid-column: 1 / 3; */
+}
+
+.item:nth-child(3) {
+    background-color: rgb(255, 255, 134);
+   /*  grid-column: 1 / 6; */
+}
+
+.tablero {
+    width: 80%;
+    border: 2px solid black;
+    height: 500px;
+    margin: 200px 0px;
+    position: relative;
+    display: grid;
+    grid-template-areas: "header header header"
+                         "header header header"
+                         "header header header"
+                         "aside main main"
+                         "footer footer footer";
+}
+
+.item-tablero1 {
+    grid-area: header;
+    background-color: rgb(255, 139, 139);
+}
+
+.item-tablero2 {
+    grid-area: aside;
+    background-color: rgb(255, 236, 139);
+}
+
+.item-tablero3 {
+    grid-area: main;
+    background-color: rgb(139, 191, 255);
+}
+
+.item-tablero4 {
+    grid-area: footer;
+    background-color: rgb(82, 82, 82);
+}
+
+@media (max-width: 800px) {
+    .tablero {
+        grid-template-areas: "header"
+                             "aside"
+                             "main"
+                             "main"
+                             "main"
+                             "footer";
+    }
+     
+}
+
+
