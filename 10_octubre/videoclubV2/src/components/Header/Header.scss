@@ -1,0 +1,18 @@
+#header {
+    padding: 20px;
+    background-color: rgb(255, 213, 135);
+
+    nav {
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+}
+
+.active {
+    border-bottom: 2px solid black;
+}
+
+/* cuando una herramienta nos obliga a trabajar de x manera tiende a ser peor que una que no lo haga y nos aporte lo mismo */

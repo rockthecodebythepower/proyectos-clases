@@ -1,0 +1,45 @@
+form {
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
+
+form input, form button, form select {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+form button {
+    cursor: pointer;
+}
+
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+
+        label {
+            width: 200px;
+        }
+    }
+}
