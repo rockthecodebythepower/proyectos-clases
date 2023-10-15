@@ -1,0 +1,24 @@
+#app {
+  background-color: var(--rtc-bgColor-light);
+  color: var(--rtc-color-light);
+  min-height: 100svh;
+}
+
+#app.dark {
+  background-color: var(--rtc-bgColor-dark);
+  color: var(--rtc-color-dark);
+}
+
+.changeTheme {
+  font-size: 40px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  user-select: none;
+}
+
+/* todo lo que haya dentro de root, includo el div app tendrá una transición de bgColor */
+#root * {
+  transition: background-color 0.5s;
+}

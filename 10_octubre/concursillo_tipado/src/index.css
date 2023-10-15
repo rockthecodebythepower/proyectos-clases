@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: var(--rtc-primary-font);
+}
+
+:root {
+
+  /* FONTS */
+  --rtc-primary-font: 'Mooli', sans-serif;
+  --rtc-secondary-font: 'Roboto', sans-serif;
+
+  /* COLORS */
+  --rtc-color-1: rgb(255, 255, 255);
+  --rtc-color-2: rgb(229, 229, 229);
+  --rtc-color-3: rgb(204, 204, 204);
+  --rtc-color-4: rgb(172, 172, 172);
+  --rtc-color-5: rgb(137, 137, 137);
+  --rtc-color-6: rgb(85, 85, 85);
+  --rtc-color-7: rgb(63, 63, 63);
+  --rtc-color-8: rgb(33, 33, 33);
+  --rtc-color-9: rgb(0, 0, 0);
+
+  /* SPECIAL COLORS */
+  --rtc-special-color-1: rgb(123, 255, 123);
+  --rtc-special-color-2: rgb(255, 120, 120);
+
+
+  /* THEMES */
+
+  /* LIGHT */
+  --rtc-bgColor-light: var(--rtc-color-2);
+  --rtc-color-light: var(--rtc-color-8);
+
+  /* DARK */
+  --rtc-bgColor-dark: var(--rtc-color-8);
+  --rtc-color-dark: var(--rtc-color-2);
+
+}

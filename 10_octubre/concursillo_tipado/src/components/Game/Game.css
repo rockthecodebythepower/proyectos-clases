@@ -1,0 +1,35 @@
+#gameBoard {
+    min-height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pregunta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.respuestas {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 1fr 1fr;
+    gap: 100px;
+}
+
+.respuestas > p {
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.respuestas > p.acertada {
+    color: var(--rtc-special-color-1);
+}
+
+.respuestas > p.fallada {
+    color: var(--rtc-special-color-2);
+}
