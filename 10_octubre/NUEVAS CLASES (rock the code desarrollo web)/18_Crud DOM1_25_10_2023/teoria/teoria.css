@@ -1,0 +1,11 @@
+p.aprobado {
+    font-size: 40px;
+    color: green;
+    font-weight: bolder;
+}
+
+p.suspendido {
+    font-size: 40px;
+    color: red;
+    font-weight: bolder;
+}

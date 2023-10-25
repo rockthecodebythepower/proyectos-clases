@@ -1,0 +1,20 @@
+ul.closed {
+    width: 0px;
+}
+
+ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 200px;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100svh;
+    transition: all 1s;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
