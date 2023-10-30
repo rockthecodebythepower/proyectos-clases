@@ -1,0 +1,27 @@
+#app {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 80svh;
+}
+
+.carta {
+  width: 150px;
+  height: 200px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+  background-color: #4d0038;
+  background-image: url("https://www.transparenttextures.com/patterns/crissxcross.png");
+}
+
+.carta:hover {
+  transform: scale(1.1);
+}
+
+h3 {
+  font-size: 40px;
+  text-align: center;
+}

@@ -1,0 +1,72 @@
+:root {
+    --rtc-color-1: rgb(20, 20, 20);
+    --rtc-color-2: rgb(255, 166, 0);
+    --rtc-color-3: rgb(247, 247, 247);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--rtc-color-1);
+    height: 100svh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section {
+    width: 300px;
+    height: 500px;
+    border: 3px solid var(--rtc-color-2);
+    border-radius: 20px;
+}
+
+section > h2 {
+    color: var(--rtc-color-3);
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.send {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.send > input, .send > button {
+    border-radius: 20px;
+    padding: 10px 30px;
+    border: none;
+}
+
+.send > button {
+    background-color: var(--rtc-color-2);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.insert-emoji-here, .insert-num-here {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.insert-emoji-here > p {
+    font-size: 40px;
+}
+
+.insert-num-here > p {
+    color: var(--rtc-color-3);
+    font-size: 30px;
+}
