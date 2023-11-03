@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --rtc-calculator-color-1: #f3f3f3;
+  --rtc-calculator-color-2: #e8e8e8;
+  --rtc-calculator-color-3: #f9f9f9;
+  --rtc-calculator-color-4: #ffffff;
+}
+
+body {
+  background-color: rgb(47, 47, 47);
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
+}
+
+#calculator {
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  width: 50%;
+  gap: 5px;
+  max-width: 500px;
+  background-color: var(--rtc-calculator-color-1);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#calculator > * {
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  align-items: center;
+  border: 1px solid var(--rtc-calculator-color-2);
+  border-radius: 5px;
+  font-size: 40px;
+  background-color: var(--rtc-calculator-color-4);
+  cursor: pointer;
+  transition: all 0.5s;
+  user-select: none;
+}
+
+#calculator > *:hover {
+  background-color: var(--rtc-calculator-color-3);
+}
+
+
+.number0 {
+  grid-row: 7 / 8;
+  grid-column: 2 / 3;
+}
+
+.number1, .number2, .number3 {
+  grid-row: 6 / 7;
+  grid-column: 1 / 2;
+}
+
+.number2 {
+  grid-column: 2 / 3;
+}
+
+.number3 {
+  grid-column: 3 / 4;
+}
+
+.number4, .number5, .number6 {
+  grid-row: 5 / 6;
+  grid-column: 1 / 2;
+}
+
+.number5 {
+  grid-column: 2 / 3;
+}
+
+.number6 {
+  grid-column: 3 / 4;
+}
+
+.number7, .number8, .number9 {
+  grid-row: 4 / 5;
+  grid-column: 1 / 2;
+}
+
+.number8 {
+  grid-column: 2 / 3;
+}
+
+.number9 {
+  grid-column: 3 / 4;
+}
+
+.modulo {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+}
+
+.dividir, .multiplicar, .resta, .suma, .igual {
+  grid-row: 3 / 4;
+  grid-column: 4 / 5;
+}
+
+.multiplicar {
+  grid-row: 4 / 5;
+}
+
+.resta {
+  grid-row: 5 / 6;
+}
+
+.suma {
+  grid-row: 6 / 7;
+}
+
+.igual {
+  grid-row: 7 / 8;
+}
+
+.coma {
+  grid-row: 7 / 8;
+  grid-column: 3 / 4;
+}
+
+.C {
+  grid-row: 3 / 4;
+  grid-column: 3 / 4;
+}
+
+.elevado {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+}
+
+#calculator > .result {
+  grid-row: 1 / 3;
+  grid-column: 1 / 5;
+  margin: 10px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 10px;
+  height: 90%;
+}
+
+#calculator > * > img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
