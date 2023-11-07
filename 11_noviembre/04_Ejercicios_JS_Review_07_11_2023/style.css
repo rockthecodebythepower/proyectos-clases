@@ -1,0 +1,51 @@
+#products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.product {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product > img {
+    object-fit: contain;
+    width: 80%;
+    filter: drop-shadow(0px 0px 6px #000000);
+}
+
+#bestProduct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bestProduct {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+
+.bestProduct > img:first-of-type {
+    object-fit: contain;
+    width: 80%;
+    position: relative;
+    z-index: 4;
+}
+
+.bestProduct > img:last-child {
+    position: absolute;
+    object-fit: contain;
+    width: 80%;
+}
