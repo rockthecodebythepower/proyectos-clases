@@ -1,0 +1,22 @@
+.card {
+    width: 300px;
+    margin: 50px;
+    border-radius: 8px;
+    background-color: rgb(255, 202, 202);
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.card > img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.card > h3 {
+    text-align: center;
+}
+
+.card > p {
+    text-align: center;
+    margin: 10px;
+}

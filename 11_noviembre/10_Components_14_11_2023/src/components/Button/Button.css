@@ -1,0 +1,44 @@
+.main-button {
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  background-color: red;
+}
+
+.main-button.primary {
+  background-color: #4caf4f;
+  color: white;
+}
+
+.main-button.secondary {
+  background-color: white;
+  color: #4caf4f;
+  border: 2px solid #4caf4f;
+}
+
+.main-button.tertiary {
+  background-color: white;
+  color: #4caf4f;
+}
+
+.main-button[disabled="true"] {
+  background-color: var(--rtc-disabled-bgColor);
+  color: #abbed1;
+  border: none;
+  cursor: auto;
+}
+
+.main-button.s {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.main-button.m {
+  padding: 10px 20px;
+  font-size: 15px;
+}
+
+.main-button.l {
+  padding: 15px 25px;
+  font-size: 18px;
+}
