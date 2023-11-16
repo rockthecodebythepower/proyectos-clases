@@ -1,0 +1,90 @@
+/* GLOBAL STYLES */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: var(--pc-primary-font);
+}
+
+:root {
+
+  /* COLORS */
+  --pc-color-1: #EFBA4E;
+  --pc-color-2: #674809;
+  --pc-color-3: #1C1402;
+
+  --pc-bgColor: var(--pc-color-1);
+  --pc-special-color: var(--pc-color-2);
+  --pc-textColor: var(--pc-color-3);
+
+  /* FONTS */
+  --pc-primary-font: 'Lato', sans-serif;
+  --pc-highlight-font: 'Anton', sans-serif;
+
+  /* SPACINGS */
+  --pc-margin-xs: 5px;
+  --pc-margin-s: 10px;
+  --pc-margin-m: 20px;
+  --pc-margin-l: 30px;
+  --pc-margin-xl: 50px;
+
+  --pc-padding-xs: 5px;
+  --pc-padding-s: 10px;
+  --pc-padding-m: 20px;
+  --pc-padding-l: 30px;
+  --pc-padding-xl: 50px;
+
+  --pc-gap-xs: 5px;
+  --pc-gap-s: 10px;
+  --pc-gap-m: 20px;
+  --pc-gap-l: 30px;
+  --pc-gap-xl: 50px;
+
+}
+
+body {
+  background-image: url("/assets/pared.png");
+  background-color: var(--pc-bgColor);
+  height: 100svh;
+  overflow: hidden;
+}
+
+#app {
+  padding-top: 200px;
+  position: relative;
+  z-index: 2;
+  height: 100svh;
+  overflow: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--pc-special-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--pc-textColor);
+}
+
+@media (max-width: 500px) {
+  #app {
+    padding-top: 130px;
+  }
+}

@@ -1,0 +1,45 @@
+.divPizzas {
+    display: flex;
+    width: 480px;
+    height: 200px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: var(--pc-gap-m);
+    margin: var(--pc-margin-l);
+    margin-top: 0px;
+    padding-left: var(--pc-padding-m);
+}
+
+.divPizzas > div {
+    min-width: 100px;
+    min-height: 100px;
+    user-select: none;
+    cursor: pointer;
+    margin-bottom: var(--pc-margin-l);
+}
+
+.divPizzas > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all 0.5s;
+}
+
+.divPizzas > div > img:hover {
+    transform: rotate(40deg) scale(1.1);
+}
+
+.seleccionado {
+    /* border-bottom: 2px solid var(--pc-special-color); */
+    filter: drop-shadow(0px 12px 9px #000000);
+}
+
+@media (max-width: 750px) {
+    .divPizzas {
+        flex-direction: column;
+        width: 150px;
+        height: 400px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+}

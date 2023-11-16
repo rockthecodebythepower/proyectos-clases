@@ -1,0 +1,29 @@
+.food-image {
+    position: absolute;
+}
+
+.albahaca {
+    width: 50px;
+}
+
+.albahaca3 {
+    width: 200px;
+}
+
+.tomate {
+    bottom: 0;
+    left: 50px;
+}
+
+.pizza {
+    bottom: 0;
+    left: 250px;
+}
+
+.background {
+    width: 100%;
+    height: 80svh;
+    top: 20svh;
+    position: absolute;
+    overflow: hidden;
+}

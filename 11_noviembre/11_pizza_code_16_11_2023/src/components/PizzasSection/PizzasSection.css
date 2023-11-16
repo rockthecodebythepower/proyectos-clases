@@ -1,0 +1,37 @@
+.pizzas {
+  padding: var(--pc-padding-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--pc-gap-m);
+}
+
+.pizzas > h2 {
+  font-family: var(--pc-highlight-font);
+  font-size: 50px;
+  width: 80%;
+}
+
+.pizzas > h4 {
+  font-size: 20px;
+  color: var(--pc-special-color);
+  font-weight: 800;
+}
+
+.pizzas > p {
+  /*  width: 50%; */
+  max-width: 400px;
+  height: 100px;
+  line-height: 25px;
+}
+
+@media (max-width: 750px) {
+  .pizzas {
+    padding-top: 0px;
+  }
+}
+
+/* @media (max-width: 500px) {
+  .pizzas > p {
+    display: none;
+  }
+} */

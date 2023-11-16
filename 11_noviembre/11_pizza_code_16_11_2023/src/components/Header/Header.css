@@ -1,0 +1,30 @@
+header {
+    padding: var(--pc-padding-xl);
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    z-index: 3;
+}
+
+header ul {
+    display: flex;
+    gap: var(--pc-gap-l);
+}
+
+header a {
+    color: var(--pc-textColor);
+    font-weight: 700;
+}
+
+@media (max-width: 500px) {
+    header ul {
+        gap: var(--pc-gap-s);
+    }
+    header img {
+        width: 50px;
+        margin-right: var(--pc-margin-l);
+    }
+}
