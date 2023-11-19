@@ -1,0 +1,9 @@
+body {
+    height: 100svh;
+    background-color: rgb(253, 244, 244);
+    /* transition: all 0.5s; */
+}
+
+body.dark {
+    background-color: rgb(33, 33, 33);
+}
