@@ -1,0 +1,20 @@
+.tetris-game {
+  height: 600px;
+  width: 400px;
+  background-color: rgb(44, 44, 44);
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(13, 46.15px);
+  overflow: hidden;
+  align-content: flex-end;
+  gap: 3px;
+}
+
+.casilla {
+  min-height: 46.15px;
+}
+
+.pieza {
+  outline: 3px solid black;
+  min-height: 46.15px;
+}
