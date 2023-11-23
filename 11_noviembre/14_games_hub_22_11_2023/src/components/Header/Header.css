@@ -1,0 +1,25 @@
+header {
+    display: flex;
+    height: 5svh;
+    padding: 5%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 25px;
+    background-color: rgb(255, 213, 136);
+    font-weight: 900;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    header button {
+        padding: 5px 10px;
+        border-radius: 8px;
+        font-size: 20px;
+    }
+}

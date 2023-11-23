@@ -1,0 +1,6 @@
+[
+  { "marca": "Peugeot", "precio": 23200, "color": "azul" },
+  { "marca": "Mazda", "color": "rojo" },
+  { "marca": "Ferrari", "precio": 150000, "color": "rojo" },
+  { "marca": "Seat", "precio": 30000, "color": "negro" }
+]

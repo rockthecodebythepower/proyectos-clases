@@ -25,7 +25,7 @@ fs.readFile("documento.txt", "utf-8", (err, data) => {
   }
   //Si hay algún error lo devolvemos
   const encryptedText = encrypt(data, secretKey)
-  //Si todo hay ido bien almacenaremos el retorno de la función encrypt en una constante encryptedText, a la cual le pasaremos los datos de la lectura de fichero y la clave secreta
+  //Si todo ha ido bien almacenaremos el retorno de la función encrypt en una constante encryptedText, a la cual le pasaremos los datos de la lectura de fichero y la clave secreta
   fs.writeFile("documento-enc.txt", encryptedText, (err) => {
     //Ahora que tenemos el texto encriptado, generamos un nuevo fichero con ello
     if (err) {
