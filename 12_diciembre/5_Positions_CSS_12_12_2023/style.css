@@ -1,0 +1,85 @@
+h1 {
+    background-color: rgb(255, 138, 138);
+    bottom: 0;
+    z-index: 999999999;
+}
+
+h2 {
+    position: relative;
+    background-color: rgb(129, 129, 255);
+    color: white;
+    top: 50px;
+}
+
+.absolute, .absolute1, .absolute2, .absolute3 {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: rgb(255, 213, 135);
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    /* z-index: -1; */
+    border: 3px solid black;
+    z-index: 1;
+}
+
+.absolute1 {
+    background-color: rgb(138, 138, 255);
+    right: 100px;
+    top: 100px;
+    /* z-index: 3; */
+}
+
+.absolute2 {
+    background-color: rgb(255, 138, 138);
+    right: 150px;
+    top: 150px;
+    /* z-index: 2; */
+}
+
+.absolute3 {
+    background-color: rgb(157, 255, 138);
+    right: 200px;
+    top: 200px;
+    /* z-index: 1; */
+}
+
+.padre {
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 138);
+    position: absolute;
+    z-index: 2;
+    overflow: hidden;
+}
+
+body {
+    height: 200svh;
+}
+
+.fixed {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: rgb(170, 91, 52);
+    position: fixed;
+    right: 50px;
+    top: 50px;
+    /* z-index: -1; */
+    border: 3px solid black;
+    z-index: 100;
+}
+
+.sticky {
+    height: 300px;
+    width: 100px;
+    border-radius: 20px;
+    background-color: bisque;
+    border: 3px solid black;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
