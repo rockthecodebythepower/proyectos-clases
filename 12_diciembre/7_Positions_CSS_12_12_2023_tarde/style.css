@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  /* font-family: "Anton", sans-serif; */
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  height: 2000px;
+}
+
+.rojo,
+.naranja,
+.amarillo,
+.blanco,
+.azul,
+.morado,
+.absolute,
+.fixed,
+.sticky {
+  border-radius: 20px;
+  border: 3px solid black;
+  margin: 20px;
+}
+
+.rojo {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255, 135, 135);
+  position: absolute;
+  z-index: 1;
+  left: 100px;
+}
+
+.rojo:hover {
+  z-index: 3;
+}
+
+.naranja {
+  width: 250px;
+  height: 250px;
+  background-color: rgb(255, 209, 118);
+  position: relative;
+  z-index: 2;
+}
+
+.amarillo {
+  width: 500px;
+  height: 500px;
+  background-color: rgb(233, 255, 135);
+}
+
+.blanco {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+  z-index: 10;
+  position: relative;
+}
+
+.azul {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(135, 207, 255);
+  position: relative;
+  z-index: 9;
+}
+
+.morado {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(135, 135, 255);
+  position: relative;
+  z-index: 8;
+  top: -70px;
+}
+
+/* PARTICULARIDADES DE LAS POSITIONS */
+/* z-index -> mover los elementos por capas */
+/* top, bottom, left, right */
+/* ocupar espacio */
+
+/** STATIC */
+/*? VALOR POR DEFECTO DE LA PROPIEDAD POSITION */
+/*! la propiedad z-index NO funciona con el valor static en la propiedad position */
+/*! las propiedades top, bottom, left, right NO van a funcionar con el valor static en la propiedad position */
+/*! SI OCUPA ESPACIO */
+
+/** ABSOLUTE */
+/*! la propiedad z-index SI funciona */
+/*! las propiedades top, bottom, left, right -> ¿De qué? -> al elemento con una posición que no sea STATIC más cercano o por el contrario al documento */
+/*! NO OCUPA ESPACIO */
+
+/** RELATIVE */
+/*! la propiedad z-index SI funciona */
+/*! las propiedades top, bottom, left, right -> ¿De qué? -> DE SI MISMOS */
+/*! SI OCUPA ESPACIO */
+
+/** FIXED */
+/*! la propiedad z-index SI funciona */
+/*! las propiedades top, bottom, left, right -> ¿De qué? -> IGUAL QUE EN EL ABSOLUTE */
+/*! NO OCUPA ESPACIO */
+/*! se fija en el documento */
+
+.absolute {
+  width: 100px;
+  height: 100px;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.fixed {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  position: fixed;
+  top: 130px;
+  right: 0;
+}
+
+/** STICKY */
+/*! la propiedad z-index SI funciona */
+/*! las propiedades top, bottom, left, right -> ¿De qué? -> IGUAL QUE EL RELATIVE */
+/*! SI OCUPA ESPACIO */
+/*! se fija en el documento igual que fixed */
+/*! el position sticky no se puede salir del elemento padre, independientemente de que position tenga el padre */
+
+.sticky {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(200, 200, 200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  position: sticky;
+  /* top: 170px; */
+  top: 0;
+  /* left: 300px; */
+}
