@@ -1,0 +1,8 @@
+.gallery {
+  padding: var(--master-padding-l);
+  height: 100svh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}

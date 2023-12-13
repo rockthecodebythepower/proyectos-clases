@@ -1,0 +1,10 @@
+.display-grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(auto, 1fr));
+  gap: var(--master-gap-s);
+}
