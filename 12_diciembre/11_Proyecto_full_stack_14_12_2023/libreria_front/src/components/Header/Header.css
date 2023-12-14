@@ -1,0 +1,21 @@
+header {
+    width: 100%;
+    position: sticky;
+    height: 8svh;
+    top: 0;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0px 29px 6px -30px #898989;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+nav a {
+    font-size: 25px;
+}

@@ -1,0 +1,15 @@
+#login > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: 80svh;
+}
+
+#login input {
+    border-radius: 20px;
+    padding: 20px;
+    border: none;
+    background-color: #f9f9f9;
+}

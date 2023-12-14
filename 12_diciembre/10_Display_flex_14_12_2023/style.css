@@ -1,0 +1,17 @@
+.flex {
+    background-color: rgb(255, 222, 160);
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 50px;
+}
+
+.hijo {
+    border-radius: 20px;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(160, 160, 255);
+}

@@ -1,0 +1,93 @@
+/* HERRAMIENTAS */
+/* selectores */
+/* propiedades -> background-color: valor; */
+/* valores -> propiedad: #ffffff */
+
+/* el display por defecto por norma general - por bloques - div - section - article - header - footer - main - body - p - h
+    propiedad con valor display: block
+*/
+
+/* el display por defecto por norma general - algunos textos - label
+    propiedad con valor display: inline
+*/
+
+/* si utilizamos display flex en un contenedor, tanto a sus hijos como a el mismo se le desbloquearán ciertas propiedades únicas de css */
+
+body {
+  background-color: rgb(33, 33, 33);
+  color: white;
+  height: 95svh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+div.bloque {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: rgb(255, 218, 224);
+}
+
+/** CONTENEDOR CON DISPLAY: FLEX */
+/*! JUSTIFY-CONTENT */ /* flex-start > start */
+    /* 
+       esta propiedad se dedica a permitirte "mover" tus elementos
+       hijos en el eje principal
+    */
+    /*? posibles valores */
+        /*? start */ /* -> al principio */
+        /*? center */ /* -> en el centro */
+        /*? end */ /* -> al final */
+        /*? space-evenly */ /* -> separao un poquillo */
+        /*? space-around */ /* -> separao un poquito más */
+        /*? space-between */ /* -> separao al máximo */
+/*! ALIGN-ITEMS */ /* flex-start > start */
+    /* 
+       esta propiedad se dedica a permitirte "mover" tus elementos
+       hijos en el eje secundario
+    */
+    /*? posibles valores */
+        /*? start */ /* -> al principio */
+        /*? center */ /* -> en el centro */
+        /*? end */ /* -> al final */
+/*! FLEX-DIRECTION */ /* row */
+    /* 
+       esta propiedad indica la dirección de tus elementos hijos
+    */
+    /*? posibles valores */
+        /*? row */ /* -> en fila */
+        /*? column */ /* -> en columna */
+        /*? row-reverse */ /* -> en fila del revés */
+        /*? column-reverse */ /* -> en columna del revés */
+/*! FLEX-WRAP*/ /* nowrap */
+    /* 
+       esta propiedad te permite "envolver" a tus hijos para 
+       que cuando no quepan se vayan organizando para pasar
+       hacia una siguiente fila o columna
+    */
+    /*? posibles valores */
+        /*? nowrap */
+        /*? wrap */
+
+/** lOS ELEMENTOS HIJOS AFECTADOS POR DISPLAY: FLEX */
+/*! ALIGN-SELF */
+    /* 
+       esta propiedad se dedica a permitirte "mover" UN ELEMENTO
+       hijo en el eje secundario
+    */
+    /*? posibles valores */
+        /*? mismos que en align-items */
+/*! ORDER */
+    /* 
+       esta propiedad que me permite indicar el NÚMERO de 
+       ordenación del elemento
+    */
+    /*? posibles valores */
+        /*? cualquier valor numérico entero */
+
+/* abreviaciones */
+/* flex-basis flex-shrink flex-grow -> flex */
+/* flex-direction flex-wrap -> flex-flow */
