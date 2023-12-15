@@ -1,0 +1,28 @@
+.links-wrp > li {
+  width: 100%;
+  border-radius: var(--master-border-radius);
+  overflow: hidden;
+  position: relative;
+}
+
+.links-wrp > li:hover > a > .highlighter {
+  width: 100%;
+}
+
+.links-wrp > li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: var(--master-padding-l);
+}
+
+.links-wrp > li img {
+  width: 50px;
+}
+
+.links-wrp > li p {
+  font-size: 23px;
+  font-weight: 700;
+  color: var(--master-color-000);
+}

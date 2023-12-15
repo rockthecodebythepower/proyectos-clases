@@ -1,0 +1,61 @@
+.login-form {
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.login-form .linea {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: var(--master-gap-s);
+    top: -10px;
+}
+
+.login-form > div {
+    border: 2px solid var(--master-color-400);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 230px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--master-border-radius);
+    gap: var(--master-gap-s);
+}
+
+.login-form label {
+    color: var(--master-color-400);
+    font-weight: 600;
+    font-size: 17px;
+    background-color: var(--master-color-000);
+    width: fit-content;
+    padding: 0px var(--master-padding-xs);
+    margin-left: var(--master-margin-s);
+}
+
+.login-form input {
+    border-radius: var(--master-border-radius);
+    border: none;
+    padding: var(--master-padding-s);
+    outline: none;
+    color: var(--master-color-400);
+}
+
+.login-form input::placeholder {
+    color: var(--master-color-400);
+}
+
+.login-form button {
+    border-radius: var(--master-border-radius);
+    border: 2px solid var(--master-color-400);
+    padding: var(--master-padding-s);
+    cursor: pointer;
+    width: 150px;
+    background-color: var(--master-color-100);
+}
