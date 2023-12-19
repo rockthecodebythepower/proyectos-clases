@@ -5,19 +5,19 @@ const template = () => {
   <section>
     <ul id="albums"></ul>
   </section>
-  <div class="form">
-    <input type="text" id="titleInput"/ placeholder="Title">
-    <input type="text" id="artistInput"/ placeholder="Artist">
-    <input type="text" id="coverInput"/ placeholder="Cover">
-    <button id="createbtn">Create</button>
+  <div>
+    <input type="text" id="titleInput" placeholder="Title"/>
+    <input type="text" id="artistInput" placeholder="Artist"/>
+    <input type="text" id="coverInput" placeholder="Cover URL"/>
+    <button id="createBtn">Create</button>
   </div>
   `;
 };
 
 const deleteAlbum = (id) => {
   axios.delete(`http://localhost:8080/api/v1/albums/${id}`).then((res) => {
-    console.log(res.data);
     location.reload();
+    console.log(res.data);
   });
 };
 
@@ -25,18 +25,20 @@ const printAlbums = () => {
   const albumsContainer = document.querySelector("#albums");
   axios.get("http://localhost:8080/api/v1/albums").then((res) => {
     for (const album of res.data) {
-      albumsContainer.innerHTML += `
-        <li>
-          <img src=${album.cover} alt=${album.title}/>
-          <h2>${album.artist}</h2>
-          <h3>${album.title}</h3>
-          <button class="deleteBtn">Delete</button>
-        </li>
-        `;
+      const deleteBtn = document.createElement("button");
+      deleteBtn.addEventListener("click", () => {
+        deleteAlbum(album._id);
+      });
+      deleteBtn.innerText = "Delete";
 
-      document
-        .querySelector(".deleteBtn")
-        .addEventListener("click", () => deleteAlbum(album._id));
+      const li = document.createElement("li");
+      li.innerHTML = `
+      <img src=${album.cover} alt=${album.title}/>
+      <h2>${album.artist}</h2>
+      <h3>${album.title}</h3>
+    `;
+      li.appendChild(deleteBtn);
+      albumsContainer.appendChild(li);
     }
   });
 };
@@ -45,7 +47,7 @@ const createAlbums = () => {
   const titleInput = document.querySelector("#titleInput");
   const artistInput = document.querySelector("#artistInput");
   const coverInput = document.querySelector("#coverInput");
-  const createBtn = document.querySelector("#createbtn");
+  const createBtn = document.querySelector("#createBtn");
 
   createBtn.addEventListener("click", () => {
     axios
@@ -63,9 +65,9 @@ const createAlbums = () => {
 
 const Albums = () => {
   const container = document.querySelector("#app");
-  container.innerHTML += template();
+  container.innerHTML = template();
   printAlbums();
-  createAlbums();
+  createAlbums()
 };
 
 export default Albums;
