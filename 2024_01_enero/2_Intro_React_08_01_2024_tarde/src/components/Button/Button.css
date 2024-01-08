@@ -1,0 +1,23 @@
+.btn {
+    border-radius: 10px;
+    border: solid 2px black;
+    background-color: transparent;
+    padding: 10px 13px;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin: 10px;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.l {
+    font-size: 20px;
+    padding: 15px 18px;
+}
+
+.s {
+    font-size: 10px;
+    padding: 5px 8px;
+}
