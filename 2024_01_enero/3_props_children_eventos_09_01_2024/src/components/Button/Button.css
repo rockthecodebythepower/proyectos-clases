@@ -1,0 +1,28 @@
+.btn {
+    border: none;
+    padding: 10px 13px;
+    margin: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.primary {
+    background-color: #4CAF4F;
+    color: white;
+}
+
+.secondary {
+    border: 1px solid #4CAF4F;
+    background-color: transparent;
+    color: #4CAF4F;
+}
+
+.tertiary {
+    background-color: transparent;
+    color: #4CAF4F;
+}
