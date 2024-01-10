@@ -1,0 +1,30 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10svh;
+    background-color: white;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10svh;
+    width: 100%;
+}
+
+header nav {
+    width: 100%;
+    height: 100%;
+}
+
+header a {
+    color: black;
+}
+
+.active {
+    border-bottom: 2px solid black;
+}

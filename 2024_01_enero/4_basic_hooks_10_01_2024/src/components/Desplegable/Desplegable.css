@@ -1,0 +1,12 @@
+.menu {
+    position: absolute;
+    width: 50px;
+    cursor: pointer;
+    right: 10px;
+    transition: all 0.5s;
+    z-index: 2;
+}
+
+.menu:hover {
+    transform: scale(1.1);
+}
