@@ -10,7 +10,6 @@ const isAuth = async (req, res, next) => {
         const { id } = verificarLlave(parsedToken);
         const user = await User.findById(id);
 
-        // abrir la puerta
         user.password = null;
         req.user = user;
         next();
