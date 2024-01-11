@@ -1,0 +1,9 @@
+.about {
+    height: 90svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 135, 135);
+    font-weight: bold;
+    font-size: 50px;
+}
