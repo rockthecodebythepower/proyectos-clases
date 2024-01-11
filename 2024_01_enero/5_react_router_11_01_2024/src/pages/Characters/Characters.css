@@ -1,0 +1,24 @@
+.characters {
+    min-height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-top: 15svh;
+    padding-bottom: 5svh;
+    font-size: 50px;
+    background-color: rgb(255, 212, 212);
+}
+
+.characters img {
+    border-radius: 20px;
+    border: 3px solid black;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.characters img:hover {
+    transform: scale(1.1) rotate(5deg);
+    filter: invert(1);
+}

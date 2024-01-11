@@ -1,0 +1,30 @@
+header {
+    background-color: white;
+    height: 10svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+}
+
+header nav {
+    width: 100%;
+}
+
+header ul {
+    display: flex;
+    gap: 30px;
+    font-size: 30px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.active {
+    border-bottom: 3px solid black;
+}
+
+header a {
+    color: black;
+}
