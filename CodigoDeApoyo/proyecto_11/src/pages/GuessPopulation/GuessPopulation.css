@@ -1,0 +1,42 @@
+.population {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    min-height: 90svh;
+    position: relative;
+}
+
+.population>.img_wrp {
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.population>.img_wrp>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.population-number {
+    font-size: 40px;
+}
+
+.input-population {
+    border-radius: 10px;
+    padding: 10px 13px;
+    border: 3px solid black;
+    text-align: center;
+}
+
+.check {
+    border-radius: 10px;
+    padding: 10px 13px;
+    font-size: 25px;
+    border: 3px solid black;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+}
