@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Instrument Serif', serif;
+}
+
+:root {
+  --rtc-color-1: #01081B;
+  --rtc-color-2: rgb(53, 53, 53);
+  --rtc-color-3: rgb(238, 238, 238);
+}
+
+body {
+  background-color: var(--rtc-color-1);
+}

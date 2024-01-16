@@ -1,0 +1,76 @@
+/*Añade los estilos de tu componente aqui*/
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: var(--rtc-color-3);
+    min-height: 100svh;
+    animation: desvanecer 2s 28s forwards;
+}
+
+.home>p {
+    font-size: 30px;
+}
+
+.home p {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    width: 0px;
+    text-align: center;
+}
+
+.home p:first-child {
+    animation: typing 3.5s steps(40, end) forwards;
+}
+
+.home p:nth-child(2) {
+    animation: typing 3.5s 3.5s steps(40, end) forwards;
+}
+
+.home p:nth-child(3) {
+    animation: typing 3.5s steps(40, end) 7s forwards;
+}
+
+.home p:nth-child(4) {
+    animation: typing 3.5s steps(40, end) 10.5s forwards;
+}
+
+.home p:nth-child(5) {
+    animation: typing 3.5s steps(40, end) 14s forwards;
+}
+
+.home p:nth-child(6) {
+    animation: typing 3.5s steps(40, end) 17.5s forwards;
+}
+
+.home p:nth-child(7) {
+    animation: typing 3.5s steps(40, end) 21s forwards;
+}
+
+.home p:nth-child(8) {
+    animation: typing 3.5s steps(40, end) 24.5s forwards;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes desvanecer {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

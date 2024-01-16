@@ -1,0 +1,49 @@
+/*Añade los estilos de tu componente aqui*/
+.bedroom {
+    background-color: #212026;
+    display: flex;
+    width: 100%;
+    height: 100svh;
+    position: relative;
+}
+
+.bedroom > .img_wrp > .dark {
+    position: absolute;
+    width: 1024px;
+    height: 100svh;
+    z-index: 3;
+}
+
+.window {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    top: 450px;
+    left: 265px;
+    z-index: 100;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.window:hover {
+    background-color: rgba(232, 232, 232, 0.192);
+}
+
+:root {
+    --rtc-dark-0: rgba(0, 0, 0, 0.682);
+    --rtc-dark-1: rgba(0, 0, 0, 0.582);
+    --rtc-dark-2: rgba(0, 0, 0, 0.482);
+    --rtc-dark-3: rgba(0, 0, 0, 0.382);
+    --rtc-dark-4: rgba(0, 0, 0, 0.282);
+    --rtc-dark-5: rgba(0, 0, 0, 0.182);
+    --rtc-dark-6: transparent;
+}
+
+.resolucion {
+    position: absolute;
+    font-size: 100px;
+    color: white;
+    top: 400px;
+    left: 200px;
+}

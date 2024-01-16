@@ -1,0 +1,139 @@
+/*Añade los estilos de tu componente aqui*/
+.attic {
+    background-color: #212026;
+    display: flex;
+    width: 100%;
+    height: 100svh;
+    position: relative;
+}
+
+.caja-fuerte {
+    width: 207px;
+    top: 286px;
+    height: 557px;
+    left: 245px;
+    position: absolute;
+    clip-path: polygon(0 0, 100% 13%, 100% 76%, 0% 100%);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.caja-fuerte:hover {
+    background-color: rgba(232, 232, 232, 0.192);
+}
+
+.modal-caja {
+    background-color: #212026;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    top: 30%;
+    left: 400px;
+    z-index: 99999999999999;
+}
+
+.modal-caja > h2 {
+    color: var(--rtc-color-3);
+    font-size: 30px;
+}
+
+.modal-caja > div {
+    display: flex; 
+    gap: 20px;
+}
+
+.modal-caja input {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.modal-caja button {
+    padding: 10px 13px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-caja p {
+    color: var(--rtc-color-3);
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px 13px;
+    font-weight: bolder;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.billete-premio {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    top: 754px;
+    left: 752px;
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.billete-premio:hover {
+    background-color: #ffffff29;
+}
+
+.libro {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    top: 228px;
+    left: 406px;
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.libro:hover {
+    background-color: #ffffff29;
+}
+
+.libro_modal {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    top: 400px;
+    right: 50px;
+    z-index: 3;
+}
+
+.libro_modal > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.libro_modal > p:first-child {
+    position: absolute;
+    top: 88px;
+    left: 55px;
+    width: 150px;
+}
+
+.libro_modal > p:nth-child(2) {
+    position: absolute;
+    top: 140px;
+    left: 55px;
+    width: 150px;
+}

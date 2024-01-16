@@ -1,0 +1,47 @@
+/*Añade los estilos de tu componente aqui*/
+.house {
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    animation: fadein 2s forwards;
+}
+
+.house > img {
+    object-fit: contain;
+}
+
+.instrucciones {
+    height: 100svh;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--rtc-color-3);
+    font-size: 25px;
+}
+
+.desvan {
+    width: 699px;
+    height: 455px;
+    position: absolute;
+    clip-path: polygon(50% 50%, 0% 100%, 100% 100%);
+    top: -179px;
+    left: 149px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.desvan:hover {
+    background-color: rgba(251, 255, 240, 0.209)
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

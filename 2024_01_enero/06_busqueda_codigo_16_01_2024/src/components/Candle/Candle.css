@@ -1,0 +1,20 @@
+/*Añade los estilos de tu componente aqui*/
+.candle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    z-index: 10;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.candle:hover {
+    background-color: rgba(232, 232, 232, 0.192);
+}
+
+.fire {
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+}
