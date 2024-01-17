@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+  font-size: var(--font-size-sm)
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(21, 21, 21);
+  color: whitesmoke;
+}
+
+a {
+  color: orange;
+  text-decoration: none;
+}
+/*ADAPTATIVE*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+header > nav > ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+
+section {
+  padding: 20px;
+}
+
+section > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+section > ul > li {
+  border: 2px solid orange;
+  list-style-type: none;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+section > ul > li > p {
+  max-width: 500px;
+  text-align: justify;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 700px) {
+  section > ul > li {
+    background-image: url(https://img.freepik.com/free-vector/stylish-hexagonal-line-pattern-background_1017-19742.jpg?size=626&ext=jpg&ga=GA1.1.632798143.1705449600&semt=ais);
+    background-size: cover;
+  }
+  p {
+    color: black;
+  
+  }
+}
