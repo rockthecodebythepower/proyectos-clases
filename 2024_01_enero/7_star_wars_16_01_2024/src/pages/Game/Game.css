@@ -1,0 +1,18 @@
+/*Añade los estilos de tu componente aqui*/
+
+.game {
+    display: flex;
+    height: 100svh;
+    justify-content: center;
+    align-items: center;
+}
+
+.game > button {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--rtc-color-4);
+    font-size: 50px;
+    cursor: pointer;
+}

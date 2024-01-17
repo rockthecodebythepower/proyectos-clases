@@ -1,0 +1,42 @@
+.character {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 100svh;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.character > div {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+.character > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.character > p {
+    width: 50%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.character > h2 {
+    font-size: 70px;
+    /* margin-top: -310px; */
+    transition: all 0.5s;
+    /* margin-bottom: 300px; */
+}
+
+/* .character > div:hover + h2 {
+    margin-top: -430px;
+} */

@@ -1,0 +1,22 @@
+/*Añade los estilos de tu componente aqui*/
+.droid {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.droid > div {
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.droid > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

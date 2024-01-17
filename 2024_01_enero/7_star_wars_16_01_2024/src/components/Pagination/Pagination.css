@@ -1,0 +1,31 @@
+.pagination {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+    z-index: 9999999999;
+}
+
+.pagination > button {
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 25px;
+    background-color: var(--rtc-color-1);
+    color: var(--rtc-color-2);
+    border: 3px solid var(--rtc-color-4);
+    cursor: pointer;
+}
+
+.pagination > p {
+    font-size: 30px;
+    width: 100px;
+    text-align: center;
+}
+
+.pagination > button:disabled {
+    border: none;
+    cursor: not-allowed;
+}

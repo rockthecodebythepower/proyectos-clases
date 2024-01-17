@@ -1,0 +1,61 @@
+.character-card {
+    position: relative;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    outline: 1px solid var(--rtc-color-4);
+    transition: transform 0.5s;
+}
+
+.character-card h2 {
+    font-size: 35px;
+    text-align: center;
+    text-shadow: 4px 3px 0px var(--rtc-color-1);
+    color: var(--rtc-color-2);
+}
+
+.character-card:hover {
+    transform: scale(1.05) rotate(1deg);
+    outline: 5px solid var(--rtc-color-4);
+}
+
+.character-card>.cortina {
+    height: 0px;
+    background-color: rgba(103, 103, 103, 0.327);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.character-card:hover>.cortina {
+    height: 300px;
+}
+
+.character-card>.img_wrp {
+    width: 500px;
+    height: 300px;
+}
+
+.character-card>.img_wrp>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .character-card>.img_wrp {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 450px) {
+    .character-card>.img_wrp {
+        width: 300px;
+        height: 250px;
+    }
+}
