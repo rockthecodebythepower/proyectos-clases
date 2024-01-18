@@ -1,0 +1,23 @@
+/*Añade los estilos de tu componente aqui*/
+.usecallback > h1 {
+    user-select: none;
+    cursor: pointer;
+    font-size: 100px;
+}
+
+.usecallback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+    flex-direction: column;
+    gap: 50px;
+}
+
+button {
+    padding: 10px 13px;
+    font-size: 30px;
+    border-radius: 5px;
+    border: 3px solid black;
+    cursor: pointer;
+}
