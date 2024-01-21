@@ -1,0 +1,37 @@
+.calc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 300px;
+    min-height: 100svh;
+    gap: 10px;
+}
+
+.calc > input {
+    font-size: 30px;
+    text-align: center;
+}
+
+.operations {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.operations > button {
+    border-radius: 2px;
+    border: 3px solid black;
+    padding: 10px 13px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.historic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
