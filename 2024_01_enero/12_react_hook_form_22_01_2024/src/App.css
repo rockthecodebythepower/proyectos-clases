@@ -1,0 +1,62 @@
+header {
+  display: flex;
+  height: 10svh;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header button {
+  font-size: 25px;
+  border-radius: 10px;
+  border: 3px solid black;
+  padding: 8px 11px;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgb(255, 220, 154);
+}
+
+.form-wrp {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  height: 90svh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrp > h2 {
+  font-size: 40px;
+}
+
+.form-wrp > form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrp > form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrp label {
+  font-size: 25px;
+}
+
+.form-wrp input {
+  font-size: 25px;
+  border-radius: 10px;
+  border: 3px solid black;
+  padding: 8px 11px;
+  text-align: center;
+}
+
+.form-wrp input::placeholder {
+  color: red;
+}
