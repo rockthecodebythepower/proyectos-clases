@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  --rtc-color-0: #f0f0f0;
+  --rtc-color-1: #0f2939;
+  --rtc-color-2: rgba(0, 134, 0, 0.197);
+  --rtc-color-3: #ffc105;
+  --rtc-color-4: #4b6572;
+  --rtc-color-5: #9b27b0;
+
+  --rtc-light-mode-bg: var(--rtc-color-0);
+  --rtc-dark-mode-bg: var(--rtc-color-1);
+  --rtc-light-mode-bg-negative: var(--rtc-color-1);
+  --rtc-dark-mode-bg-negative: var(--rtc-color-0);
+
+  --rtc-light-mode-text: var(--rtc-color-1);
+  --rtc-dark-mode-text: var(--rtc-color-0);
+  --rtc-light-mode-text-negative: var(--rtc-color-0);
+  --rtc-dark-mode-text-negative: var(--rtc-color-1);
+}
+
