@@ -1,0 +1,12 @@
+.info {
+    position: absolute;
+    font-weight: 600;
+    font-size: 25px;
+    top: 50px;
+    right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}

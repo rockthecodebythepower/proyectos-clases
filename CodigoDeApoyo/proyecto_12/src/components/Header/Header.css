@@ -1,0 +1,26 @@
+header {
+  height: 10svh;   
+  box-shadow: 0px 7px 26px -22px rgba(0,0,0,0.75);
+}
+
+header nav {
+    width: 100%;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10svh;
+}
+
+header a {
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+header a.active {
+    border-bottom: 3px solid black;
+}
