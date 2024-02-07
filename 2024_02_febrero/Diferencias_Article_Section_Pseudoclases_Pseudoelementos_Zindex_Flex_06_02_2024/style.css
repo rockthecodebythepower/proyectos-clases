@@ -1,0 +1,87 @@
+.comentario {
+    background-color: #f6f6f6;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    min-width: 300px;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 200px;
+    transition: all 0.5s;
+}
+
+.comentario>img {
+    width: 200px;
+    border-radius: 100%;
+}
+
+/* pseudoclase -> : */
+/* pseudoelemento -> :: */
+
+::-webkit-scrollbar {
+    background-color: red;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: blue;
+}
+
+.comentario::before {
+    content: "Guacamole";
+    color: blue;
+    background-color: red;
+    width: 200px;
+    height: 100px;
+}
+
+.comentario>p {
+    user-select: none;
+}
+
+.comentario>p::selection {
+    background-color: black;
+    color: white;
+}
+
+.comentario:hover {
+    background-color: red;
+    transform: scale(1.2);
+}
+
+.input {
+    width: 200px;
+    margin: 500px;
+}
+
+.input::placeholder {
+    color: blue;
+}
+
+.input:disabled {
+    background-color: black;
+}
+
+a {
+    margin-bottom: 500px;
+    /* color: black;
+    text-decoration: none; */
+}
+
+a:visited {
+    font-size: 100px;
+    color: red;
+}
+
+a:active {
+    font-size: 50px;
+    color: green;
+}
+
+a:hover {
+    background-color: blue;
+}

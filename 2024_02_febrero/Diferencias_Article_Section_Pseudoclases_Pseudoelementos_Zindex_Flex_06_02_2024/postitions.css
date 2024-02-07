@@ -1,0 +1,23 @@
+div {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.orange {
+    background-color: rgb(255, 213, 136);
+    width: 200px;
+    /* intentando llevar mi div naranja a la parte de abajo de la página */
+    position: absolute;
+    bottom: 100px;
+    left: 40%;
+    z-index: 9999999999999999999999999;
+}
+
+.blue {
+    background-color: rgb(146, 146, 255);
+    bottom: 100px;
+    left: 40%;
+    position: absolute;
+    z-index: 40;
+}

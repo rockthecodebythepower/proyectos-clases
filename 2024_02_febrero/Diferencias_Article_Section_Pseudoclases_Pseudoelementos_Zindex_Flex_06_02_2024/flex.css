@@ -1,0 +1,25 @@
+article {
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    border-radius: 20px;
+    background-color: rgb(255, 211, 129);
+}
+
+body {
+    display: flex;
+    height: 100svh;
+    margin: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 100px;
+    width: 100%;
+}
+
+/* svh small viewport height */
+
+/*!  ->  justify-content  -  align-items  -  flex-wrap  -   flex-direction  */
+
+/*? justify-content: start, end, center, space-evenly, space-around, space-between */
