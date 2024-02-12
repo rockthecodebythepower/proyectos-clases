@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    /* selecciona absolutamente todas las etiquetas de mi html */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--landing-primaryFont);
+}
+
+/* header * { seleccionando absolutamente todos los HIJOS de header
+    color: black;
+} */
+
+:root {
+    /* declarar una variable */
+    /* nombreVariable: valor */
+
+    /* FONTS */
+    --landing-primaryFont: 'Inter', sans-serif;
+
+    /* COLORS */
+    --landing-textColor-important: #505F98;
+    --landing-title: #091133;
+    --landing-descriptions: #6F7CB2;
+    --landing-primary-button-bg: #111B47;
+    --landing-primary-button-color: #FFFFFF;
+    --landing-secondary-button-bg: transparent;
+    --landing-secondary-button-color: #091133;
+    --landing-text: #5D6970;
+    --landing-h1: #37447E;
+
+    /* SPACINGS */
+    --landing-margin-xs: 5px;
+    --landing-margin-s: 10px;
+    --landing-margin-m: 20px;
+    --landing-margin-l: 30px;
+    --landing-margin-xl: 40px;
+    --landing-margin-xxl: 50px;
+
+    --landing-padding-xs: 5px;
+    --landing-padding-s: 10px;
+    --landing-padding-m: 20px;
+    --landing-padding-l: 30px;
+    --landing-padding-xl: 40px;
+    --landing-padding-xxl: 50px;
+
+    --landing-gap-xs: 5px;
+    --landing-gap-s: 10px;
+    --landing-gap-m: 20px;
+    --landing-gap-l: 30px;
+    --landing-gap-xl: 40px;
+    --landing-gap-xxl: 50px;
+
+    /* BORDER RADIUS */
+    --landing-br: 5px;
+}
+
+#header {
+    padding: var(--landing-padding-m);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header>* {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+}
+
+#header>nav>ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+#header a {
+    font-size: 20px;
+    color: var(--landing-textColor-important);
+}
+
+h1 {
+    font-weight: 800;
+    color: var(--landing-h1);
+}
+
+.primary-button, .secondary-button {
+    padding: var(--landing-padding-s) var(--landing-padding-xxl);
+    color: var(--landing-primary-button-color);
+    font-weight: 700;
+    background-color: var(--landing-primary-button-bg);
+    border-radius: var(--landing-br);
+    border: none;
+}
+
+.secondary-button {
+    color: var(--landing-secondary-button-color);
+    background-color: var(--landing-secondary-button-bg);
+    outline: var(--landing-secondary-button-color) 2px solid;
+}
+
+#hero {
+    display: flex;
+    height: 70svh;
+    padding: var(--landing-padding-xl);
+    align-items: center;
+    gap: var(--landing-gap-xl);
+}
+
+#hero > div {
+    width: 50%;
+    min-width: 570px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--landing-gap-m);
+}
+
+.hero-img {
+    width: 50%;
+    max-width: 430px;
+    position: absolute;
+    right: 0;
+    min-width: 350px;
+}
+
+.path {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 50%;
+    min-width: 700px;
+}
+
+#hero > div > h2 {
+    font-size: 50px;
+    color: var(--landing-title);
+    font-weight: 500;
+}
+
+#hero > div p {
+    color: var(--landing-textColor-important);
+}
+
+#hero > div > div {
+    margin-top: var(--landing-margin-l);
+    display: flex;
+    gap: var(--landing-gap-l);
+    flex-wrap: wrap;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--landing-h1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--landing-descriptions);
+}
+
+
+@media (max-width: 1020px) {
+    .hero-img {
+        opacity: 0.2;
+    }
+}
+
+@media (max-width: 640px) {
+    #hero > div > h2 {
+        font-size: 30px;
+    }
+    #hero > div {
+        width: 100%;
+        min-width: 0px;
+    }
+    #hero > div p {
+        color: var(--landing-textColor-important);
+    }
+}
+
+@media (max-width: 800px) {
+    #header > div {
+        display: none;
+    }
+    #header {
+        flex-direction: column-reverse;
+        gap: var(--landing-gap-m);
+    }
+    #header > nav {
+        width: 100%;
+    }
+}
