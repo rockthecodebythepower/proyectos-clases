@@ -1,0 +1,24 @@
+.title {
+  font-size: 90px;
+  text-align: center;
+}
+
+.buttons {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons>button {
+  padding: 8px 10px;
+  font-size: 30px;
+  border-radius: 5px;
+  background-color: rgb(255, 131, 131);
+  border: none;
+  cursor: pointer;
+  width: 50px;
+}
+
+.buttons>button:last-child {
+  background-color: rgb(126, 126, 255);
+}
