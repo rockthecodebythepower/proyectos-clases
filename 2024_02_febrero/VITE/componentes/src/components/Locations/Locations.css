@@ -1,0 +1,24 @@
+.locations {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 50px;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.locations>div>div {
+    width: 200px;
+    height: 200px;
+}
+
+.locations>div>div>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.locations>div h3,
+.locations>div p {
+    text-align: center;
+}

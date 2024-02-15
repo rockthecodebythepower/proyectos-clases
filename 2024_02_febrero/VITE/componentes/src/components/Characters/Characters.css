@@ -1,0 +1,8 @@
+.characters {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 50px;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}

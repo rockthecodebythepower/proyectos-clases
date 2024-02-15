@@ -1,0 +1,11 @@
+nav {
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 30px;
+    background-color: rgb(255, 211, 129);
+}

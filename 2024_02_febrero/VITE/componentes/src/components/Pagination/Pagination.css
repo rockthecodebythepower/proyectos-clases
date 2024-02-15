@@ -1,0 +1,13 @@
+.pagination {
+    padding-bottom: 100px;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+
+.pagination > button {
+    border-radius: 10px;
+    padding: 8px 10px;
+    border: none;
+    cursor: pointer;
+}
