@@ -1,0 +1,11 @@
+header nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 30px 0px;
+}
+
+header a {
+    color: white;
+    font-size: 30px;
+}

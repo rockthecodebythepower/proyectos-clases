@@ -1,0 +1,18 @@
+/* estilos globales y de primer nivel */
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100svh;
+  background-image: url("https://fotografias.lasexta.com/clipping/cmsimages01/2020/05/08/E3BC9A26-F5D7-4B1D-9497-72A52CE9CB79/98.jpg?crop=1300,731,x0,y19&width=1900&height=1069&optimize=high&format=webply");
+  /* background-image: url("https://us.123rf.com/450wm/ballha67/ballha672304/ballha67230403352/202514358-fondo-de-tono-pastel-colorido-abstracto-para-dise%C3%B1o-gr%C3%A1fico-y-dise%C3%B1o-web.jpg?ver=6"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
