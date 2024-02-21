@@ -1,0 +1,67 @@
+.overlay {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100svh;
+    top: 0;
+    left: 0;
+    animation: fadeIn forwards 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert {
+    /* display: none; */
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 32em;
+    max-width: 100%;
+    padding: 1.25em;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    color: #545454;
+    font-family: inherit;
+    font-size: 1rem;
+    z-index: 12;
+}
+
+.icon {
+    width: 80px;
+}
+
+h2 {
+    margin: 15px;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.alert button {
+    border: 0;
+    border-radius: 0.25em;
+    background: initial;
+    background-color: #7066e0;
+    color: #fff;
+    font-size: 1em;
+    margin: 0.3125em;
+    padding: 0.625em 1.1em;
+    transition: box-shadow .1s;
+    box-shadow: 0 0 0 3px rgba(0,0,0,0);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    0% {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+}
