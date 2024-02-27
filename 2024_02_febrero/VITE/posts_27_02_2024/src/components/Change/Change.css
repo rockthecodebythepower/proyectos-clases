@@ -1,0 +1,35 @@
+.prev {
+  transform: rotate(180deg);
+}
+
+#change {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+#change button {
+  width: 150px;
+  height: 80px;
+  cursor: pointer;
+  background-color: var(--rtc-color-2);
+  border: none;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+#change button:hover {
+  transform: scale(1.1);
+}
+
+#change button img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+#change p {
+  font-size: 40px;
+  font-weight: 800;
+}

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kode+Mono:wght@400..700&display=swap');
+
+:root {
+  --rtc-font-family: "Kode Mono", monospace;
+
+  --rtc-color-1: #ff6b6b;
+  --rtc-color-2: #ffbb99;
+  --rtc-color-3: #ffe5e5;
+  --rtc-color-4: #ffccda;
+  --rtc-color-5: #ffd4b8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: var(--rtc-font-family);
+}
+
+body {
+  min-height: 100svh;
+  background-color: var(--rtc-color-3);
+  overflow: hidden;
+}
