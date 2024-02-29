@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(27, 118, 154);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+}
+
+.ojo_buey {
+    width: 300px;
+    height: 300px;
+    border: 6px solid rgb(39, 153, 199);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submarino {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation: movimiento_submarino 4s infinite;
+}
+
+@keyframes movimiento_submarino {
+    0% {
+        transform: rotate(0deg);
+    }
+    33% {
+        transform: rotate(10deg) translateX(10px);
+    }
+    66% {
+        transform: rotate(-5deg) translateX(-5px);
+    }
+}
+
+.cuerpo {
+    width: 170px;
+    height: 90px;
+    background-color: rgb(227, 93, 93);
+    border-radius: 100px;
+    position: absolute;
+    top: 100px;
+    left: 70px;
+}
+
+.propulsor {
+    background-color: rgb(227, 93, 93);
+    height: 85px;
+    width: 30px;
+    border-radius: 5px;
+    position: absolute;
+    top: 102.5px;
+    left: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aleta {
+    width: 70%;
+    height: 14%;
+    background-color: rgb(252, 155, 155);
+}
+
+.aleta:first-child {
+    border-radius: 5px 5px 0px 0px;
+}
+
+.aleta:last-child {
+    border-radius: 0px 0px 5px 5px;
+}
+
+.aleta:nth-child(odd) {
+    animation: alternar-aleta 0.1s infinite;
+}
+
+.aleta:nth-child(even) {
+    animation: alternar-aleta2 0.1s infinite;
+}
+
+@keyframes alternar-aleta {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes alternar-aleta2 {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.casco {
+    width: 70px;
+    height: 30px;
+    background-color: rgb(227, 93, 93);
+    position: absolute;
+    top: 70px;
+    left: 120px;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.luces {
+    background-color: rgb(193, 50, 50);
+    width: 70%;
+    height: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.luz {
+    background-color: white;
+    border-radius: 100%;
+    height: 5px;
+    width: 5px;
+    animation: luz 0.5s infinite;
+}
+
+@keyframes luz {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+.giroscopio {
+    width: 5px;
+    height: 20px;
+    background-color: rgb(227, 93, 93);
+    position: absolute;
+    top: 50px;
+    left: 170px;
+}
+
+.giroscopio2 {
+    width: 12px;
+    height: 5px;
+    background-color: rgb(227, 93, 93);
+    position: absolute;
+    top: 50px;
+    left: 170px;
+    border-radius: 5px;
+}
+
+.rotor {
+    width: 40px;
+    height: 40px;
+    border: 6px solid rgb(235, 118, 118);
+    border-radius: 100%;
+    position: absolute;
+    top: 130px;
+    left: 120px;
+    animation: rotar 1s infinite linear;
+}
+
+.aspa {
+    width: 5px;
+    height: 28px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.568);
+    position: absolute;
+    top: 0px;
+    left: 12px;
+    transform: rotate(45deg);
+}
+
+.aspa:last-child {
+    transform: rotate(-45deg);
+}
+
+@keyframes rotar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(350deg);
+    }
+}

@@ -1,0 +1,78 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ html {
+     font-size: 20px;
+ }
+
+ body {
+     min-height: 100svh;
+     background-color: rgb(255, 208, 120);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ /*
+.container {
+    width: 50%;
+    height: 50vh;
+    background-color: rgb(130, 130, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.child {
+    width: 80%;
+    height: 50%;
+    font-size: 16px;
+    background-color: rgb(255, 128, 128);
+}
+
+.prueba {
+    font-size: calc(1em + 1vw);
+    /* calculo (16px + 100px) -> 116px*/
+ /* viewport width: 10000px */
+ /* }
+@media (width <= 500px) {
+    html {
+        font-size: 10px;
+    }
+} */
+
+/* .principal {
+    width: 50%;
+    height: 50vh;
+    background-color: rgb(110, 110, 255);
+    transition: all 0.5s;
+}
+
+@media (max-width: 1600px) {
+    .principal {
+        width: 40%;
+        height: 40vh;
+        background-color: rgb(255, 127, 127);
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .principal {
+        background-color: rgb(127, 255, 127);
+    }
+    body {
+        background-color: rgb(255, 255, 133);
+    }
+}
+
+@media (width <= 1400px) {
+    .principal {
+        width: 30%;
+        height: 30vh;
+        background-color: rgb(127, 253, 255);
+    }
+} */
