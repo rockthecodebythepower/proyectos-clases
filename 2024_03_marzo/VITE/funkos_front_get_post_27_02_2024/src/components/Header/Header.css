@@ -1,0 +1,19 @@
+header {
+    height: 7svh;
+    background-color: rgb(35, 33, 33);
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+header > button {
+    cursor: pointer;
+    padding: 8px 12px;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+}

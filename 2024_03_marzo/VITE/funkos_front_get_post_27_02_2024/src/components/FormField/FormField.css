@@ -1,0 +1,18 @@
+.form_field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.form_field > label {
+    font-weight: 600;
+}
+
+.form_field > input {
+    width: 100%;
+    border: 2px solid black;
+    font-size: 15px;
+    padding: 8px 12px;
+    border-radius: 10px;
+}

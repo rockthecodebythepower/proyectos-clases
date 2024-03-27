@@ -1,0 +1,33 @@
+svg {
+    width: 100px;
+    height: 100px;
+    animation: 2s rotate infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.characters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.character {
+    width: 100px;
+    height: 200px;
+}
+
+.character > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
