@@ -1,0 +1,57 @@
+.character {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    overflow: hidden;
+    width: 300px;
+    height: 350px;
+    gap: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.character > div {
+    width: 100%;
+    height: 300px;
+}
+
+.character > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.character-container {
+    position: relative;
+}
+
+.character-container > img {
+    position: absolute;
+    transform: rotate(30deg);
+    width: 70px;
+    cursor: pointer;
+    transition: all 0.5s;
+    z-index: 6;
+}
+
+.character-container > img:hover {
+    transform: rotate(30deg) scale(1.1);
+}
+
+.muerto {
+    filter: grayscale(50);
+    cursor: default;
+}
+
+.character-container > .sangre {
+    top: 20px;
+    left: 40%;
+    width: 50px;
+    cursor: default;
+}
+
+.character-container > .sangre:hover {
+    transform: rotate(30deg) scale(1);
+}
