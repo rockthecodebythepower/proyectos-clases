@@ -1,0 +1,13 @@
+.fieldForm {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.fieldForm > input {
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 18px;
+    border: none;
+    color: var(--rtc-color-1);
+}

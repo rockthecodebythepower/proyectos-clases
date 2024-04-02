@@ -1,0 +1,20 @@
+.alert {
+    padding: 8px 12px;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(255, 119, 119);
+    position: absolute;
+    top: -50px;
+    left: 20px;
+    animation: alert-animation 0.5s forwards;
+}
+
+@keyframes alert-animation {
+    0% {
+        top: -50px
+    }
+
+    100% {
+        top: 20px;
+    }
+}

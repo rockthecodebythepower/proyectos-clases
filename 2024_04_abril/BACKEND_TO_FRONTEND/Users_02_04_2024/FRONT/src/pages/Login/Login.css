@@ -1,0 +1,16 @@
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-form > button {
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 18px;
+    color: var(--rtc-color-1);
+    border: none;
+    cursor: pointer;
+}
