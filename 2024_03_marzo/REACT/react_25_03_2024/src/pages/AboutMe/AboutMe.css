@@ -1,0 +1,9 @@
+.aboutme {
+    display: flex;
+    min-height: 70svh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    font-weight: 800;
+}

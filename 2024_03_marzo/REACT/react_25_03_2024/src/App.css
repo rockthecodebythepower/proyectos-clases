@@ -1,0 +1,13 @@
+main {
+  display: flex !important;
+  width: 100%;
+  min-height: 100svh;
+  flex-direction: column;
+  gap: 100px;
+  align-items: start;
+  justify-content: center;
+}
+
+.pages {
+  padding-top: 10svh;
+}

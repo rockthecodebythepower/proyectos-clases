@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kode+Mono:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+body {
+  min-height: 100svh;
+  background-color: rgb(52, 48, 48);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 300px;
+  background-color: rgb(251, 244, 244);
+  border-radius: 20px;
+  padding: 50px;
+}
+
+.login-form>div>input {
+  border-radius: 5px;
+  padding: 8px 12px;
+  border: solid 1px black;
+}
+
+.login-form>button {
+  border-radius: 5px;
+  padding: 8px 12px;
+  border: solid 1px black;
+  cursor: pointer;
+  background-color: rgb(157, 255, 157);
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.foro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.foro>div {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.foro>div>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.foro>h3 {
+  font-weight: 700;
+  color: white;
+}
+
+.foro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.foro-header {
+  position: absolute;
+  width: 300px;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.foro-header>div {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.foro-header>div>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.foro-header>h3 {
+  color: white;
+  font-weight: 800;
+}
+
+.foro>section {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h2 {
+  color: white;
+  font-weight: 800;
+}
+
+section>div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.comment {
+  padding: 30px;
+  background-color: rgb(252, 246, 246);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-user {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.info-user > div {
+  border-radius: 100%;
+  border: 2px solid black;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.info-user > div > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}

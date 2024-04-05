@@ -1,0 +1,33 @@
+header {
+    height: 10svh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #2c2a2a;
+    width: 100%;
+    align-items: center;
+}
+
+header > nav > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+header a {
+    color: rgb(255, 248, 248);
+    transition: all 0.5s;
+}
+
+header a:hover {
+    color: rgb(255, 255, 75);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+header a.active {
+    border-bottom: 2px solid rgb(255, 255, 75);
+}

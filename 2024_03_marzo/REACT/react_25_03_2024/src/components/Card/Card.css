@@ -1,0 +1,23 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+
+.card > h3 {
+    text-align: center;
+    height: 100px;
+}
+
+.technologies {
+    top: 50px;
+    right: 20px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
