@@ -1,0 +1,54 @@
+.button {
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.button.high {
+    background-color: #05C0C7;
+    color: white;
+}
+
+.button.medium {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.button.low {
+    background-color: transparent;
+    color: black;
+}
+
+.button.l {
+    padding: 10px 12px;
+    font-size: 17px;
+}
+
+.button.m {
+    padding: 8px 10px;
+    font-size: 15px;
+}
+
+.button.s {
+    padding: 6px 8px;
+    font-size: 13px;
+}
+
+.button > img {
+    width: 50px;
+}
+
+.button.leftIcon > img {
+    width: 20px;
+    transform: rotate(180deg);
+}
+
+.button.rightIcon > img {
+    width: 20px;
+}
