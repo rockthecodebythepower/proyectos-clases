@@ -1,0 +1,202 @@
+.lienzo {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-top: 50px;
+    border: 3px solid black;
+    position: relative;
+}
+
+.lienzo>div {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+}
+
+.brown {
+    background-color: brown;
+}
+
+.black {
+    background-color: black;
+}
+
+.brownSoft {
+    background-color: #be976a;
+}
+
+.brown1 {
+    top: 10px;
+    left: 20px;
+}
+
+.brown2 {
+    top: 11px;
+    left: 21px;
+}
+
+.brown3 {
+    top: 12px;
+    left: 21px;
+}
+
+.brown4 {
+    top: 13px;
+    left: 21px;
+}
+
+.brown5 {
+    top: 14px;
+    left: 21px;
+}
+
+.brown6 {
+    top: 14px;
+    left: 20px;
+}
+
+.brown7 {
+    top: 14px;
+    left: 22px;
+}
+
+.brown8 {
+    top: 13px;
+    left: 22px;
+}
+
+.brown9 {
+    top: 13px;
+    left: 19px;
+}
+
+.brown10 {
+    top: 12px;
+    left: 18px;
+    animation: gato-bigote 1s infinite;
+}
+
+.brown11 {
+    top: 14px;
+    left: 18px;
+}
+
+.brown12 {
+    top: 10px;
+    left: 24px;
+}
+
+.brown13 {
+    top: 12px;
+    left: 23px;
+}
+
+.brown14 {
+    top: 14px;
+    left: 23px;
+}
+
+.brown15 {
+    top: 14px;
+    left: 24px;
+}
+
+.brown16 {
+    top: 13px;
+    left: 24px;
+}
+
+.brown17 {
+    top: 13px;
+    left: 25px;
+}
+
+.brown18 {
+    top: 12px;
+    left: 26px;
+}
+
+.brown19 {
+    top: 14px;
+    left: 26px;
+}
+
+.brown20 {
+    top: 11px;
+    left: 23px;
+}
+
+.black1 {
+    top: 13px;
+    left: 20px;
+}
+
+.black2 {
+    top: 13px;
+    left: 23px;
+}
+
+.brownSoft1 {
+    top: 11px;
+    left: 20px;
+}
+
+.brownSoft2 {
+    top: 12px;
+    left: 20px;
+}
+
+.brownSoft3 {
+    top: 12px;
+    left: 22px;
+}
+
+.brownSoft4 {
+    top: 12px;
+    left: 24px;
+}
+
+.brownSoft5 {
+    top: 11px;
+    left: 24px;
+}
+
+
+@keyframes gato-bigote {
+    0% {
+        top: 12px;
+    }
+
+    50% {
+        top: 13px;
+    }
+
+    100% {
+        top: 12px;
+    }
+}
+
+
+img {
+    width: 200px;
+    position: absolute;
+    top: 500px;
+    left: 500px;
+    animation: volar 5s infinite;
+}
+
+@keyframes volar {
+    0% {
+        transform: rotate(0deg) translateX(0px) translateY(0px);
+    }
+    
+    33% {
+        transform: rotate(-30deg) translateX(-300px) translateY(-200px) scale(0.5);
+        filter: blur(2px);
+    }
+
+    66% {
+        transform: rotate(40deg) translateX(400px) translateY(-300px) scale(1.5);
+        filter: blur(0px);
+    }
+}

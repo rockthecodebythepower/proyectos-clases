@@ -1,0 +1,28 @@
+form {
+  width: 500px;
+  margin: auto;
+  margin-top: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+input, button{
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: solid black 2px;
+}
+
+button {
+  cursor: pointer;
+}
