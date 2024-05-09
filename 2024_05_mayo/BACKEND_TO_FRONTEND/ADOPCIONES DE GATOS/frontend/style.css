@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(39, 39, 39);
+    min-height: 100svh;
+}
+
+.form {
+    background-color: rgb(232, 232, 232);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.form > div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.form input, .form button {
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: none;
+}
+
+.form button {
+    cursor: pointer;
+    border: 2px solid black;
+}
