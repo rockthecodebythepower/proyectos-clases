@@ -1,0 +1,13 @@
+#app > header {
+    height: 10svh;
+    background-color: rgb(182, 226, 255);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#app > header > nav > ul {
+    display: flex;
+    gap: 30px;
+}

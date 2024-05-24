@@ -1,0 +1,9 @@
+.nav-link > a {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(55, 55, 178);
+}
+
+.nav-link > a:hover {
+    border-bottom: 3px solid rgb(55, 55, 178);
+}
