@@ -1,0 +1,14 @@
+@mixin image_wrapper($w: 300px, $h: 300px, $br: 20px, $bgColor: transparent) {
+    width: $w;
+    height: $h;
+    border-radius: $br;
+    overflow: hidden;
+    background-color: $bgColor;
+}
+
+@mixin image_inside_wrapper($of: cover) {
+    width: 100%;
+    height: 100%;
+    object-fit: $of;
+}
+

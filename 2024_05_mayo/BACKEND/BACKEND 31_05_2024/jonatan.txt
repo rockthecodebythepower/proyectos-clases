@@ -1,0 +1,8 @@
+apuntar horas -> id trabajador -> [obras diárias] -> si pasas de 8h son extras
+
+// express -> servidor
+// mongoose -> bbdd
+// cors -> peticiones desde otra url
+// dotenv -> guardar en el .env la variable de conexión a la bbdd
+
+// nodemon -> para que no tenga que tirar y levantar el sevidor con cada cambio

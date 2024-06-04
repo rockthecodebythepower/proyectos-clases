@@ -1,0 +1,35 @@
+@import "./global/variables.scss";
+@import "./global/mixins.scss";
+
+body {
+    background-color: $primary-color;
+}
+
+.img_wrp {
+    @include image_wrapper();
+
+    img {
+        @include image_inside_wrapper();
+    }
+}
+
+#user {
+    div {
+        @include image_wrapper(200px, 200px, 100%);
+    
+        img {
+            @include image_inside_wrapper();
+        }
+    }
+}
+
+#products {
+    div {
+        @include image_wrapper(300px, 300px, 10px, rgb(235, 235, 235));
+    
+    
+        img {
+            @include image_inside_wrapper(contain);
+        }
+    }
+} 
