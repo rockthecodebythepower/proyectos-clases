@@ -1,0 +1,25 @@
+.register {
+    height: 20px;
+    overflow: hidden;
+    background-color: palevioletred;
+    padding-top: 40px;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.register.openned {
+    height: 600px;
+}
+
+.register > img {
+    width: 40px;
+    position: absolute;
+    left: 49%;
+    bottom: 0;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.register.openned > img {
+    transform: rotate(180deg);
+}

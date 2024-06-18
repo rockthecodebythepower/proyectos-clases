@@ -1,0 +1,13 @@
+.field_form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.field_form > input {
+    border-radius: 5px;
+    border: none;
+    padding: 8px 12px;
+}

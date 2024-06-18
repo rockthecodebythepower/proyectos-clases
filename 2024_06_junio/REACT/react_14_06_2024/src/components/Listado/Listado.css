@@ -1,0 +1,14 @@
+ul {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.br {
+    border-radius: 20px;
+}
+
+.nobr {
+    border-radius: 0px;
+}

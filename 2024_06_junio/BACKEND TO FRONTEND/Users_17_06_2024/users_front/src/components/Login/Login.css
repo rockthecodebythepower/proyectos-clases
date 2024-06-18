@@ -1,0 +1,25 @@
+.login {
+    height: 20px;
+    overflow: hidden;
+    background-color: rgb(132, 86, 177);
+    padding-top: 40px;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.login.openned {
+    height: 350px;
+}
+
+.login > img {
+    width: 40px;
+    position: absolute;
+    left: 49%;
+    bottom: 0;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.login.openned > img {
+    transform: rotate(180deg);
+}

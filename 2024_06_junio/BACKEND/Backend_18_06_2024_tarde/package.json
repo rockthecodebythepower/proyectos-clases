@@ -1,0 +1,22 @@
+{
+  "name": "backend_18_06_2024_tarde",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "marvelSeed": "node ./src/utils/seeds/marvel.seed.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.3"
+  }
+}
