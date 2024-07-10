@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Playwrite NG Modern", cursive;
+}
+
+:root {
+  --rtc-bg-color: rgb(42, 42, 42);
+  --rtc-text-color: rgb(234, 234, 234)
+}
+
+body {
+  background-color: var(--rtc-bg-color);
+  min-height: 100svh;
+}

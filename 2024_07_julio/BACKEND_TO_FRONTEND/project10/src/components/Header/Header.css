@@ -1,0 +1,21 @@
+header {
+    height: 8svh;
+    background-color: var(--rtc-text-color);
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header a {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--rtc-bg-color);
+}

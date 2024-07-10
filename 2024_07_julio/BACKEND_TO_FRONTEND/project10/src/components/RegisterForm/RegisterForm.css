@@ -1,0 +1,10 @@
+.register-form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 30px;
+    gap: 20px;
+    background-color: var(--rtc-bg-color);
+    color: var(--rtc-text-color);
+    border: 3px solid var(--rtc-text-color);
+}

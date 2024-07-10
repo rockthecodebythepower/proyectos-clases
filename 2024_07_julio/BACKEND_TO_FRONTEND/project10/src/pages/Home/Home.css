@@ -1,0 +1,11 @@
+#home {
+    min-height: 92svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home h1 {
+    color: var(--rtc-text-color);
+    font-size: 50px;
+}
