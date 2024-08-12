@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Playwrite NG Modern", cursive;
+}
+
+:root {
+  --bingo-bgColor: rgb(44, 44, 44);
+  --bingo-textColor: rgb(236, 236, 236);
+}
+
+body {
+  min-height: 100svh;
+  background-color: var(--bingo-bgColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 50px;
+}
+
+.bola {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  background-color: var(--bingo-textColor);
+  /* position: absolute; */
+  /* top: 50px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  font-weight: 800;
+}
+
+.carton {
+  width: 1110px;
+  height: 360px;
+  background-color: var(--bingo-textColor);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* outline: 3px solid var(--bingo-textColor); */
+}
+
+div.enemigo1 {
+  left: 0;
+  transform: rotateX(205deg) rotateY(220deg) rotateZ(269deg);
+}
+
+.cartonEnemigo {
+  width: 275px;
+  height: 90px;
+  position: absolute;
+  right: 0;
+  top: 200px;
+  transform: rotateX(25deg) rotateY(40deg) rotateZ(269deg);
+}
+
+.casilla {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: var(--bingo-bgColor);
+  color: var(--bingo-textColor);
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.casilla:hover {
+  background-color: rgb(21, 21, 21);
+}
+
+.casilla.null {
+  background-color: rgb(255, 206, 115);
+  cursor: auto;
+}
+
+.cartonEnemigo > .casilla {
+  width: 25px;
+  margin: 2.5px;
+  height: 25px;
+  font-size: 11px;
+}
+
+.tachado {
+  background-color: red;
+  cursor: default;
+}
+
+.tachado:hover {
+  background-color: red;
+}
