@@ -146,16 +146,12 @@ h1 {
     width: 140px;
 }
 
-body {
-    min-height: 200svh;
-}
-
 .nube {
     width: 100%;
     position: absolute;
     transform: rotate(180deg);
     z-index: 3;
-    bottom: -10px;
+    bottom: 0px;
 }
 
 .berry,
